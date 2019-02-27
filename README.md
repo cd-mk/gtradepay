@@ -67,19 +67,24 @@ $ git remote -v
 - master 브랜치는 일정 주기를 가지고 develop의 변경사항을 merge하여 형상관리 용도로 사용
 - 아래의 순서로 작업이 진행됨
 
-1. local repo에 develop브랜치 생성
+1. git remote 갱신
+```bash
+$ git remote update
+```
+
+2. local repo에 develop브랜치 생성
 ```bash
 $ git checkout -b develop --track upstream/develop
 ```
 
-2. origin에 develop 브랜치 생성
+3. origin에 develop 브랜치 생성
 ```bash
 (branch on develop) $ git push origin develop
 ```
 
-3. 작업
+4. 작업
 
-4. commit & rebase
+5. commit & rebase
 ```bash
 $ git commit -m "commit 메시지"
 ```
@@ -88,18 +93,18 @@ $ git commit -m "commit 메시지"
 $ git rebase -i HEAD~2
 ```
 
-5. upstream/develop 의 변경사항을 pull
+6. upstream/develop 의 변경사항을 pull
 ```bash
 $ git pull --rebase upstream develop
 ```
 이때 충돌이 발생할 경우 충돌발생한 부분 수정하여 충돌 해결
 
-6. push & Pull Request
+7. push & Pull Request
 ```bash
 $ git push origin develop
 ```
 origin develop에 push 후 PR 생성 후 upstream/develop에 self merge
 
 ```
-한번 develop 브랜치를 생성하고난 뒤에는 1,2번은 생략하고 3~6 반복
+한번 develop 브랜치를 생성하고난 뒤에는 1~3번은 생략하고 4~6 반복
 ```
