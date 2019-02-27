@@ -27,3 +27,11 @@ body {
   font-family: 'notokr' sans-serif;
   font-size: 14px;
 }
+
+.blind{
+  overflow:hidden;
+  position:absolute;
+  top:0; left:0;
+  width:1px; height:1px;
+  font-size:0; line-height:0
+}
