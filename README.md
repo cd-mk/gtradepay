@@ -96,3 +96,7 @@ $ git pull --rebase upstream develop
 $ git push origin develop
 ```
 origin develop에 push 후 PR 생성 후 upstream/develop에 self merge
+
+```
+한번 develop 브랜치를 생성하고난 뒤에는 1,2번은 생략하고 3~6 반복
+```
