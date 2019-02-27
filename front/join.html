@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GTradePay > 회원가입</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="join_form">
+        <form method="POST" action="">
+          <fieldset>
+            <legend class="blind">회원 가입 정보</legend>
+            <h2 class="title">회원가입</h2>
+            <div class="form_group">
+              <h3 class="group_title">1. 회사 정보</h3>
+              <div class="group_wrap">
+                <dl class="group_inp">
+                  <dt>사업자 번호 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="businessNum" class="blind">사업자 번호 입력</label>
+                    <input type="text" name="" id="businessNum">
+                    <button type="button" class="btn_check">
+                      <span>조회</span>
+                    </button>
+                  </dd>
+                  <dd class="txt_message">(-) 제외, 숫자만 입력 가능</dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>회사명 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="companyName" class="blind">회사명 입력</label>
+                    <input type="text" name="" id="companyName">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>구분</dt>
+                  <dd>
+                    <label for="division" class="blind">가입 구분 선택</label>
+                    <select name="" id="division">
+                      <option value="">선택</option>
+                      <option value="">법인</option>
+                      <option value="">개인</option>
+                    </select>
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>대표자명 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="ceoName" class="blind">대표자명 입력</label>
+                    <input type="text" name="" id="ceoName">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>법인번호</dt>
+                  <dd>
+                    <label for="corporNum" class="blind">법인번호 입력</label>
+                    <input type="text" name="" id="corporNum">
+                  </dd>
+                  <dd class="txt_message">(-) 제외, 숫자만 입력 가능</dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>업종 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="sectors" class="blind">업종 입력</label>
+                    <input type="text" name="" id="sectors">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>업태 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="sectorsType" class="blind">업종 형태 입력</label>
+                    <input type="text" name="" id="sectorsType">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>전화번호 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="telNum" class="blind">전화번호 입력</label>
+                    <input type="tel" name="" id="telNum">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>팩스번호</dt>
+                  <dd>
+                    <label for="faxNum" class="blind">팩스번호 입력</label>
+                    <input type="tel" name="" id="faxNum">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>주소 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="address1" class="blind">우편 번호</label>
+                    <input type="text" name="" id="address1">
+                    <button type="button" class="btn_check">
+                      <span>주소검색</span>
+                    </button>
+                  </dd>
+                  <dd>
+                    <label for="address2" class="blind">기본 주소</label>
+                    <input type="text" name="" id="address2">
+                  </dd>
+                  <dd>
+                    <label for="address3" class="blind">상세 주소</label>
+                    <input type="text" name="" id="address3">
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="form_group">
+              <h3 class="group_title">2. 사용자 정보</h3>
+              <div class="group_wrap">
+                <dl class="group_inp">
+                  <dt>아이디 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="idName" class="blind">아이디 입력</label>
+                    <input type="text" name="" id="idName">
+                    <button type="button" class="btn_check">
+                      <span>중복 확인</span>
+                    </button>
+                  </dd>
+                  <dd class="txt_message">영문자, 숫자, _만 입력 가능</dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>이름 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="name" class="blind">이름 입력</label>
+                    <input type="text" name="" id="name">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>비밀번호 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="password1" class="blind">비밀번호 입력</label>
+                    <input type="password" name="" id="password1">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>비밀번호 확인 <span class="require">*</span></dt>
+                  <dd>
+                    <label for="password2" class="blind">비밀번호 확인 입력</label>
+                    <input type="password" name="" id="password2">
+                  </dd>
+                  <!-- 유효 검증 통과시 pass, 비통과시 no_pass 클래스 추가 -->
+                  <dd class="txt_validate">비밀번호가 일치하지 않습니다</dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>부서/직급</dt>
+                  <dd>
+                    <label for="part" class="blind">부서/직급 입력</label>
+                    <input type="text" name="" id="part">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>E-mail <span class="require">*</span></dt>
+                  <dd>
+                    <label for="mail" class="blind">이메일 입력</label>
+                    <input type="email" name="" id="mail">
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="form_group">
+              <h3 class="group_title">3. 가입 필수 서류 <span class="require">*</span></h3>
+              <div class="group_wrap">
+                <dl class="group_inp">
+                  <dt>회사 사업자 등록증 <span class="require">*</span></dt>
+                  <dd>
+                    <input type="text" disabled="disabled" value="파일선택">
+
+                    <label for="file1">파일 선택</label>
+                    <input type="file" id="file1">
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- js -->
+  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+</body>
+</html>

@@ -3,6 +3,11 @@
 충돌 방지를 위한 간단한 Rule 정의
 ### Common
 - Tab 사이즈는 2로 사용 (vs code에서 "ctrl + ," 를 입력 뒤 Tab Size : 4 -> 2)로 변경
+### 네이밍
+- html 클래스 네이밍은 underscore_case 사용
+```html
+<div class="item_box"></div>
+```
 ### CSS
 - css는 개행하여 작성
 ```css
