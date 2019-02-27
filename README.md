@@ -41,8 +41,6 @@ common, admin, front 폴더로 구분하여 사용
 플러그인 사용 시 css, js폴더 내 plugins 폴더에 저장하여 사용
 
 ## git setting
-충돌 방지를 위해 각자 branch 생성 하여 작업 후 master에 merge
-### flow
 1. github에서 프로젝트(저장소) fork
 
 2. fork받은 프로젝트를 clone
@@ -59,7 +57,7 @@ $ git remote add upstream http://fork받기위해 들어간 저장소 주소
 $ git remote -v
 ```
 를 하면 origin주소에는 내가 포크 받은 나의 저장소 주소가 upstream에는 원저장소 주소가 보여야 올바르게 연결한 것임
-### branch
+### work flow
 - develop 브랜치만 작업 브랜치로 사용
 - master 브랜치는 일정 주기를 가지고 develop의 변경사항을 merge하여 형상관리 용도로 사용
 - 아래의 순서로 작업이 진행됨
