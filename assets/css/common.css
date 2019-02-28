@@ -24,8 +24,14 @@
   url('../font/notokr-regular.svg#notokr-regular') format('svg');}
 
 body {
-  font-family: 'notokr' sans-serif;
+  font-family: 'notokr';
   font-size: 14px;
+  color: #222;
+  background: #fff;
+}
+a {
+  color: #222;
+  text-decoration: none;
 }
 
 .blind{
@@ -34,4 +40,49 @@ body {
   top:0; left:0;
   width:1px; height:1px;
   font-size:0; line-height:0
+}
+
+/* bold text */
+h1,h2,h3,h4,h5,h6,strong {
+  font-weight: 500;
+}
+
+/* color */
+.point_green {
+  color: #36ae53;
+}
+.point_gray {
+  color: #666;
+}
+
+/* header */
+#header .header_top {
+  height: 70px;
+  padding: 24px 3.125%;
+  background: #fff;
+}
+#header .header_top .logo {
+  float: left;
+  width: 119px;
+}
+#header .header_top .logo img {
+  width: 100%;
+}
+
+/* content */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.page_title {
+  padding: 50px 0;
+  border-bottom: 1px solid #d8d8d8;
+  text-align: center;
+}
+.page_title .txt_title {
+  font-size: 32px;
+}
+.page_title .txt_desc {
+  margin-top: 16px;
+  color: #999;
 }
