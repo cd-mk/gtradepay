@@ -16,17 +16,36 @@
         <a href="#url">Help</a>
       </li>
     </ul>
+    <div class="my_box">
+      <div class="login_box">
+        <!-- login상태: login, logout상태: logout 클래스 추가 -->
+        <a href="#url" class="btn_login login"><span class="blind">로그인</span></a>
+        <div class="login_layer js-layer">
+          <div class="btn_wrap">
+            <a href="#url">로그아웃</a>
+            <a href="#url">마이페이지</a>
+          </div>
+        </div>
+      </div>
+      <div class="lang_box">
+        <a href="#url" class="btn_lang">KOR</a>
+        <div class="lang_layer js-layer">
+          <div class="btn_wrap">
+            <a href="#url">CHN</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="header_bottom">
     <a href="#url" class="btn_back"><span class="blind">뒤로가기</span></a>
-
     <div class="sub_gnb_wrap">
       <!-- Escrow Service -->
-      <ul class="sub_gnb">
+      <ul class="sub_gnb active">
         <li>
           <a href="#url">에스크로 신청 내역</a>
         </li>
-        <li>
+        <li class="active">
           <a href="#url">에스크로 신청하기</a>
         </li>
       </ul>
@@ -90,3 +109,5 @@
     </div>
   </div>
 </div>
+<script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+<script src="../assets/js/common.js"></script>
