@@ -1,3 +1,24 @@
 @charset "utf-8";
 
 /* 회원 가입 */
+.join_form .form_group {
+  width: 505px;
+  margin: 0 auto;
+}
+.join_form .require {
+  color: #ff3d00;
+}
+.form_group .group_title {
+  margin: 40px 0 30px;
+  padding-bottom: 19px;
+  font-size: 18px;
+  border-bottom: 2px solid #222;
+}
+.form_group .group_wrap .group_inp {
+  margin-top: 20px;
+}
+.form_group .group_wrap .group_inp dd {
+  overflow: hidden;
+  margin-top: 10px;
+  font-weight: 500;
+}
