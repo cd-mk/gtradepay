@@ -43,22 +43,48 @@
 .align_left li:last-child {
     padding-right:0;
 }
+.tab_active a {
+    color:#36ae53;
+}
 
 .align_right {
     float:right;
 }
 
-.escrow_tb01 {
+select.es_sl {
+    float:left;
+    width:100px;
+    vertical-align: middle;
+}
+
+input.es_ip {
+    float:left;
+    margin-left:5px;
+    width:200px;
+    vertical-align: middle;
+}
+
+.btn_search {
+    width:44px;
+    height:44px;
+    color:transparent;
+    background:#666 url('../images/common/btn_search.png') no-repeat center;
+    background-size:16px;
+}
+
+
+
+.escrow_tb {
     margin-top:12px;
     width:100%;
 }
 
-.escrow_tb01 thead {
+.escrow_tb thead {
     background-color:#eee;
     border:1px solid #e1e1e1;
 }
 
-.escrow_tb01 th {
+.escrow_tb th {
     position:relative;
     height:55px;
     font-weight:500;
@@ -66,7 +92,7 @@
     line-height:55px;
 }
 
-.escrow_tb01 th:before {
+.escrow_tb th:before {
     content:'';
     position:absolute;
     top:50%;
@@ -77,33 +103,61 @@
     background-color:#d4d4d4;
 }
 
-.escrow_tb01 th:last-child:before {
+.escrow_tb th:last-child:before {
     display:none;
 }
 
-.escrow_tb01 td {
+.escrow_tb td {
     height:55px;
     box-sizing:border-box;
-    line-height:56px;
+    line-height:55px;
     border-bottom:1px solid #e1e1e1;
-    color:#666;
     text-align:center;
 }
 
-.escrow_tb01 tr td:nth-child(4) {
+.escrow_tb tr td:nth-child(4) {
     padding-left:12px;
     text-align:left;
 }
 
-.escrow_tb01 tr td:nth-child(5) {
+.escrow_tb tr td:nth-child(5) {
     padding-left:20px;
     text-align:left;
 }
 
-.more_btn {
+.escrow_tb td.gray_bg {
+    padding:8px 20px;
+    box-sizing:border-box;
+    line-height:normal;
+}
+
+.escrow_tb .gray_bg a {
     display:block;
-    margin-top:30px;
+    color:#fff;
+    background-color:#999;
+    line-height:40px;
+}
+
+.more_btn {
+    margin:30px auto 120px; 
+    width:150px;
+    height:50px;
     text-align:center;
+}
+
+.more_btn a {
+    display:block;
+    line-height:50px;
+}
+
+.white_btn {
+    background-color:#fff;
+    border:1px solid #999;
+}
+
+.white_btn a {
+    color:#222;
+    font-weight:500;
 }
 
 /* 에스크로 신청내역 view */
@@ -126,10 +180,6 @@
     width:100%;
 }
 
-.con_box caption {
-    display:none;
-}
-
 .con_box tbody tr:first-child th,
 .con_box tbody tr:first-child td {
     border-top:1px solid #e1e1e1;
@@ -144,7 +194,7 @@
 }
 
 .con_box th {
-    width:155px;
+    width:30.69%;
     padding-left:20px;
     background-color:#eee;
     border-left:1px solid #e1e1e1;
@@ -177,6 +227,7 @@
     padding:0 20px;
     box-sizing:border-box;
     background-color:#eee;
+    border-bottom:1px solid #d0d0d0;
     line-height:44px;
     font-weight:500;
 }
@@ -190,6 +241,20 @@
     display:inline-block;
     float:right;
     font-weight:400;
+}
+
+.escrow_file_list label {
+    color:#222;
+    font-weight:500;
+}
+
+.payment_box td {
+    font-weight:400;
+}
+
+.payment_box span {
+    color:#36ae53;
+    font-weight:500;
 }
 
 

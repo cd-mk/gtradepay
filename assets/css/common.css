@@ -515,6 +515,19 @@ button {
   border: 1px solid #999;
 }
 
+/* font style */
+.green_txt {
+  color:#36ae53;
+}
+
+.red_txt {
+  color:#ff3d00;
+}
+
+.gray_txt {
+  color:#666;
+}
+
 
 /* mobile */
 @media screen and (max-width: 768px) {
