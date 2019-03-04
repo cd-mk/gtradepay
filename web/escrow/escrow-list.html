@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>로그인</title>
+  <title>GTradePay > 에스크로 신청내역</title>
 
   <!-- css -->
-  <link rel="stylesheet" href="../assets/css/app.css">
+  <link rel="stylesheet" href="../../assets/css/app.css">
 </head>
 <body>
   <div id="wrap">
     <div id="header">
       <div class="header_top">
-        <a href="#url" class="logo"><img src="../assets/images/common/logo.png" alt="GTradePay"></a>
+        <a href="#url" class="logo"><img src="../../assets/images/common/logo.png" alt="GTradePay"></a>
         <ul class="gnb">
           <li>
             <a href="#url">Escrow Service</a>
@@ -100,11 +100,11 @@
         <a href="#url" class="btn_back"><span class="blind">뒤로가기</span></a>
         <div class="sub_gnb_wrap">
           <!-- Escrow Service -->
-          <ul class="sub_gnb">
+          <ul class="sub_gnb active">
             <li>
               <a href="#url">에스크로 신청 내역</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#url">에스크로 신청하기</a>
             </li>
           </ul>
@@ -172,57 +172,107 @@
       </div>
     </div>
     <div class="container">
-      <div class="page_title">
-        <h2 class="txt_title">Member Login</h2>
-        <p class="txt_desc">로그인을 위해 아이디와 비밀번호를 입력해주세요.</p>
-      </div>
-      <div class="login_wrap">
-        <form method="POST" action="">
-          <fieldset>
-            <legend class="blind">로그인 양식</legend>
-            <div class="group_wrap">
-              <div class="group_inp">
-                <label for="userName" class="blind">아이디 입력</label>
-                <input type="text" name="" id="userName" placeholder="Username">
-              </div>
-              <div class="group_inp">
-                <label for="password" class="blind">비밀번호 입력</label>
-                <input type="password" name="" id="password" placeholder="Password">
-              </div>
-              <div class="group_inp chk_inp_box">
-                <span class="chk_inp">
-                  <input type="checkbox" name="" id="privacyAgree">
-                  <label for="privacyAgree"><span class="blind">로그인 정보 저장</span></label>
-                </span>
-                <span class="txt_label">Remind me Later</span>
-              </div>
-              <div class="btn_wrap">
-                <button type="submit" class="btn point_green"><span>로그인</span></button>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-        <div class="forgot_wrap">
-          <a href="#url" class="join_link">회원가입</a>
-          <a href="#url">아이디/비밀번호 찾기</a>
+      <div class="escrow_list">
+        <div class="page_title">
+            <h2 class="txt_title">에스크로 신청내역</h2>
+            <p class="txt_desc">가장 안전하고, 가장 믿을 수 있는 무역결제 에스크로 서비스 입니다.</p>
+            <a href="#a" class="green_btn">Sign a Escrow</a>
         </div>
+        <div class="sort_wrap">
+            <ul class="align_left">
+                <li class="tab_active"><a href="escrow-list.html">전체</a></li>
+                <li><a href="escrow-list-import.html">수입</a></li>
+                <li><a href="escrow-list-export.html">수출</a></li>
+            </ul>
+            <div class="align_right">
+                <select class="es_sl" title="검색 조건 선택">
+                    <option>전체</option>
+                    <option>거래처명</option>
+                    <option>계약명</option>
+                </select> 
+                <input type="text" class="es_ip" title="검색어 입력">
+                <button type="button" class="btn_search">찾기</button>
+            </div>
+        </div>
+        <div class="tab_wrap">
+            <table class="escrow_tb" id="tb_export">
+                <caption class="blind">신청내역 조회 내역 수출 확인을 위한 표</caption> 
+                <colgroup>
+                    <col width="6.15%">
+                    <col width="6.88%">
+                    <col width="10.32%">
+                    <col width="15.84%">
+                    <col width="*">
+                    <col width="11.67%">
+                    <col width="19.39%">
+                </colgroup>                 
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>구분</th>
+                        <th>계약일</th>
+                        <th>거래처명</th>
+                        <th>계약명</th>
+                        <th>거래금액</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>수입</td>
+                        <td>2019/01/05</td>
+                        <td>그랜드 센트럴 상하이</td>
+                        <td>PIXNET Mobile 모바일 패널</td>
+                        <td>500,000 USD</td>
+                        <td class="gray_txt">승인대기</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>수출</td>
+                        <td>2019/01/05</td>
+                        <td>중국철강회사</td>
+                        <td>아이오페 라이브 리프트 세트</td>
+                        <td>500,000 USD</td>
+                        <td class="green_txt">에스크로 입금완료</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>수입</td>
+                        <td>2019/01/05</td>
+                        <td>샤오미 휴대폰</td>
+                        <td>PIXNET Mobile 모바일 패널</td>
+                        <td>500,000 USD</td>
+                        <td class="gray_bg"><a href="#a">에스트로 입금대기</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>수출</td>
+                        <td>2019/01/05</td>
+                        <td>샤오미 휴대폰</td>
+                        <td>아이오페 라이브 리프트 세트</td>
+                        <td>500,000 USD</td>
+                        <td class="red_txt">출금완료</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>수입</td>
+                        <td>2019/01/05</td>
+                        <td>샤오미 휴대폰</td>
+                        <td>PIXNET Mobile 모바일 패널</td>
+                        <td>500,000 USD</td>
+                        <td class="gray_bg"><a href="#a">에스트로 출금대기</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="more_btn white_btn"><a href="#a">더보기</a></div>
       </div>
-    </div>
-    <div id="footer">
-      <p class="foot_title">Global <span>Trade</span> Payments Corporation</p>
-      <div class="foot_logo">
-        <img src="../assets/images/common/img-ssl-logo.jpg" alt="COMODO AUTHENTIC SITE SECURED BY SSL">
-        <p>USD 250,000 배상보험 가입</p>
-      </div>
-      <p class="foot_desc">GTadePay.com의 모든 거래는 최신, 최고의 정보 보안상태로 보호되고 있으며, 거래당 25만불의  배상 책임 보험에 가입되어 있습니다.</p>
-      <p class="foot_cpr">
-        &copy; 2018. Global Trade payments Corporation. All Rights Reserved.<br>
-        ​Powered by GET corp. a member of Global e trade.
-      </p>
     </div>
   </div>
   <!-- js -->
-  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
-  <script src="../assets/js/common.js"></script>
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
 </body>
 </html>

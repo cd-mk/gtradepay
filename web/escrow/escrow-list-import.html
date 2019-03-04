@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>회원가입 승인 대기</title>
+  <title>GTradePay > 에스크로 신청내역</title>
 
   <!-- css -->
-  <link rel="stylesheet" href="../assets/css/app.css">
+  <link rel="stylesheet" href="../../assets/css/app.css">
 </head>
 <body>
   <div id="wrap">
     <div id="header">
       <div class="header_top">
-        <a href="#url" class="logo"><img src="../assets/images/common/logo.png" alt="GTradePay"></a>
+        <a href="#url" class="logo"><img src="../../assets/images/common/logo.png" alt="GTradePay"></a>
         <ul class="gnb">
           <li>
             <a href="#url">Escrow Service</a>
@@ -100,11 +100,11 @@
         <a href="#url" class="btn_back"><span class="blind">뒤로가기</span></a>
         <div class="sub_gnb_wrap">
           <!-- Escrow Service -->
-          <ul class="sub_gnb">
+          <ul class="sub_gnb active">
             <li>
               <a href="#url">에스크로 신청 내역</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#url">에스크로 신청하기</a>
             </li>
           </ul>
@@ -172,51 +172,89 @@
       </div>
     </div>
     <div class="container">
-      <div class="page_title">
-        <h2 class="txt_title">회원가입 승인 대기</h2>
-        <p class="txt_desc">GTradePay 회원 가입 검토 중에 있습니다.</p>
-      </div>
-      <div class="join_fin_wrap">
-        <div class="txt_box">
-          <h3 class="txt_welcome">
-            <span class="green_txt">공지철</span>님의 회원가입을 환영합니다.
-          </h3>
-          <p class="txt_alert">최종 가입 승인은 서류 접수 1일 이내 검토 완료 후 승인 예정이며, 승인 즉시 GTP에스크로 신청이 가능합니다.</p>
+      <div class="escrow_list">
+        <div class="page_title">
+            <h2 class="txt_title">에스크로 신청내역</h2>
+            <p class="txt_desc">가장 안전하고, 가장 믿을 수 있는 무역결제 에스크로 서비스 입니다.</p>
+            <a href="#a" class="green_btn">Sign a Escrow</a>
         </div>
-        <ol>
-          <li>1 회사 사업자 등록증</li>
-          <li>2 무역업고유번호 (수출의 경우에 필수 서류)</li>
-          <li>3 재무제표 증명원 3개년 (신생 기업이거나, 설립 3년 미만의 기업은 별도의 심사 필요)</li>
-          <li>4 등기부등본</li>
-          <li>5 인감증명서</li>
-          <li>6 대표자 여권사본</li>
-        </ol>
-        <div class="txt_notice">
-          <p>가입 서류 제출처: 서울 성동구 연무장5가길 25</p>
+        <div class="sort_wrap">
+            <ul class="align_left">
+                <li><a href="escrow-list.html">전체</a></li>
+                <li class="tab_active"><a href="escrow-list-import.html">수입</a></li>
+                <li><a href="escrow-list-export.html">수출</a></li>
+            </ul>
+            <div class="align_right">
+                <select class="es_sl" title="검색 조건 선택">
+                    <option>전체</option>
+                    <option>거래처명</option>
+                    <option>계약명</option>
+                </select> 
+                <input type="text" class="es_ip" title="검색어 입력">
+                <button type="button" class="btn_search">찾기</button>
+            </div>
         </div>
-        <ul>
-          <li class="green_txt">- 위 증명서류를 보내주셔야 가입 승인되오니 반드시 Fax 또는 이메일로 전송해주시기 바랍니다.</li>
-        </ul>
-        <div class="btn_wrap">
-          <a href="./index.html" class="btn point_green"><span>메인으로</span></a>
+        <div class="tab_wrap">
+            <table class="escrow_tb" id="tb_income">
+                <caption class="blind">신청내역 조회 내역 수입 확인을 위한 표</caption> 
+                <colgroup>
+                    <col width="6.15%">
+                    <col width="6.88%">
+                    <col width="10.32%">
+                    <col width="15.84%">
+                    <col width="*">
+                    <col width="11.67%">
+                    <col width="19.39%">
+                </colgroup>                 
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>구분</th>
+                        <th>계약일</th>
+                        <th>거래처명</th>
+                        <th>계약명</th>
+                        <th>거래금액</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>수입</td>
+                        <td>2019/01/05</td>
+                        <td>그랜드 센트럴 상하이</td>
+                        <td>PIXNET Mobile 모바일 패널</td>
+                        <td>500,000 USD</td>
+                        <td class="gray_txt">승인대기</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>수입</td>
+                        <td>2019/01/05</td>
+                        <td>샤오미 휴대폰</td>
+                        <td>PIXNET Mobile 모바일 패널</td>
+                        <td>500,000 USD</td>
+                        <td class="gray_bg"><a href="#a">에스트로 입금대기</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>수입</td>
+                        <td>2019/01/05</td>
+                        <td>샤오미 휴대폰</td>
+                        <td>PIXNET Mobile 모바일 패널</td>
+                        <td>500,000 USD</td>
+                        <td class="gray_bg"><a href="#a">에스트로 출금대기</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <div class="more_btn white_btn"><a href="#a">더보기</a></div>
       </div>
-    </div>
-    <div id="footer">
-      <p class="foot_title">Global <span>Trade</span> Payments Corporation</p>
-      <div class="foot_logo">
-        <img src="../assets/images/common/img-ssl-logo.jpg" alt="COMODO AUTHENTIC SITE SECURED BY SSL">
-        <p>USD 250,000 배상보험 가입</p>
-      </div>
-      <p class="foot_desc">GTadePay.com의 모든 거래는 최신, 최고의 정보 보안상태로 보호되고 있으며, 거래당 25만불의  배상 책임 보험에 가입되어 있습니다.</p>
-      <p class="foot_cpr">
-        &copy; 2018. Global Trade payments Corporation. All Rights Reserved.<br>
-        ​Powered by GET corp. a member of Global e trade.
-      </p>
     </div>
   </div>
   <!-- js -->
-  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
-  <script src="../assets/js/common.js"></script>
+  <script src="../../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+
 </body>
 </html>
