@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GTradePay > 에스크로 신청내역</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="escrow_list">
+        <div class="page_title">
+            <h2 class="txt_title">에스크로 신청내역</h2>
+            <p class="txt_desc">가장 안전하고, 가장 믿을 수 있는 무역결제 에스크로 서비스 입니다.</p>
+            <div class="gray-bg">승인대기</div>
+        </div>
+        <div class="con_box">
+            <h3 class="txt_title">거래정보</h3>
+            <table>
+                <caption>거래 정보를 나열한 표</caption>
+                <tbody>
+                    <tr>
+                        <th>등록일</th>
+                        <td>2019-02-11</td>
+                    </tr>
+                    <tr>
+                        <th>계약일</th>
+                        <td>2019-02-11</td>
+                    </tr>
+                    <tr>
+                        <th>거래처 이름</th>
+                        <td>흥부상사</td>
+                    </tr>
+                    <tr>
+                        <th>거래처 이메일</th>
+                        <td>heung@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>거래금액</th>
+                        <td>10,000USD</td>
+                    </tr>
+                    <tr class="last_txt">
+                        <th>거래내용</th>
+                        <td>전자상거래에서의 매매 보호 서비스. 비대면 거래의 
+                            피해를 방지를 위해 거래대금의 입출금을 제3의 
+                            회사에 맡기는 제도이다. 전자상거래에서 소비자의 
+                            피해가 급증함에 따라, 2004년 5월 공정거래위원회는 
+                            에스크로 도입 의무화의 내용을 담은 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="con_box">
+            <h3 class="txt_title">첨부 서류</h3>
+            <ul class="escrow_file_list">
+                <li class="escrow_link file_link01">
+                    <a href="#a">무역 견적서<span>바로보기 +</span></a>
+                </li>
+                <li class="escrow_link file_link02">
+                    <a href="#a">인보이스<span>바로보기 +</span></a>
+                </li>
+                <li>
+                    <label for="ip1">Packing List</label>
+                    <input type="file" id="ip1">
+                    <span class="file_name">Packing List</span>
+                    <button type="button" class="del_btn">삭제</button>
+                </li>
+                <li>
+                    <label for="ip2">은행통장사본</label>
+                    <input type="file" id="ip2">
+                    <span class="file_name">통장사본.jpg</span>
+                    <button type="button" class="del_btn">삭제</button>
+                </li>
+                <li>
+                    <label for="ip3">기타 첨부1</label>
+                    <input type="file" id="ip3">
+                    <span class="file_name">샘플상품.jpg</span>
+                    <button type="button" class="del_btn">삭제</button>
+                </li>
+                <li>
+                    <label for="ip4">기타 첨부2</label>
+                    <input type="file" id="ip4">
+                    <button type="button" class="find_btn">찾아보기</button>
+                </li>
+                <li>
+                    <label for="ip5">기타 첨부3</label>
+                    <input type="file" id="ip5">
+                    <button type="button" class="find_btn">찾아보기</button>
+                </li>
+                <li>
+                    <label for="ip6">기타 첨부4</label>
+                    <input type="file" id="ip6">
+                    <button type="button" class="find_btn">찾아보기</button>
+                </li>
+            </ul>
+        </div>
+        <div class="con_box">
+            <h3 class="txt_title">거래처 입력사항</h3>
+            <table>
+                <caption>거래처 입력 사항 정보를 나열한 표</caption>
+                <tbody>
+                    <tr>
+                        <th>계약번호</th>
+                        <td>2019-02-11</td>
+                    </tr>
+                    <tr>
+                        <th>Hscode</th>
+                        <td>FR776-GT999-0000</td>
+                    </tr>
+                    <tr>
+                        <th>통관구분</th>
+                        <td>FR776-GT999-0000</td>
+                    </tr>
+                    <tr>
+                        <th>B/L</th>
+                        <td>FR776-GT999-0000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="con_box">
+            <h3>수수료</h3>
+            <table>
+                <caption>수수료 정보를 나열한 표</caption>
+                <tbody>
+                    <tr>
+                        <th>에스크로 수수료</th>
+                        <td><span>0.5</span>%</td>
+                    </tr>
+                    <tr>
+                        <th>MP수수료</th>
+                        <td><span>0.05</span>%</td>
+                    </tr>
+                    <tr>
+                        <th>현지은행수수료</th>
+                        <td><span>100</span>RMB</td>
+                    </tr>
+                    <tr>
+                        <th>송금수수료</th>
+                        <td><span>20</span>USD</td>
+                    </tr>
+                    <tr>
+                        <th>통관수수료</th>
+                        <td><span>1</span>USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- js -->
+  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+</body>
+</html>
