@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>회원가입 완료</title>
+  <title>로그인</title>
 
   <!-- css -->
   <link rel="stylesheet" href="../assets/css/app.css">
@@ -173,35 +173,38 @@
     </div>
     <div class="container">
       <div class="page_title">
-        <h2 class="txt_title">회원가입 완료</h2>
-        <p class="txt_desc">GTradePay 회원가입 신청이 완료 되셨습니다.</p>
+        <h2 class="txt_title">Member Login</h2>
+        <p class="txt_desc">로그인을 위해 아이디와 비밀번호를 입력해주세요.</p>
       </div>
-      <div class="join_fin_wrap">
-        <div class="txt_box">
-          <h3 class="txt_welcome">
-            <span class="green_txt">공지철</span>님의 회원가입을 환영합니다.
-          </h3>
-          <p class="txt_alert">
-            <span class="green_txt">필독!</span> 회원 가입 후 반드시 아래 항목을 우편으로 제출해야 이용 신청 완료가 최종 승인 됩니다.
-          </p>
-        </div>
-        <ol>
-          <li>1 회사 사업자 등록증</li>
-          <li>2 무역업고유번호 (수출의 경우에 필수 서류)</li>
-          <li>3 재무제표 증명원 3개년 (신생 기업이거나, 설립 3년 미만의 기업은 별도의 심사 필요)</li>
-          <li>4 등기부등본</li>
-          <li>5 인감증명서</li>
-          <li>6 대표자 여권사본</li>
-        </ol>
-        <div class="txt_notice">
-          <p>가입 서류 제출처: 서울 성동구 연무장5가길 25</p>
-        </div>
-        <ul>
-          <li>- 회원님의 비밀번호는 아무도 알 수 없는 암호화 코드로 저장되므로 안심하셔도 좋습니다.</li>
-          <li>- 아이디, 비밀번호 분실시에는 회원가입시 입력하신 이메일 주소를 이용하여 찾을 수 있습니다.</li>
-        </ul>
-        <div class="btn_wrap">
-          <a href="./index.html" class="btn point_green"><span>메인으로</span></a>
+      <div class="login_wrap">
+        <form method="POST" action="">
+          <fieldset>
+            <legend class="blind">로그인 양식</legend>
+            <div class="group_wrap">
+              <div class="group_inp">
+                <label for="userName" class="blind">아이디 입력</label>
+                <input type="text" name="" id="userName" placeholder="Username">
+              </div>
+              <div class="group_inp">
+                <label for="password" class="blind">비밀번호 입력</label>
+                <input type="password" name="" id="password" placeholder="Password">
+              </div>
+              <div class="group_inp chk_inp_box">
+                <span class="chk_inp">
+                  <input type="checkbox" name="" id="privacyAgree">
+                  <label for="privacyAgree"><span class="blind">로그인 정보 저장</span></label>
+                </span>
+                <span class="txt_label">Remind me Later</span>
+              </div>
+              <div class="btn_wrap">
+                <button type="submit" class="btn point_green"><span>로그인</span></button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div class="forgot_wrap">
+          <a href="#url" class="join_link">회원가입</a>
+          <a href="#url">아이디/비밀번호 찾기</a>
         </div>
       </div>
     </div>

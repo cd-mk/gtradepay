@@ -24,6 +24,8 @@
   url('../font/notokr-regular.svg#notokr-regular') format('svg');}
 
 body {
+  font-family: 'notokr';
+  font-size: 14px;
   color: #222;
   background: #fff;
 }
@@ -266,6 +268,7 @@ h1,h2,h3,h4,h5,h6,strong {
 
 /* footer */
 #footer {
+  position: relative;
   padding: 40px 25%;
   background: #fafafa;
 }
@@ -277,7 +280,65 @@ h1,h2,h3,h4,h5,h6,strong {
 #footer .foot_title span {
   color: #36ae53;
 }
-
+#footer .foot_desc {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #666;
+}
+#footer .foot_cpr {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #8f9194;
+}
+#footer .foot_logo {
+  position: absolute;
+  right: 25%; top: 40px;
+  max-width: 73px;
+  text-align: center;
+}
+#footer .foot_logo p {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #666;
+}
+@media screen and (max-width: 1500px) {
+  #footer .foot_logo {
+    overflow: hidden;
+    position: static;
+    display: table;
+    margin-top: 10px;
+  }
+  #footer .foot_logo {
+    max-width: none;
+  }
+  #footer .foot_logo img {
+    display: table-cell;
+  }
+  #footer .foot_logo p {
+    display: table-cell;
+    margin-top: 0;
+    padding-left: 10px;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    padding: 39px 4.26% 41.5px;
+    text-align: center;
+  }
+  #footer .foot_logo {
+    margin: 27px auto 0;
+  }
+  #footer .foot_logo img {
+    width: 58px;
+  }
+  #footer .foot_cpr {
+    margin-top: 12px;
+  }
+}
 /* content */
 .container {
   max-width: 960px;
@@ -293,6 +354,7 @@ h1,h2,h3,h4,h5,h6,strong {
 }
 .page_title .txt_desc {
   margin-top: 16px;
+  line-height: 1.4;
   color: #999;
 }
 
@@ -374,8 +436,8 @@ input[type="text"].id_vaild {
 }
 .chk_inp input[type="checkbox"]:checked + label:before {
   content: '';
-  background: #36ae53;
-  background-clip: content-box;
+  background: url(../images/common/ico-check.png) no-repeat 0 0;
+  border: 0;
 }
 
 /* select */
@@ -405,11 +467,15 @@ button {
   cursor: pointer;
 }
 .btn {
+  display: inline-block;
   height: 44px;
+  line-height: 44px;
   box-sizing: border-box;
   color: #fff;
+  text-align: center;
 }
 .btn span {
+  font-size: 14px;
   font-weight: 500;
 }
 .input_with_btn + .btn {
@@ -422,6 +488,7 @@ button {
 .btn_wrap .btn {
   width: 100%;
   height: 50px;
+  line-height: 50px;
 }
 .btn_wrap .btn span {
   font-size: 15px;
@@ -451,6 +518,9 @@ button {
 
 /* mobile */
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 0 4.26%;
+  }
   #header .header_top {
     height: 60px;
     padding: 21px 4.2%;
