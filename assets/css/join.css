@@ -26,6 +26,7 @@
 .form_group .group_title .require_txt {
   float: right;
   line-height: 23px;
+  font-size: 14px;
   font-weight: 400;
   color: #666;
 }
@@ -111,4 +112,109 @@
 .form_notice .txt_desc {
   margin-top: 14px;
   color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .join_form {
+    width: 100%;
+  }
+}
+
+/* 회원가입 완료 */
+.join_fin_wrap {
+  padding-bottom: 137px;
+}
+.join_fin_wrap .txt_box {
+  margin-top: 80px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #222;
+  text-align: center;
+}
+.join_fin_wrap .txt_box .txt_welcome {
+  font-size: 36px;
+  font-weight: 400;
+}
+.join_fin_wrap .txt_box .txt_alert {
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+  padding-left: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.join_fin_wrap .txt_box .txt_alert::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 20px; height: 20px;
+  background: url(../images/common/ico-alert.png)no-repeat 0 0;
+}
+.join_fin_wrap ol {
+  margin-top: 30px;
+  padding-left: 8.4%;
+}
+.join_fin_wrap ol > li {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.join_fin_wrap ol > li:first-child {
+  margin-top: 0;
+}
+.join_fin_wrap .txt_notice {
+  margin-top: 30px;
+  padding: 22.5px 9.7%; 
+  background: #fafafa;
+}
+.join_fin_wrap .txt_notice p {
+  position: relative;
+  font-size: 16px;
+}
+.join_fin_wrap .txt_notice p::before {
+  content: '';
+  position: absolute;
+  left: -12px; top: 50%;
+  width: 4px; height: 4px;
+  border-radius: 100%;
+  background: #36ae53;
+  transform: translateY(-50%);
+}
+.join_fin_wrap ul {
+  margin-top: 29px;
+  padding-left: 8.4%;
+}
+.join_fin_wrap ul > li {
+  margin-top: 8px;
+  color: #666;
+}
+.join_fin_wrap ul > li:first-child {
+  margin-top: 0;
+}
+.join_fin_wrap .btn_wrap {
+  width: 360px;
+  margin: 50px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .join_fin_wrap {
+    padding-bottom: 69px;
+  }
+  .join_fin_wrap ol {
+    padding-left: 0;
+  }
+  .join_fin_wrap ol > li {
+    line-height: 1.4;
+  }
+  .join_fin_wrap .txt_notice {
+    padding: 22.5px 5.7%;
+  }
+  .join_fin_wrap ul {
+    padding-left: 0;
+  }
+  .join_fin_wrap ul > li {
+    line-height: 1.4;
+  }
+  .join_fin_wrap .btn_wrap {
+    width: 100%;
+  }
 }
