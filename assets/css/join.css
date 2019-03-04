@@ -218,3 +218,21 @@
     width: 100%;
   }
 }
+
+/* 마이페이지 */
+.mypage_form {
+  width: 505px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+.mypage_form .require {
+  color: #ff3d00;
+}
+.mypage_form .btn_wrap {
+  margin-top: 40px;
+}
+.mypage_form .txt_notice {
+  margin-top: 32px;
+  color: #36ae53;
+  text-align: center;
+}
