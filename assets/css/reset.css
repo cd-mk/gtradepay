@@ -16,7 +16,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-family: 'notokr';
-	font-size: 14px;
+	font-size: 100%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -48,4 +48,7 @@ caption {
   top:0; left:0;
   width:1px; height:1px;
   font-size:0; line-height:0
+}
+em {
+	font-style: normal;
 }
