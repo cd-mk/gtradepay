@@ -41,8 +41,24 @@ var mobileGnb = function() {
   });
 };
 
+var inputFile = function() {
+  $('.file_inp').each(function() {
+    var fileName;
+    $(this).on('change', function() {
+      if (window.FileReader) {
+        fileName = $(this)[0].files[0].name;
+      } else {
+        fileName = $(this).val().split('/').pop().split('\\').pop();
+      }
+
+      $(this).siblings('.js-file_name').val(fileName);
+    });
+  });
+};
+
 $(document).ready(function() {
   miniLayer();
   setGnb();
   mobileGnb();
+  inputFile();
 });

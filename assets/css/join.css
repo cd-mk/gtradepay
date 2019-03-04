@@ -1,12 +1,21 @@
 @charset "utf-8";
 
 /* 회원 가입 */
-.join_form .form_group {
+.join_form {
   width: 505px;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 .join_form .require {
   color: #ff3d00;
+}
+.join_form .btn_wrap {
+  margin-top: 40px;
+}
+.join_form .txt_notice {
+  margin-top: 32px;
+  color: #36ae53;
+  text-align: center;
 }
 .form_group .group_title {
   margin: 40px 0 30px;
@@ -14,11 +23,92 @@
   font-size: 18px;
   border-bottom: 2px solid #222;
 }
+.form_group .group_title .require_txt {
+  float: right;
+  line-height: 23px;
+  font-weight: 400;
+  color: #666;
+}
+.form_group .group_title .require_txt em {
+  color: #ff3d00;
+}
 .form_group .group_wrap .group_inp {
   margin-top: 20px;
 }
 .form_group .group_wrap .group_inp dd {
-  overflow: hidden;
   margin-top: 10px;
   font-weight: 500;
+}
+.form_group .group_wrap .group_inp .txt_message {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+}
+.form_group .group_wrap .group_inp .vaild_message {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.form_group .group_wrap .group_inp .txt_message + .vaild_message {
+  margin-top: 4px;
+}
+.form_group .group_wrap .group_inp .vaild_message.vaild {
+  color: #36ae53;
+}
+.form_group .group_wrap .group_inp .vaild_message.invaild {
+  color: #ff3d00;
+}
+.form_group .group_wrap.col2 {
+  overflow: hidden;
+  margin-top: -10px;
+}
+.form_group .group_wrap.col2 .group_inp {
+  float: left;
+  margin-top: 0;
+  margin-left: 50px;
+}
+.form_group .group_wrap.col2 .group_inp:first-child {
+  margin-left: 0;
+}
+.form_notice {
+  margin-top: 58px;
+}
+.form_notice .txt_alert {
+  position: relative;
+  padding: 0 0 15px 28px;
+  border-bottom: 1px solid #d8d8d8;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 500;
+}
+.form_notice .txt_alert::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 4px;
+  width: 20px; height: 20px;
+  background: url(../images/common/ico-alert.png) no-repeat 0 0;
+}
+.form_notice ol {
+  margin-top: 24px;
+  padding: 0 1.5%;
+}
+.form_notice ol > li {
+  margin-top: 14px;
+  color: #666;
+}
+.form_notice ol > li:first-child {
+  margin-top: 0;
+}
+.form_notice .txt_bg {
+  height: 55px;
+  margin-top: 24px;
+  padding-left: 1.5%;
+  line-height: 55px;
+  background: #fafafa;
+  color: #666;
+}
+.form_notice .txt_desc {
+  margin-top: 14px;
+  color: #666;
 }
