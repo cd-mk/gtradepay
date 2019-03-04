@@ -63,17 +63,17 @@ $(window).resize(function(e){
 	$("#g_navi").g_widthC();
 });
 
-function gTab(){
-	$("#gTabBox").load("status-common.html #gTab", function(){
-		var caption_txt = $(".g_status_board > table >caption").text();
-		$("#gTab li").each(function(){
-			var thisTxt = $(this).text();
-			if(thisTxt== caption_txt){
-				$(this).addClass("g_on");
-			}
-		});
-	});
-}
+// function gTab(){
+// 	$("#gTabBox").load("status-common.html #gTab", function(){
+// 		var caption_txt = $(".g_status_board > table >caption").text();
+// 		$("#gTab li").each(function(){
+// 			var thisTxt = $(this).text();
+// 			if(thisTxt== caption_txt){
+// 				$(this).addClass("g_on");
+// 			}
+// 		});
+// 	});
+// }
 function gTabCode(){
 	$("#gTabBox").load("status-common.html #gCode", function(){
 		var caption_txt = $(".g_m_tit").text();

@@ -3,8 +3,8 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0; padding:0; border:0}
 header, hgroup, footer ,nav ,section ,article ,aside ,figure ,video ,audio {margin:0;padding:0;border:0;}
 
-@font-face{font-family:notokr; src:url(../assets/font/notokr-medium.eot); src:local(â€»), url(../assets/font/notokr-medium.woff) format("woff"), url(../assets/font/notokr-medium.ttf) format("truetype")}
-@font-face{font-family:notokrB; src:url(../assets/font/notokr-bold.eot); src: local(â€»), url(../assets/font/notokr-bold.woff) format("woff"), url(../assets/font/notokr-bold.ttf) format("truetype")}
+@font-face{font-family:notokr; src:url(../web/assets/font/notokr-medium.eot); src:local(â€»), url(../web/assets/font/notokr-medium.woff) format("woff"), url(../web/assets/font/notokr-medium.ttf) format("truetype")}
+@font-face{font-family:notokrB; src:url(../web/assets/font/notokr-bold.eot); src: local(â€»), url(../web/assets/font/notokr-bold.woff) format("woff"), url(../web/assets/font/notokr-bold.ttf) format("truetype")}
 
 body,button,input,select,textarea{color:#666; font:12px "notokrB", Dotum, AppleGothic, Helvetica,sans-serif; line-height:18px;}
 ul, ol, li{list-style:none}
