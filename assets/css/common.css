@@ -369,6 +369,9 @@ input {
   border: 1px solid #e1e1e1;
   box-sizing: border-box;
 }
+input:disabled {
+  background: #f9f9f9;
+}
 input::placeholder {
   color: #999;
 }
