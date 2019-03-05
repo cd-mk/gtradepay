@@ -258,3 +258,21 @@ input.es_ip {
 }
 
 
+.status {
+    display: block;
+    line-height: 40px;
+    text-align:center;
+    width:145px;
+}
+.status a {
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+}
+.status.wait_appro {color: #666;}
+.status.es_wait_dep a{color: #fff;background-color: #999;}
+.status.es_comp_dep {color: #36ae53;}
+.status.es_wait_wd {color: #666;}
+.status.comp_wd {color: #ff3d00;}
+.status.extend a {color: #fff;background-color: #36ae53;}
+.status.wait_tran {color: #ff3d00;}
