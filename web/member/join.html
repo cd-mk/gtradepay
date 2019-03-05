@@ -258,7 +258,7 @@
                   <dd>
                     <label for="address1" class="blind">우편 번호</label>
                     <input type="text" name="" id="address1" class="input_with_btn">
-                    <button type="button" class="btn point_gray" onclick="exeDaumPostcode()">
+                    <button type="button" class="btn point_gray">
                       <span>주소검색</span>
                     </button>
                   </dd>
@@ -270,9 +270,6 @@
                     <label for="address3" class="blind">상세 주소</label>
                     <input type="text" name="" id="address3">
                   </dd>
-                  <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
-                    <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
-                  </div>
                 </dl>
               </div>
             </div>
@@ -465,71 +462,5 @@
   <!-- js -->
   <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
   <script src="../assets/js/common.js"></script>
-  <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
-  <script>
-    var element_layer = document.getElementById('layer');
-
-    function closeDaumPostcode() {
-      element_layer.style.display = 'none';
-    }
-
-    function exeDaumPostcode() {
-      new daum.Postcode({
-        oncomplete: function(data) {
-          var addr = '';
-          var extraAddr = '';
-
-          if (data.userSelectedType === 'R') {
-            addr = data.roadAddress;
-          } else {
-            addr = data.jibunAddress;
-          }
-
-          if (data.userSelectedType === 'R') {
-            if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-              extraAddr += data.bname;
-            }
-            if(data.buildingName !== '' && data.apartment === 'Y'){
-              extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-            }
-            if(extraAddr !== ''){
-              extraAddr = ' (' + extraAddr + ')';
-            }
-
-            document.getElementById("address3").value = extraAddr;
-          } else {
-            document.getElementById("address3").value = '';
-          }
-
-          document.getElementById('address1').value = data.zonecode;
-          document.getElementById("address2").value = addr;
-          // 커서를 상세주소 필드로 이동한다.
-          document.getElementById("address3").focus();
-
-          element_layer.style.display = 'none';
-        },
-        width: '100%',
-        height: '100%',
-        maxSuggestItems : 5
-      }).embed(element_layer);
-
-      element_layer.style.display = 'block';
-
-      initLayerPosition();
-
-      function initLayerPosition(){
-        var width = 800; 
-        var height = 500; 
-        var borderWidth = 1;
-
-        element_layer.style.width = width + 'px';
-        element_layer.style.height = height + 'px';
-        element_layer.style.border = borderWidth + 'px solid';
-        
-        element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
-        element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
-      }
-    }
-  </script>
 </body>
 </html>
