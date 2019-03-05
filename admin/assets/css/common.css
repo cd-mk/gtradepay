@@ -519,15 +519,15 @@ button {
 }
 
 /* font style */
-.green_txt {
+.txt_green {
   color:#36ae53;
 }
 
-.red_txt {
+.txt_red {
   color:#ff3d00;
 }
 
-.gray_txt {
+.txt_gray {
   color:#666;
 }
 

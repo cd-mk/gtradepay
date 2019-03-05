@@ -2,6 +2,11 @@
 
 /* 에스크로 신청내역 */
 
+.escrow_list .btn_wrap {
+    display:block;
+    width:200px;
+}
+
 .sort_wrap {
     margin-top:40px;
 }
@@ -14,6 +19,7 @@
 
 .align_left {
     float:left;
+    margin-top:11px;
 }
 .align_left li {
     float:left;
@@ -43,6 +49,7 @@
 .align_left li:last-child {
     padding-right:0;
 }
+
 .tab_active a {
     color:#36ae53;
 }
@@ -51,40 +58,47 @@
     float:right;
 }
 
-select.es_sl {
+.sort_wrap select.select_sort {
     float:left;
     width:100px;
     vertical-align: middle;
 }
 
-input.es_ip {
+.sort_wrap .input_search {
     float:left;
     margin-left:5px;
-    width:200px;
+}
+
+.sort_wrap input.input_sort {  
+    float:left;
+    width: calc(100% - 44px);
     vertical-align: middle;
 }
 
-.btn_search {
+.sort_wrap .btn_search {
+    float:left;
     width:44px;
     height:44px;
     color:transparent;
     background:#666 url('../../images/common/btn_search.png') no-repeat center;
     background-size:16px;
+    vertical-align: middle;
 }
 
+.table_wrap {
+    padding-top:12px;
+}
 
-
-.escrow_tb {
-    margin-top:12px;
+.tb_escrow {
     width:100%;
 }
 
-.escrow_tb thead {
+.tb_escrow thead {
     background-color:#eee;
     border:1px solid #e1e1e1;
 }
 
-.escrow_tb th {
+.tb_escrow th {
     position:relative;
     height:55px;
     font-weight:500;
@@ -92,7 +106,7 @@ input.es_ip {
     line-height:55px;
 }
 
-.escrow_tb th:before {
+.tb_escrow th:before {
     content:'';
     position:absolute;
     top:50%;
@@ -103,11 +117,11 @@ input.es_ip {
     background-color:#d4d4d4;
 }
 
-.escrow_tb th:last-child:before {
+.tb_escrow th:last-child:before {
     display:none;
 }
 
-.escrow_tb td {
+.tb_escrow td {
     height:55px;
     box-sizing:border-box;
     line-height:55px;
@@ -115,49 +129,148 @@ input.es_ip {
     text-align:center;
 }
 
-.escrow_tb tr td:nth-child(4) {
+.tb_escrow tr td:nth-child(4) {
     padding-left:12px;
     text-align:left;
 }
 
-.escrow_tb tr td:nth-child(5) {
+.tb_escrow tr td:nth-child(5) {
     padding-left:20px;
     text-align:left;
 }
 
-.escrow_tb td.gray_bg {
+.btn_waiting {
     padding:8px 20px;
     box-sizing:border-box;
     line-height:normal;
 }
 
-.escrow_tb .gray_bg a {
+.btn_waiting a {
     display:block;
     color:#fff;
     background-color:#999;
     line-height:40px;
 }
 
-.more_btn {
+.btn_more {
     margin:30px auto 120px; 
     width:150px;
     height:50px;
     text-align:center;
-}
-
-.more_btn a {
-    display:block;
-    line-height:50px;
-}
-
-.white_btn {
     background-color:#fff;
     border:1px solid #999;
 }
 
-.white_btn a {
+.btn_more a {
+    display:block;
+    line-height:50px;
     color:#222;
     font-weight:500;
+}
+
+.tb_escrow td.txt_wait {
+    color:#666;
+}
+
+.tb_escrow td.txt_deposit {
+    color:#36ae53;
+}
+
+.tb_escrow td.txt_withdraw {
+    color:#ff3d00;
+}
+
+
+/* 팝업 */
+.pop_application {
+    width:370px;
+    height:344px;
+}   
+
+.pop_application .content_pop {
+    padding:40px 30px 30px; 
+    box-sizing: border-box;
+}
+
+.pop_application .content_pop dt {
+    display:block;
+    font-weight:500;
+    color:#222;    
+    text-align:left;
+    line-height:30px;
+}
+
+.pop_application input {
+    width:200px;
+    line-height:44px;
+    vertical-align: middle;
+}
+.pop_application select {
+    margin-left:5px;
+    width:100px;
+    line-height:44px;
+    vertical-align: middle;
+}
+
+.pop_application .txt_bank {
+    text-align:left;
+    color:#666;
+    line-height:normal;
+}
+
+.escrow_list .pop_application .btn_wrap {
+    margin-top:20px;
+    width:auto;
+}
+
+.escrow_list .pop_application .btn_wrap a {
+    vertical-align: middle;
+
+}
+
+@media screen and (max-width: 768px) {
+    .sort_wrap {
+        margin-top:20px;
+    }
+
+    .align_left,
+    .align_right {
+        float:none;
+        width:100%;
+    }
+
+    .align_left:after {
+        content:'';
+        display:block;
+        clear:both;
+    }
+
+    .align_right {
+        margin-top:6.5px;
+    }
+
+    .sort_wrap .input_search {
+        width:calc(71.35% - 5px);
+    }
+
+    .sort_wrap select.select_sort {
+        width:28.65%;
+    }
+
+    .sort_wrap input.input_sort {
+        width:calc(100% - 44px);
+    }
+    
+
+    .table_wrap {
+        padding-top:6px;
+    }
+
+    .tb_escrow {
+        width:900px;
+        overflow:scroll;
+    }
+
 }
 
 /* 에스크로 신청내역 view */
