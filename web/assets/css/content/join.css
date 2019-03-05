@@ -40,6 +40,21 @@
   margin-top: 10px;
   font-weight: 500;
 }
+.form_group .group_wrap .group_inp .col2 {
+  overflow: hidden;
+}
+.form_group .group_wrap .group_inp .col2 select {
+  float: left;
+  width: 28%;
+  background-position: 93% 50%;
+}
+.form_group .group_wrap .group_inp .col2 input {
+  float: left;
+  width: 71%;
+}
+.form_group .group_wrap .group_inp .col2 *:last-child {
+  margin-left: 1%;
+}
 .form_group .group_wrap .group_inp .txt_message {
   margin-top: 10px;
   font-size: 13px;
