@@ -88,7 +88,7 @@
   position: absolute;
   left: 0; top: 4px;
   width: 20px; height: 20px;
-  background: url(../images/common/ico-alert.png) no-repeat 0 0;
+  background: url(../../images/common/ico-alert.png) no-repeat 0 0;
 }
 .form_notice ol {
   margin-top: 24px;
@@ -161,7 +161,7 @@
   position: absolute;
   left: 0; top: 0;
   width: 20px; height: 20px;
-  background: url(../images/common/ico-alert.png)no-repeat 0 0;
+  background: url(../../images/common/ico-alert.png)no-repeat 0 0;
 }
 .join_fin_wrap ol {
   margin-top: 30px;
