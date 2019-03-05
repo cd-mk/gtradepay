@@ -5,12 +5,21 @@
 
 var setGnb = function() {
   var idx;
+  var idx1;
 
-  $('.gnb > li').find('a').on('click', function() {
-    idx = $(this).parent().index();
-    $('.sub_gnb').removeClass('active');
-    $('.sub_gnb').eq(idx).addClass('active');
+  $('.gnb > li').on('click', function() {
+    idx = $(this).index();
+    $(".gnb > li").removeClass('active');
+    $(".gnb > li").eq(idx).addClass('active');
   });
+  var caption_txt = $(".txt_title").text();
+  $(".sub_gnb li a").each(function () {
+    var thisTxt = $(this).text();
+    if (thisTxt == caption_txt) {
+      $(this).addClass("active");
+    }
+  });
+ 
 
 };
 
@@ -88,3 +97,35 @@ $(document).ready(function() {
   }
   setAccordian();
 });
+
+
+// TAB
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+//임시 header, footer영역 로드
+function layout() {
+  $("#header").load("../common.html .header_inner", function () {
+  });
+  $("#footer").load("../common.html .footer_inner", function () {
+  });
+}
+
