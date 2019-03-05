@@ -88,7 +88,7 @@
   position: absolute;
   left: 0; top: 4px;
   width: 20px; height: 20px;
-  background: url(../images/common/ico-alert.png) no-repeat 0 0;
+  background: url(../../images/common/ico-alert.png) no-repeat 0 0;
 }
 .form_notice ol {
   margin-top: 24px;
@@ -102,17 +102,30 @@
   margin-top: 0;
 }
 .form_notice .txt_bg {
-  height: 55px;
+  height: 54px;
   margin-top: 24px;
   padding-left: 1.5%;
   line-height: 55px;
   background: #fafafa;
+  border-bottom: 1px solid #d8d8d8;
   color: #666;
 }
 .form_notice .txt_desc {
-  margin-top: 14px;
+  margin-top: 15px;
   color: #666;
 }
+.captcha_wrap {
+  margin-top: 40px;
+}
+.captcha_wrap .captcha_inner {
+  height: 129px;
+  margin-top: 10px;
+  padding: 23px 21.7% 20px;
+  background: #fafafa;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+}
+
 
 @media screen and (max-width: 768px) {
   .join_form {
@@ -148,7 +161,7 @@
   position: absolute;
   left: 0; top: 0;
   width: 20px; height: 20px;
-  background: url(../images/common/ico-alert.png)no-repeat 0 0;
+  background: url(../../images/common/ico-alert.png)no-repeat 0 0;
 }
 .join_fin_wrap ol {
   margin-top: 30px;
@@ -235,4 +248,10 @@
   margin-top: 32px;
   color: #36ae53;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .mypage_form {
+    width: 100%;
+  }
 }

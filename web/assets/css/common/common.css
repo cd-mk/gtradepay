@@ -4,24 +4,24 @@
 
 /* font */
 @font-face {
-  font-family:'notokr';font-weight:700; font-style:normal; src:url('../font/notokr-bold.eot'); src:url('../font/notokr-bold.eot?#iefix') format('embedded-opentype'),
-  url('../font/notokr-bold.woff2') format('woff2'),
-  url('../font/notokr-bold.woff') format('woff'),
-  url('../font/notokr-bold.ttf') format('truetype'),
-  url('../font/notokr-bold.svg#notokr-medium') format('svg');
+  font-family:'notokr';font-weight:700; font-style:normal; src:url('../../font/notokr-bold.eot'); src:url('../../font/notokr-bold.eot?#iefix') format('embedded-opentype'),
+  url('../../font/notokr-bold.woff2') format('woff2'),
+  url('../../font/notokr-bold.woff') format('woff'),
+  url('../../font/notokr-bold.ttf') format('truetype'),
+  url('../../font/notokr-bold.svg#notokr-medium') format('svg');
 }
 
-@font-face {font-family:'notokr'; font-weight:500; font-style:normal; src:url('../font/notokr-medium.eot'); src:url('../font/notokr-medium.eot?#iefix') format('embedded-opentype'),
-  url('../font/notokr-medium.woff2') format('woff2'),
-  url('../font/notokr-medium.woff') format('woff'),
-  url('../font/notokr-medium.ttf') format('truetype'),
-  url('../font/notokr-medium.svg#notokr-medium') format('svg');}
+@font-face {font-family:'notokr'; font-weight:500; font-style:normal; src:url('../../font/notokr-medium.eot'); src:url('../../font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+  url('../../font/notokr-medium.woff2') format('woff2'),
+  url('../../font/notokr-medium.woff') format('woff'),
+  url('../../font/notokr-medium.ttf') format('truetype'),
+  url('../../font/notokr-medium.svg#notokr-medium') format('svg');}
 
-@font-face {font-family:'notokr'; font-weight:400; font-style:normal; src:url('../font/notokr-regular.eot'); src:url('../font/notokr-regular.eot?#iefix') format('embedded-opentype'),
-  url('../font/notokr-regular.woff2') format('woff2'),
-  url('../font/notokr-regular.woff') format('woff'),
-  url('../font/notokr-regular.ttf') format('truetype'),
-  url('../font/notokr-regular.svg#notokr-regular') format('svg');}
+@font-face {font-family:'notokr'; font-weight:400; font-style:normal; src:url('../../font/notokr-regular.eot'); src:url('../../font/notokr-regular.eot?#iefix') format('embedded-opentype'),
+  url('../../font/notokr-regular.woff2') format('woff2'),
+  url('../../font/notokr-regular.woff') format('woff'),
+  url('../../font/notokr-regular.ttf') format('truetype'),
+  url('../../font/notokr-regular.svg#notokr-regular') format('svg');}
 
 body {
   font-family: 'notokr';
@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5,h6,strong {
   display: inline-block;
   width: 19px;
   height: 20px;
-  background: url(../images/common/ico-login.png) no-repeat 0 0;
+  background: url(../../images/common/ico-login.png) no-repeat 0 0;
 }
 .header_top .my_box .login_box .btn_login.logout {
   background-position: 0 -20px;
@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5,h6,strong {
   font-size: 12px;
   color: #000;
   font-weight: 500;
-  background: url(../images/common/arr-bottom.png) no-repeat center right;
+  background: url(../../images/common/arr-bottom.png) no-repeat center right;
 }
 .header_top .my_box .lang_box .lang_layer::before {
   content: '';
@@ -205,7 +205,7 @@ h1,h2,h3,h4,h5,h6,strong {
   height: 14px;
   margin-top: 15px;
   padding: 3px 1px;
-  background: url(../images/common/arr-left.png) no-repeat 50%;
+  background: url(../../images/common/arr-left.png) no-repeat 50%;
 }
 .header_bottom .sub_gnb_wrap {
   float: right;
@@ -357,6 +357,10 @@ h1,h2,h3,h4,h5,h6,strong {
   line-height: 1.4;
   color: #999;
 }
+.page_title .btn_wrap {
+  width: 200px;
+  margin: 25px auto 0;
+}
 
 /* input */
 input {
@@ -381,7 +385,7 @@ input::placeholder {
 }
 input[type="text"].id_vaild {
   padding-right: 46px;
-  background: url(../images/common/ico-vaild.png) no-repeat 94.5% 50%;
+  background: url(../../images/common/ico-vaild.png) no-repeat 94.5% 50%;
 }
 
 .file_inp_box .file_inp {
@@ -439,7 +443,7 @@ input[type="text"].id_vaild {
 }
 .chk_inp input[type="checkbox"]:checked + label:before {
   content: '';
-  background: url(../images/common/ico-check.png) no-repeat 0 0;
+  background: url(../../images/common/ico-check.png) no-repeat 0 0;
   border: 0;
 }
 
@@ -457,12 +461,14 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(../images/common/arr-bottom.png) no-repeat 96% 50%;
+  background: url(../../images/common/arr-bottom.png) no-repeat 96% 50%;
 }
 select::-ms-expand {
   display: none;
 }
-
+select:disabled {
+  background-color: #f9f9f9;
+}
 /* button */
 button {
   border: 0;
@@ -503,6 +509,15 @@ button {
 }
 .btn_wrap.col2 .btn:first-child {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .input_with_btn {
+    width: 66.5%;
+  }
+  .input_with_btn + .btn {
+    width: 32.5%;
+  }
 }
 
 /* button color */
@@ -619,7 +634,7 @@ button {
     display: block;
     font-size: 18px;
     color: #000;
-    background: url(../images/common/arr-bottom-gray.png) no-repeat center right;
+    background: url(../../images/common/arr-bottom-gray.png) no-repeat center right;
   }
   .header_top .mobile_wrap .mobile_gnb dl dt.on a {
     color: #36ae53;
@@ -660,11 +675,11 @@ button {
     color: #666;
   }
   .header_top .mobile_wrap .mobile_gnb .bottom_box .login span {
-    background: url(../images/common/ico-power.png) no-repeat center top;
+    background: url(../../images/common/ico-power.png) no-repeat center top;
     background-size: auto 50%;
   }
   .header_top .mobile_wrap .mobile_gnb .bottom_box .mypage span {
-    background: url(../images/common/ico-mypage.png) no-repeat center top;
+    background: url(../../images/common/ico-mypage.png) no-repeat center top;
     background-size: auto 50%;
   }
   .header_top .mobile_wrap .mobile_gnb.open {
