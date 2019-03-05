@@ -357,6 +357,10 @@ h1,h2,h3,h4,h5,h6,strong {
   line-height: 1.4;
   color: #999;
 }
+.page_title .btn_wrap {
+  width: 200px;
+  margin: 25px auto 0;
+}
 
 /* input */
 input {
@@ -462,7 +466,9 @@ select {
 select::-ms-expand {
   display: none;
 }
-
+select:disabled {
+  background-color: #f9f9f9;
+}
 /* button */
 button {
   border: 0;
@@ -503,6 +509,15 @@ button {
 }
 .btn_wrap.col2 .btn:first-child {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .input_with_btn {
+    width: 66.5%;
+  }
+  .input_with_btn + .btn {
+    width: 32.5%;
+  }
 }
 
 /* button color */
