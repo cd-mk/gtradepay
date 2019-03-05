@@ -85,6 +85,15 @@ var setAccordian = function() {
   });
 };
 
+var popUp = function(){
+  $('.js-popup-btn').on('click',function(){
+    $(this).next('.popup').addClass('open');
+  });
+  $('.btn_close_pop').on('click', function(){
+    $(this).closest('.popup').removeClass('open');
+  });
+};
+
 $(document).ready(function() {
   miniLayer();
   setGnb();
@@ -96,6 +105,8 @@ $(document).ready(function() {
     setDatePicker();
   }
   setAccordian();
+  inputFile();
+  popUp();
 });
 
 
