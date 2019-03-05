@@ -73,6 +73,9 @@ var setAccordian = function() {
       $(this).closest('.accordian_inp').toggleClass('open');
       $(this).closest('.accordian_inp').find('.inp_wrap').slideToggle();
     });
+  });
+};
+
 var popUp = function(){
   $('.js-popup-btn').on('click',function(){
     $(this).next('.popup').addClass('open');
