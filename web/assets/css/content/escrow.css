@@ -269,6 +269,7 @@ input.es_ip {
     line-height: 40px;
     text-decoration: none;
 }
+
 .status.wait_appro {color: #666;}
 .status.es_wait_dep a{color: #fff;background-color: #999;}
 .status.es_comp_dep {color: #36ae53;}
