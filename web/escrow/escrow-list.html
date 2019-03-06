@@ -8,7 +8,7 @@
 
   <!-- css -->
   <link rel="stylesheet" href="../assets/css/app.css">
-</head>
+  </head>
 <body>
   <div id="wrap">
 	<!-- header area -->
@@ -19,123 +19,146 @@
     <div class="container">
       <div class="escrow_list">
         <div class="page_title">
-            <h2 class="txt_title">에스크로 신청내역</h2>
-            <p class="txt_desc">가장 안전하고, 가장 믿을 수 있는 무역결제 에스크로 서비스 입니다.</p>
-            <div class="btn_wrap">
-              <a href="#a" class="btn point_green">Sign a Escrow</a>
-            </div>
+          <h2 class="txt_title">에스크로 신청내역</h2>
+          <p class="txt_desc">가장 안전하고, 가장 믿을 수 있는 무역결제 에스크로 서비스 입니다.</p>
+          <div class="btn_wrap">
+            <a href="#a" class="btn point_green"><span>Sign a Escrow</span></a>
+          </div>
         </div>
         <div class="sort_wrap">
-            <ul class="align_left">
-                <li class="tab_active"><a href="escrow-list.html">전체</a></li>
-                <li><a href="escrow-list-import.html">수입</a></li>
-                <li><a href="escrow-list-export.html">수출</a></li>
-            </ul>
-            <div class="align_right">
-                <select class="select_sort" title="검색 조건 선택">
-                    <option>전체</option>
-                    <option>거래처명</option>
-                    <option>계약명</option>
-                </select> 
-                <span class="input_search">
-                  <input type="text" class="input_sort" title="검색어 입력">
-                  <button type="button" class="btn_search">찾기</button>
-                </span>
-            </div>
+          <ul class="align_left">
+              <li class="tab_active"><a href="escrow-list.html">전체</a></li>
+              <li><a href="escrow-list-import.html">수입</a></li>
+              <li><a href="escrow-list-export.html">수출</a></li>
+          </ul>
+          <div class="align_right">
+            <select class="select_sort" title="검색 조건 선택">
+                <option>전체</option>
+                <option>거래처명</option>
+                <option>계약명</option>
+            </select> 
+            <span class="input_search">
+              <input type="text" class="input_sort" title="검색어 입력">
+              <button type="button" class="btn_search">찾기</button>
+            </span>
+          </div>
         </div>
         <div class="table_wrap">
-            <table class="tb_escrow">
-                <caption>신청내역 조회 내역 수출 확인을 위한 표</caption>               
-                <thead>
-                    <tr>
-                        <th scope="col" width="6.15%">No</th>
-                        <th scope="col" width="6.88%">구분</th>
-                        <th scope="col" width="10.32%">계약일</th>
-                        <th scope="col" width="15.84%">거래처명</th>
-                        <th scope="col">계약명</th>
-                        <th scope="col" width="11.67%">거래금액</th>
-                        <th scope="col" width="19.39%">상태</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>수입</td>
-                        <td>2019/01/05</td>
-                        <td>그랜드 센트럴 상하이</td>
-                        <td>PIXNET Mobile 모바일 패널</td>
-                        <td>500,000 USD</td>
-                        <td><span class="status wait_appro">승인대기</span></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>수출</td>
-                        <td>2019/01/05</td>
-                        <td>중국철강회사</td>
-                        <td>아이오페 라이브 리프트 세트</td>
-                        <td>500,000 USD</td>
-                        <td><span class="status es_comp_dep">에스크로 입금완료</span></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>수입</td>
-                        <td>2019/01/05</td>
-                        <td>샤오미 휴대폰</td>
-                        <td>PIXNET Mobile 모바일 패널</td>
-                        <td>500,000 USD</td>
-                        <td>
-                          <span class="js-popup-btn status es_wait_dep"><a href="#a">에스트로 입금대기</a></span>
-                          <div class="popup escrow_pop01">
-                            <div class="head_pop"><span>에스크로 신청내역</span><button class="btn_close_pop" type="button">닫기</button></div>
-                            <div class="content_pop">
-                              <dl>
-                                <dt><label for="ip_escrow01"><span>결제금액</span></label></dt>
-                                <dd class="pop_content01">
-                                  <input type="text" id="ip_escrow01">
-                                  <select>
-                                    <option>선택</option>
-                                    <option>원(KRW)</option>
-                                    <option>달러(USD)</option>
-                                  </select>
-                                </dd>
-                                <dt class="pop_sub_title">결제은행</dt>
-                                <dd class="pop_content02">Unionpay</dd>
-                              </dl>
-                              <div class="btn_wrap">
-                                <a href="#a" class="js-popup-btn02 btn point_green">입금</a>
-                                <a href="#a" class="btn point_white">닫기</a>
-                              </div>   
-                            </div>
+          <table class="tb_escrow">
+            <caption>신청내역 조회 내역 수출 확인을 위한 표</caption>               
+            <thead>
+                <tr>
+                    <th scope="col" width="6.15%">No</th>
+                    <th scope="col" width="6.88%">구분</th>
+                    <th scope="col" width="10.32%">계약일</th>
+                    <th scope="col" width="15.84%">거래처명</th>
+                    <th scope="col">계약명</th>
+                    <th scope="col" width="11.67%">거래금액</th>
+                    <th scope="col" width="19.39%">상태</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>수입</td>
+                  <td>2019/01/05</td>
+                  <td>그랜드 센트럴 상하이</td>
+                  <td>PIXNET Mobile 모바일 패널</td>
+                  <td>500,000 USD</td>
+                  <td><span class="status wait_appro">승인대기</span></td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>수출</td>
+                  <td>2019/01/05</td>
+                  <td>중국철강회사</td>
+                  <td>아이오페 라이브 리프트 세트</td>
+                  <td>500,000 USD</td>
+                  <td><span class="status es_comp_dep">에스크로 입금완료</span></td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>수입</td>
+                  <td>2019/01/05</td>
+                  <td>샤오미 휴대폰</td>
+                  <td>PIXNET Mobile 모바일 패널</td>
+                  <td>500,000 USD</td>
+                  <td>
+                    <span class="js-popup-btn status es_wait_dep"><a href="#a">에스트로 입금대기</a></span>
+                    <div class="popup escrow_pop01">
+                      <div class="head_pop"><span>에스크로 신청내역</span><button class="btn_close_pop" type="button">닫기</button></div>
+                      <div class="content_pop">
+                        <dl>
+                          <dt><label for="ip_escrow01"><span>결제금액</span></label></dt>
+                          <dd class="pop_content01">
+                            <input type="text" id="ip_escrow01">
+                            <select>
+                              <option>선택</option>
+                              <option>원(KRW)</option>
+                              <option>달러(USD)</option>
+                            </select>
+                          </dd>
+                          <dt class="pop_sub_title">결제은행</dt>
+                          <dd class="pop_content02">Unionpay</dd>
+                        </dl>
+                        <div class="btn_wrap">
+                          <a href="#a" class="js-popup-btn btn point_green"><span>입금</span></a>                          
+                          <a href="#a" class="btn point_white btn_close_pop"><span>닫기</span></a>
+                        </div>   
+                      </div>
+                    </div>
+                    <div class="popup escrow_pop02">
+                        <div class="head_pop"><span>입금완료</span><button class="btn_close_pop" type="button">닫기</button></div>
+                        <div class="content_pop">
+                          <p>입금 완료 되었습니다.</p>
+                          <span>감사합니다.</span>
+                        </div>
+                    </div>            
+                  </td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>수출</td>
+                  <td>2019/01/05</td>
+                  <td>샤오미 휴대폰</td>
+                  <td>아이오페 라이브 리프트 세트</td>
+                  <td>500,000 USD</td>
+                  <td><span class="status comp_wd">출금완료</span></td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>수입</td>
+                  <td>2019/01/05</td>
+                  <td>샤오미 휴대폰</td>
+                  <td>PIXNET Mobile 모바일 패널</td>
+                  <td>500,000 USD</td>
+                  <td>
+                    <span class="js-popup-btn status es_wait_dep"><a href="#a">에스트로 출금대기</a></span>
+                    <div class="popup escrow_pop03">
+                        <div class="head_pop"><span>에스크로 출금</span><button class="btn_close_pop" type="button">닫기</button></div>
+                        <div class="content_pop">
+                          <ul class="btn_wrap">
+                            <li><a href="#a" class="btn point_white"><span>기간연장</span></a></li>
+                            <li><a href="#a" class="btn point_white"><span>거래정지</span></a></li>
+                            <li><a href="#a" class="btn point_green"><span>거래완료</span></a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="popup escrow_pop04">
+                        <div class="head_pop"><span>거래정지</span><button class="btn_close_pop" type="button">닫기</button></div>
+                        <div class="content_pop">
+                          <p>거래를 정지하시겠습니까?</p>
+                          <span>사유를 입력해주시면<br>관리자 확인 후 거래 정지처리 됩니다.</span>
+                          <textarea placeholder="전자상거래에서의 매매 보호 서비스. 비대면 거래의 피해를 방지를 위해 거래대금의 입풀금 제3의 회사에 맡기는 제도이다."></textarea>
+                          <div class="btn_wrap">
+                            <span><a href="#a" class="btn point_green">확인</a></span>
                           </div>
-                          <div class="popup escrow_pop02">
-                              <div class="head_pop"><span>입금완료</span><button class="btn_close_pop" type="button">닫기</button></div>
-                              <div class="content_pop">
-                                <p>입금 완료 되었습니다.</p>
-                                <span>감사합니다.</span>
-                              </div>
-                          </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>수출</td>
-                        <td>2019/01/05</td>
-                        <td>샤오미 휴대폰</td>
-                        <td>아이오페 라이브 리프트 세트</td>
-                        <td>500,000 USD</td>
-                        <td><span class="status comp_wd">출금완료</span></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>수입</td>
-                        <td>2019/01/05</td>
-                        <td>샤오미 휴대폰</td>
-                        <td>PIXNET Mobile 모바일 패널</td>
-                        <td>500,000 USD</td>
-                        <td><span class="status es_wait_dep"><a href="#a">에스트로 출금대기</a></span></td>
-                    </tr>
-                </tbody>
-            </table>
+                        </div>
+                    </div>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="btn_wrap"><a href="#a" class="btn_more">더보기</a></div>
       </div>

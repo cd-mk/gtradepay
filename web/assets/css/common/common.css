@@ -602,6 +602,7 @@ button {
   position:absolute;
   top:50%;
   left:50%;
+  width:370px;
   transform:translate(-50%);
   background-color:#fff;
 }
@@ -646,7 +647,10 @@ button {
   display:inline-block;
   width:100px;
 }
-
+.popup .content_pop {
+  border:1px solid #e1e1e1;
+  line-height:normal;
+}
 
 /* tab */
 .tab {
