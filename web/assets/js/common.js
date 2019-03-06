@@ -58,8 +58,16 @@ var inputFile = function() {
         fileName = $(this).val().split('/').pop().split('\\').pop();
       }
 
-      $(this).siblings('.js-file_name').val(fileName);
+      $(this).siblings('.js-file_name').val(fileName).attr('disabled', 'disabled');
+      $(this).siblings('label').hide();
+      $(this).siblings('.btn_delete').removeClass('hide');
     });
+  });
+  $('.btn_delete').on('click', function() {
+    $(this).addClass('hide');
+    $(this).siblings('label').show();
+    $(this).siblings('.js-file_name').val('').removeAttr('disabled');
+    $(this).siblings('.file_inp').val('');
   });
 };
 
@@ -103,7 +111,6 @@ $(document).ready(function() {
     setDatePicker();
   }
   setAccordian();
-  inputFile();
   popUp();
 });
 
