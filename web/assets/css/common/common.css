@@ -567,6 +567,11 @@ button {
   }
 }
 
+/* border color */
+.border_green {
+  background: #36ae53;
+}
+
 /* button color */
 .point_gray {
   background: #999;
@@ -581,6 +586,9 @@ button {
   background: #fff;
   color: #222;
   border: 1px solid #999;
+}
+.point_blue {
+  background:#004c7a;
 }
 
 /* font style */

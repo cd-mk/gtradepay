@@ -92,7 +92,7 @@
   height:55px;
   font-weight:500;
   box-sizing:border-box;
-  line-height:55px;
+  vertical-align: middle;
 }
 
 .tb_escrow th:before {
@@ -112,7 +112,8 @@
 
 .tb_escrow tr > td {
   box-sizing:border-box;
-  line-height:55px;
+  height:55px;
+  vertical-align: middle;
   border-bottom:1px solid #e1e1e1;
   text-align:center;
 }
@@ -280,10 +281,10 @@
   }
   .table_wrap {
     padding-top:6px;
+    overflow-x:scroll;
   }
   .tb_escrow {
     width:900px;
-    overflow:scroll;
   }
 }
 
