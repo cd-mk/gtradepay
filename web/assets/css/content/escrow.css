@@ -288,53 +288,47 @@
 }
 
 /* 에스크로 신청내역 view */
-
 .escrow_view {
   width: 505px;
   margin: 0 auto;
   padding-bottom: 120px;
 }
-.con_box {
+.escrow_view .con_box {
   margin-top: 40px;
 }
-.con_box h3 {
+.escrow_view .con_box h3 {
   margin-bottom:30px;
   padding-bottom:10px;
   border-bottom:2px solid #222;
   font-size:18px;
   font-weight:500;
 }
-.con_box table {
+.escrow_view .con_box table {
   width:100%;
 }
-.con_box tbody tr:first-child th,
-.con_box tbody tr:first-child td {
-    border-top:1px solid #e1e1e1;
+.escrow_view .con_box tbody tr:first-child th,
+.escrow_view .con_box tbody tr:first-child td {
+  border-top:1px solid #e1e1e1;
 }
-.con_box th,
-.con_box td {
-  padding-left:20px;
+.escrow_view .con_box th,
+.escrow_view .con_box td {
+  padding: 18px 4% 17px;
   border-right:1px solid #e1e1e1;
   border-bottom:1px solid #e1e1e1;
-  line-height:55px;
+  text-align:left;
+  vertical-align: middle;
 }
-.con_box th {
-  width:30.69%;
-  padding-left:20px;
+.escrow_view .con_box th {
+  width:31%;
   background-color:#eee;
   border-left:1px solid #e1e1e1;
-  color:#222;
-  text-align:left;
   font-weight:500;
 }
-.con_box td {
-  padding-right:20px;
+.escrow_view .con_box td {
   color:#666;
-  font-weight:400;
 }
-.last_txt td {
-  padding:18px 20px 99px;
-  line-height:normal;
+.escrow_view .con_box .last_txt td {
+  line-height: 1.6;
 }
 .escrow_view .btn_wrap {
   margin-top: 40px;
@@ -343,44 +337,9 @@
   .escrow_view {
     width: 100%;
   }
-}
-
-.escrow_file_list li {
-  margin-top:20px;
-}
-.escrow_file_list .file_link02 {
-  margin-top:7px;
-}
-.escrow_link a {
-  display:block;
-  width:100%;
-  padding:0 20px;
-  box-sizing:border-box;
-  background-color:#eee;
-  border-bottom:1px solid #d0d0d0;
-  line-height:44px;
-  font-weight:500;
-}
-.escrow_link a:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-.escrow_link a span {
-  display:inline-block;
-  float:right;
-  font-weight:400;
-}
-.escrow_file_list label {
-  color:#222;
-  font-weight:500;
-}
-.payment_box td {
-  font-weight:400;
-}
-.payment_box span {
-  color:#36ae53;
-  font-weight:500;
+  .escrow_view .con_box th {
+    width: 37%;
+  }
 }
 
 .status {
