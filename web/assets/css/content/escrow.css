@@ -2,10 +2,6 @@
 
 /* 에스크로 신청내역 */
 
-.escrow_list .btn_wrap {
-    display:block;
-    width:200px;
-}
 
 .sort_wrap {
     margin-top:40px;
@@ -121,8 +117,7 @@
     display:none;
 }
 
-.tb_escrow td {
-    height:55px;
+.tb_escrow tr > td {
     box-sizing:border-box;
     line-height:55px;
     border-bottom:1px solid #e1e1e1;
@@ -152,80 +147,74 @@
     line-height:40px;
 }
 
-.btn_more {
-    margin:30px auto 120px; 
-    width:150px;
-    height:50px;
-    text-align:center;
-    background-color:#fff;
-    border:1px solid #999;
-}
-
-.btn_more a {
-    display:block;
-    line-height:50px;
-    color:#222;
-    font-weight:500;
-}
-
-.tb_escrow td.txt_wait {
-    color:#666;
-}
-
-.tb_escrow td.txt_deposit {
-    color:#36ae53;
-}
-
-.tb_escrow td.txt_withdraw {
-    color:#ff3d00;
-}
-
-
 /* 팝업 */
-.pop_application {
+
+.escrow_pop01 {
     width:370px;
     height:344px;
 }   
 
-.pop_application .content_pop {
+.escrow_pop01 .content_pop {
     padding:40px 30px 30px; 
     box-sizing: border-box;
+    border:1px solid #e1e1e1;
 }
 
-.pop_application .content_pop dt {
+.escrow_pop01 .content_pop dt {
     display:block;
     font-weight:500;
     color:#222;    
     text-align:left;
-    line-height:30px;
+    line-height:20px;
 }
 
-.pop_application input {
+.pop_content01 {
+    margin-top:10px;
+}
+
+.pop_content01:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.escrow_pop01 input {
+    float:left;
     width:200px;
     line-height:44px;
     vertical-align: middle;
 }
-.pop_application select {
+.escrow_pop01 select {
+    float:left;
     margin-left:5px;
-    width:100px;
+    width:103px;
     line-height:44px;
     vertical-align: middle;
 }
+.pop_sub_title {
+    margin-top:20px;
+}
 
-.pop_application .txt_bank {
+.escrow_pop01 .pop_content02 {
+    margin-top:10px;
     text-align:left;
     color:#666;
+    line-height:20px;
+}
+
+.escrow_list .escrow_pop01 .btn_wrap {
+    margin-top:20px;
+    width:auto;
     line-height:normal;
 }
 
-.escrow_list .pop_application .btn_wrap {
-    margin-top:20px;
-    width:auto;
-}
-
-.escrow_list .pop_application .btn_wrap a {
+.escrow_list .escrow_pop01 .btn_wrap a {
     vertical-align: middle;
 
+}
+
+.escrow_pop02 .content_pop {
+    padding:40px 96px;
 }
 
 @media screen and (max-width: 768px) {
@@ -372,7 +361,7 @@
 
 
 .status {
-    display: block;
+    display: inline-block;
     line-height: 40px;
     text-align:center;
     width:145px;
