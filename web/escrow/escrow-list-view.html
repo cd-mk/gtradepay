@@ -16,147 +16,427 @@
     </div>
 	  <!-- header area -->
     <div class="container">
-      <div class="escrow_list">
-        <div class="page_title">
-          <h2 class="txt_title">에스크로 신청내역</h2>
-          <p class="txt_desc">가장 안전하고, 가장 믿을 수 있는 무역결제 에스크로 서비스 입니다.</p>
-          <div class="btn_wrap">
-            <span class="btn point_dgray"><span>승인대기</span></span>
-          </div>
+      <div class="page_title">
+        <h2 class="txt_title">에스크로 신청내역</h2>
+        <p class="txt_desc">가장 안전하고, 가장 믿을 수 있는 무역결제 에스크로 서비스 입니다.</p>
+        <div class="btn_wrap">
+          <span class="btn point_dgray"><span>승인대기</span></span>
         </div>
-        <div class="con_box">
-          <h3 class="txt_title">거래정보</h3>
-          <table>
-            <caption>거래 정보를 나열한 표</caption>
-            <tbody>
-              <tr>
-                <th>등록일</th>
-                <td>2019-02-11</td>
-              </tr>
-              <tr>
-                <th>계약일</th>
-                <td>2019-02-11</td>
-              </tr>
-              <tr>
-                <th>거래처 이름</th>
-                <td>흥부상사</td>
-              </tr>
-              <tr>
-                <th>거래처 이메일</th>
-                <td>heung@gmail.com</td>
-              </tr>
-              <tr>
-                <th>거래금액</th>
-                <td>10,000USD</td>
-              </tr>
-              <tr class="last_txt">
-                <th>거래내용</th>
-                <td>전자상거래에서의 매매 보호 서비스. 비대면 거래의 
-                    피해를 방지를 위해 거래대금의 입출금을 제3의 
-                    회사에 맡기는 제도이다. 전자상거래에서 소비자의 
-                    피해가 급증함에 따라, 2004년 5월 공정거래위원회는 
-                    에스크로 도입 의무화의 내용을 담은 
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="con_box">
-          <h3 class="txt_title">첨부 서류</h3>
-          <ul class="escrow_file_list">
-            <li class="escrow_link file_link01">
-              <a href="#a">무역 견적서<span>바로보기 +</span></a>
-            </li>
-            <li class="escrow_link file_link02">
-              <a href="#a">인보이스<span>바로보기 +</span></a>
-            </li>
-            <li>
-              <label for="ip1">Packing List</label>
-              <input type="file" id="ip1">
-              <span class="file_name">Packing List</span>
-              <button type="button" class="del_btn">삭제</button>
-            </li>
-            <li>
-              <label for="ip2">은행통장사본</label>
-              <input type="file" id="ip2">
-              <span class="file_name">통장사본.jpg</span>
-              <button type="button" class="del_btn">삭제</button>
-            </li>
-            <li>
-              <label for="ip3">기타 첨부1</label>
-              <input type="file" id="ip3">
-              <span class="file_name">샘플상품.jpg</span>
-              <button type="button" class="del_btn">삭제</button>
-            </li>
-            <li>
-              <label for="ip4">기타 첨부2</label>
-              <input type="file" id="ip4">
-              <button type="button" class="find_btn">찾아보기</button>
-            </li>
-            <li>
-              <label for="ip5">기타 첨부3</label>
-              <input type="file" id="ip5">
-              <button type="button" class="find_btn">찾아보기</button>
-            </li>
-            <li>
-              <label for="ip6">기타 첨부4</label>
-              <input type="file" id="ip6">
-              <button type="button" class="find_btn">찾아보기</button>
-            </li>
-          </ul>
-        </div>
-        <div class="con_box">
-          <h3 class="txt_title">거래처 입력사항</h3>
-          <table>
-            <caption>거래처 입력 사항 정보를 나열한 표</caption>
-            <tbody>
-              <tr>
-                <th>계약번호</th>
-                <td>2019-02-11</td>
-              </tr>
-              <tr>
-                <th>Hscode</th>
-                <td>FR776-GT999-0000</td>
-              </tr>
-              <tr>
-                <th>통관구분</th>
-                <td>FR776-GT999-0000</td>
-              </tr>
-              <tr>
-                <th>B/L</th>
-                <td>FR776-GT999-0000</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="con_box payment_box">
-          <h3>수수료</h3>
-          <table>
-            <caption>수수료 정보를 나열한 표</caption>
-            <tbody>
-              <tr>
-                <th>에스크로 수수료</th>
-                <td><span>0.5</span> %</td>
-              </tr>
-              <tr>
-                <th>MP수수료</th>
-                <td><span>0.05</span> %</td>
-              </tr>
-              <tr>
-                <th>현지은행수수료</th>
-                <td><span>100</span> RMB</td>
-              </tr>
-              <tr>
-                <th>송금수수료</th>
-                <td><span>20</span> USD</td>
-              </tr>
-              <tr>
-                <th>통관수수료</th>
-                <td><span>1</span> USD</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      </div>
+      <div class="escrow_view">
+        <form method="POST" action="">
+          <fieldset>
+            <legend class="blind">에스크로 신청 내역 양식</legend>
+            <div class="con_box">
+              <h3 class="txt_title">거래정보</h3>
+              <table>
+                <caption>거래 정보를 나열한 표</caption>
+                <tbody>
+                  <tr>
+                    <th>등록일</th>
+                    <td>2019-02-11</td>
+                  </tr>
+                  <tr>
+                    <th>계약일</th>
+                    <td>2019-02-11</td>
+                  </tr>
+                  <tr>
+                    <th>거래처 이름</th>
+                    <td>흥부상사</td>
+                  </tr>
+                  <tr>
+                    <th>거래처 이메일</th>
+                    <td>heung@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <th>거래금액</th>
+                    <td>10,000USD</td>
+                  </tr>
+                  <tr class="last_txt">
+                    <th>거래내용</th>
+                    <td>전자상거래에서의 매매 보호 서비스. 비대면 거래의 
+                        피해를 방지를 위해 거래대금의 입출금을 제3의 
+                        회사에 맡기는 제도이다. 전자상거래에서 소비자의 
+                        피해가 급증함에 따라, 2004년 5월 공정거래위원회는 
+                        에스크로 도입 의무화의 내용을 담은 
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="con_box form_group">
+              <h3>첨부 서류</h3>
+              <div class="group_wrap">
+                <div class="accordian_inp">
+                  <a href="#url" class="title_accordian js-accordian">무역 견적서 <span class="text_state">바로 보기</span></a>
+                  <div class="inp_wrap">
+                    <dl class="group_inp">
+                      <dt>수신인(Consignee)</dt>
+                      <dd class="file_inp_box">
+                        <label for="consigneeText" class="blind">수신인 입력</label>
+                        <textarea name="" id="consigneeText" placeholder="TO: Mr/Ms&#13;&#10;XXX Co. Ltd.&#13;&#10;Address"></textarea>
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>E-mail</dt>
+                      <dd class="file_inp_box">
+                        <label for="mail" class="blind">이메일 입력</label>
+                        <input type="email" name="" id="mail" placeholder="example@example.com">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Quotation Date</dt>
+                      <dd>
+                        <label for="quotationDate" class="blind">Quotation date 입력</label>
+                        <input type="text" name="" id="quotationDate" class="input_date" placeholder="2019-02-01">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Reference</dt>
+                      <dd>
+                        <label for="reference" class="blind">reference 입력</label>
+                        <input type="text" name="" id="reference" placeholder="Advertisement">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Delivery Date</dt>
+                      <dd>
+                        <label for="deliveryDate" class="blind">delivery date 입력</label>
+                        <input type="text" name="" id="deliveryDate" class="input_date" placeholder="2019-02-01">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Payment Date</dt>
+                      <dd>
+                        <label for="paymentDate" class="blind">payment date 입력</label>
+                        <input type="text" name="" id="paymentDate" class="input_date" placeholder="2019-02-01">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Banking Charges</dt>
+                      <dd>
+                        <label for="bankingCharges" class="blind">Banking Charges 입력</label>
+                        <input type="text" name="" id="bankingCharges" placeholder="5%">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Offer Validity</dt>
+                      <dd>
+                        <label for="offerValidity" class="blind">offer Validity 입력</label>
+                        <input type="text" name="" id="offerValidity" placeholder="20일">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Description</dt>
+                      <dd>
+                        <label for="description" class="blind">description 입력</label>
+                        <textarea name="" id="description" placeholder="제품명&#13;&#10;상세내역"></textarea>
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Quantity</dt>
+                      <dd>
+                        <label for="quantity" class="blind">Quantity 입력</label>
+                        <input type="text" name="" id="quantity" placeholder="1.000">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Unit Price</dt>
+                      <dd>
+                        <label for="unitPrice" class="blind">unit Price 입력</label>
+                        <input type="text" name="" id="unitPrice" placeholder="0.03">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Taxes</dt>
+                      <dd>
+                        <label for="taxes" class="blind">taxes 입력</label>
+                        <input type="text" name="" id="taxes" placeholder="15.00%">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Amount</dt>
+                      <dd>
+                        <label for="amount" class="blind">amount 입력</label>
+                        <input type="text" name="" id="amount" placeholder="10,000 USD">
+                      </dd>
+                    </dl>
+                    <div class="btn_wrap">
+                      <button type="button" class="btn point_dgray"><span>저장</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordian_inp">
+                  <a href="#url" class="title_accordian js-accordian">인보이스 <span class="text_state">바로 보기</span></a>
+                  <div class="inp_wrap">
+                    <dl class="group_inp">
+                      <dt>Shipper / Exporter</dt>
+                      <dd class="file_inp_box">
+                        <label for="shipperText" class="blind">발송인 정보 입력</label>
+                        <textarea name="" id="shipperText" placeholder="발송인의 이름 / 회사명 / 주소 / 전화번호"></textarea>
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Account &amp; Risk of Messrs.</dt>
+                      <dd class="file_inp_box">
+                        <label for="accountText" class="blind">수취인 정보 입력</label>
+                        <textarea name="" id="accountText" placeholder="수취인의 이름 / 회사명 / 주소 / 전화번호"></textarea>
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Notify party</dt>
+                      <dd>
+                        <label for="notifyParty" class="blind">notifyParty 입력</label>
+                        <input type="text" name="" id="notifyParty">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Port of loading</dt>
+                      <dd>
+                        <label for="port" class="blind">Port of loading 입력</label>
+                        <input type="text" name="" id="port">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Final Destination</dt>
+                      <dd>
+                        <label for="destination" class="blind">Final Destination 입력</label>
+                        <input type="text" name="" id="destination">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Sailing on or about</dt>
+                      <dd>
+                        <label for="sailing" class="blind">Sailing on or about 입력</label>
+                        <input type="text" name="" id="sailing">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>No. &amp; Date of invoice</dt>
+                      <dd>
+                        <label for="invoice" class="blind">No. &amp; Date of invoice 입력</label>
+                        <input type="text" name="" id="invoice">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>No. &amp; Date of L/C</dt>
+                      <dd>
+                        <label for="lc" class="blind">No. &amp; Date of L/C 입력</label>
+                        <input type="text" name="" id="lc">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>L/C Issuing bank</dt>
+                      <dd>
+                        <label for="bank" class="blind">L/C Issuing bank 입력</label>
+                        <input type="text" name="" id="bank">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Remarks</dt>
+                      <dd>
+                        <label for="remarks" class="blind">remarks 입력</label>
+                        <textarea name="" id="remarks" class="textarea_midium" placeholder="운송요금 지불방식 또는 기타 요구되는 사항 기재"></textarea>
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Marks and Numbers of PKGS</dt>
+                      <dd>
+                        <label for="markNum" class="blind">Marks and Numbers of PKGS 입력</label>
+                        <input type="text" name="" id="markNum">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Description of Goods</dt>
+                      <dd>
+                        <label for="descGoods" class="blind">Description of Goods 입력</label>
+                        <textarea name="" id="descGoods" class="textarea_midium" placeholder="발송물의 품목을 구체적으로 기재"></textarea>
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Quantity/Unit</dt>
+                      <dd>
+                        <label for="quantityUnit" class="blind">Quantity/Unit 입력</label>
+                        <input type="text" name="" id="quantityUnit" placeholder="발송물의 수량을 정확히 기재">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Unit Price</dt>
+                      <dd>
+                        <label for="unitPrice2" class="blind">unit Price 입력</label>
+                        <input type="text" name="" id="unitPrice2" placeholder="발송물의 단가 기재">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Amount</dt>
+                      <dd>
+                        <label for="amount2" class="blind">amount 입력</label>
+                        <input type="text" name="" id="amount2" placeholder="발송물 금액 기재">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>P.O Box</dt>
+                      <dd>
+                        <label for="po" class="blind">P.O Box 입력</label>
+                        <input type="text" name="" id="po">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Cable address</dt>
+                      <dd>
+                        <label for="cableAddr" class="blind">Cable address 입력</label>
+                        <input type="text" name="" id="cableAddr">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Telex Code</dt>
+                      <dd>
+                        <label for="telexCode" class="blind">Telex Code 입력</label>
+                        <input type="text" name="" id="telexCode">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Telephone No.</dt>
+                      <dd>
+                        <label for="telNum" class="blind">Telex Code 입력</label>
+                        <input type="tel" name="" id="telNum">
+                      </dd>
+                    </dl>
+                    <dl class="group_inp">
+                      <dt>Signed by</dt>
+                      <dd class="file_inp_box">
+                        <input type="text" readonly value="" class="input_with_btn js-file_name">
+                        <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                        <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                        <label for="signFile">찾아보기</label>
+                        <input type="file" id="signFile" class="file_inp">
+                      </dd>
+                    </dl>
+                    <div class="btn_wrap">
+                      <button type="button" class="btn point_dgray"><span>저장</span></button>
+                    </div>
+                  </div>
+                </div>
+                <dl class="group_inp">
+                  <dt>Packing List</dt>
+                  <dd class="file_inp_box">
+                    <input type="text" readonly value="" class="input_with_btn js-file_name">
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file1">찾아보기</label>
+                    <input type="file" id="file1" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>은행통장사본</dt>
+                  <dd class="file_inp_box">
+                    <input type="text" readonly value="" class="input_with_btn js-file_name">
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file2">찾아보기</label>
+                    <input type="file" id="file2" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>기타 첨부 1</dt>
+                  <dd class="file_inp_box">
+                    <input type="text" readonly value="" class="input_with_btn js-file_name">
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file3">찾아보기</label>
+                    <input type="file" id="file3" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>기타 첨부 2</dt>
+                  <dd class="file_inp_box">
+                    <input type="text" readonly value="" class="input_with_btn js-file_name">
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file4">찾아보기</label>
+                    <input type="file" id="file4" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>기타 첨부 3</dt>
+                  <dd class="file_inp_box">
+                    <input type="text" readonly value="" class="input_with_btn js-file_name">
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file5">찾아보기</label>
+                    <input type="file" id="file5" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>기타 첨부 4</dt>
+                  <dd class="file_inp_box">
+                    <input type="text" readonly value="" class="input_with_btn js-file_name">
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file6">찾아보기</label>
+                    <input type="file" id="file6" class="file_inp">
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="con_box">
+              <h3 class="txt_title">거래처 입력사항</h3>
+              <table>
+                <caption>거래처 입력 사항 정보를 나열한 표</caption>
+                <tbody>
+                  <tr>
+                    <th>계약번호</th>
+                    <td>2019-02-11</td>
+                  </tr>
+                  <tr>
+                    <th>Hscode</th>
+                    <td>FR776-GT999-0000</td>
+                  </tr>
+                  <tr>
+                    <th>통관구분</th>
+                    <td>FR776-GT999-0000</td>
+                  </tr>
+                  <tr>
+                    <th>B/L</th>
+                    <td>FR776-GT999-0000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="con_box">
+              <h3>수수료</h3>
+              <table>
+                <caption>수수료 정보를 나열한 표</caption>
+                <tbody>
+                  <tr>
+                    <th>에스크로 수수료</th>
+                    <td><strong class="txt_green">0.5</strong> %</td>
+                  </tr>
+                  <tr>
+                    <th>MP수수료</th>
+                    <td><strong class="txt_green">0.05</strong> %</td>
+                  </tr>
+                  <tr>
+                    <th>현지은행수수료</th>
+                    <td><strong class="txt_green">100</strong> RMB</td>
+                  </tr>
+                  <tr>
+                    <th>송금수수료</th>
+                    <td><strong class="txt_green">20</strong> USD</td>
+                  </tr>
+                  <tr>
+                    <th>통관수수료</th>
+                    <td><strong class="txt_green">1</strong> USD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn_wrap col2">
+              <button type="submit" class="btn point_green"><span>수정</span></button>
+              <button type="button" class="btn point_white"><span>취소</span></button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </div>
 	<!-- footer area -->
@@ -166,6 +446,7 @@
   </div>
   <!-- js -->
   <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/plugins/jquery-ui.min.js"></script>
   <script src="../assets/js/common.js"></script>
 	<script>
 		layout();

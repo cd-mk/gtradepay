@@ -416,9 +416,6 @@ input[type="text"].id_vaild {
   text-align: center;
   cursor: pointer;
 }
-.file_inp_box input:disabled {
-  background: #fff;
-}
 
 .chk_inp_box {
   overflow: hidden;
@@ -516,6 +513,9 @@ button {
   color: #fff;
   text-align: center;
 }
+.btn_delete.hide {
+  display: none;
+}
 .btn span {
   font-size: 14px;
   font-weight: 500;
@@ -581,6 +581,14 @@ button {
   background: #fff;
   color: #222;
   border: 1px solid #999;
+}
+.point_blue {
+  background:#004c7a;
+}
+.border_point_green {
+  background:#fff;
+  border:1px solid #36ae53;
+  color:#36ae53;
 }
 
 /* font style */
