@@ -65,7 +65,7 @@
                         <td>그랜드 센트럴 상하이</td>
                         <td>PIXNET Mobile 모바일 패널</td>
                         <td>500,000 USD</td>
-                        <td class="txt_wait">승인대기</td>
+                        <td><span class="status wait_appro">승인대기</span></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -74,7 +74,7 @@
                         <td>중국철강회사</td>
                         <td>아이오페 라이브 리프트 세트</td>
                         <td>500,000 USD</td>
-                        <td class="txt_deposit">에스크로 입금완료</td>
+                        <td><span class="status es_comp_dep">에스크로 입금완료</span></td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -83,14 +83,14 @@
                         <td>샤오미 휴대폰</td>
                         <td>PIXNET Mobile 모바일 패널</td>
                         <td>500,000 USD</td>
-                        <td class="btn_waiting">
-                          <a class="js-popup-btn" href="#a">에스트로 입금대기</a>
-                          <div class="popup pop_application">
+                        <td>
+                          <span class="js-popup-btn status es_wait_dep"><a href="#a">에스트로 입금대기</a></span>
+                          <div class="popup escrow_pop01">
                             <div class="head_pop"><span>에스크로 신청내역</span><button class="btn_close_pop" type="button">닫기</button></div>
                             <div class="content_pop">
                               <dl>
                                 <dt><label for="ip_escrow01"><span>결제금액</span></label></dt>
-                                <dd>
+                                <dd class="pop_content01">
                                   <input type="text" id="ip_escrow01">
                                   <select>
                                     <option>선택</option>
@@ -98,14 +98,21 @@
                                     <option>달러(USD)</option>
                                   </select>
                                 </dd>
-                                <dt>결제은행</dt>
-                                <dd class="txt_bank">Unionpay</dd>
+                                <dt class="pop_sub_title">결제은행</dt>
+                                <dd class="pop_content02">Unionpay</dd>
                               </dl>
                               <div class="btn_wrap">
-                                <a href="#a" class="btn point_green">입금</a>
+                                <a href="#a" class="js-popup-btn02 btn point_green">입금</a>
                                 <a href="#a" class="btn point_white">닫기</a>
                               </div>   
                             </div>
+                          </div>
+                          <div class="popup escrow_pop02">
+                              <div class="head_pop"><span>입금완료</span><button class="btn_close_pop" type="button">닫기</button></div>
+                              <div class="content_pop">
+                                <p>입금 완료 되었습니다.</p>
+                                <span>감사합니다.</span>
+                              </div>
                           </div>
                         </td>
                     </tr>
@@ -116,7 +123,7 @@
                         <td>샤오미 휴대폰</td>
                         <td>아이오페 라이브 리프트 세트</td>
                         <td>500,000 USD</td>
-                        <td class="txt_withdraw">출금완료</td>
+                        <td><span class="status comp_wd">출금완료</span></td>
                     </tr>
                     <tr>
                         <td>5</td>
@@ -125,12 +132,12 @@
                         <td>샤오미 휴대폰</td>
                         <td>PIXNET Mobile 모바일 패널</td>
                         <td>500,000 USD</td>
-                        <td class="btn_waiting"><a href="#a">에스트로 출금대기</a></td>
+                        <td><span class="status es_wait_dep"><a href="#a">에스트로 출금대기</a></span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="btn_more"><a href="#a">더보기</a></div>
+        <div class="btn_wrap"><a href="#a" class="btn_more">더보기</a></div>
       </div>
     </div>
     <div id="footer">
