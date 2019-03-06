@@ -5,8 +5,7 @@
 
 var setGnb = function() {
   var idx;
-  var idx1;
-
+  
   $('.gnb > li').on('click', function() {
     idx = $(this).index();
     $(".gnb > li").removeClass('active');
@@ -19,7 +18,6 @@ var setGnb = function() {
       $(this).addClass("active");
     }
   });
- 
 
 };
 
