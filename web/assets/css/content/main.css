@@ -5,8 +5,8 @@
 .main.container {
   max-width:100%;
 }
-
 .main .visual_wrap {
+  position:relative;
   background:url('../../images/main/img_visual01.png') no-repeat center;
   background-size:cover;
 }
@@ -45,8 +45,11 @@
   line-height:1.71;
 }
 .main .btn_main.btn_wrap {
+  position:absolute;
   width:636px;
-  margin:-35px auto 0;
+  bottom:-35px;
+  left:50%;
+  transform:translateX(-50%);
 }
 .main .btn_main.btn_wrap:after {
   content:'';
@@ -54,21 +57,88 @@
   clear:both;
 }
 .main .btn_main.btn_wrap .btn {
+  float:left;
   width:50%;
+  padding:0 48px;
+  height:70px;
+  box-sizing:border-box;
   background-image:url('../../images/main/ico_right.png');
   background-repeat: no-repeat;
   background-size:18px 14px;
-  background-position:66px center;
+  background-position:254px center;
   text-align:left;
-}
-.main .btn_main.btn_wrap a {
-  float:left;
-  width:50%;
-  height:70px;
   line-height:70px;
 }
-
 .main.container section {
   margin:0 auto;
   max-width:1280px;
+  text-align:center;
+}
+.main.container section h2 {
+  font-size:32px;
+  font-weight:500;
+  line-height:1;
+}
+.main.container section .txt_sub {
+  margin-top:14px;
+  color:#666;
+  line-height:1;
+}
+.main .section01 {
+  padding-top:135px;
+}
+.main .section01 .list_deal {
+  margin:50px auto 0;
+  max-width:957px;
+}
+.main .section01 .list_deal:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.main .section01 .list_deal li {
+  float:left;
+  width: 20%;
+}
+.main .section01 .list_deal li div {
+  position:relative;
+  margin-left:8px;
+  padding:140px 37px 0 30px;
+  box-sizing:border-box;
+  height:230px;
+  border:1px solid #e1e1e1;
+  text-align:left;
+}
+.main .section01 .list_deal li:first-child div {
+  margin-left:0;
+  background:url('../../images/main/ico_deal01.png') no-repeat;
+  background-position:30px 78px;
+  background-size:34px 41px;
+}
+.main .section01 .list_deal li:nth-child(2) div {
+  background:url('../../images/main/ico_deal02.png') no-repeat;
+  background-position:30px 82px;
+  background-size:45px 35px;
+}
+.main .section01 .list_deal li:nth-child(3) div {
+  background:url('../../images/main/ico_deal03.png') no-repeat;
+  background-position:30px 79px;
+  background-size:41px 40px; 
+}
+.main .section01 .list_deal li:nth-child(4) div {
+  background:url('../../images/main/ico_deal04.png') no-repeat;
+  background-position:30px 81px;
+  background-size:41px 37px;  
+}
+.main .section01 .list_deal li:last-child div {
+  background:url('../../images/main/ico_deal05.png') no-repeat;
+  background-position:30px 79px;
+  background-size:42px 41px; 
+}
+.main .section01 .list_deal li span {
+  position:absolute;
+  top:20px;
+  right:20px;
+  color:#36ae53;
+  font-size:24px;
 }
