@@ -98,13 +98,10 @@ h1,h2,h3,h4,h5,h6,strong {
 }
 .header_top .my_box .login_box .btn_login {
   display: inline-block;
-  width: 19px;
   height: 20px;
   background: url(../../images/common/ico-login.png) no-repeat 0 0;
 }
-.header_top .my_box .login_box .btn_login.logout {
-  background-position: 0 -20px;
-}
+
 .header_top .my_box .login_box .login_layer::before {
   content: '';
   position: absolute;

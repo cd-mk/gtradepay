@@ -5,7 +5,6 @@
 
 var setGnb = function () {
   var idx;
-  var idx1;
 
   $('.gnb > li').on('click', function () {
     idx = $(this).index();
@@ -24,7 +23,7 @@ var setGnb = function () {
 };
 
 var miniLayer = function () {
-  var targets = ['.btn_login.login', '.btn_lang'];
+  var targets = ['.btn_login.login'];
 
   for (var i = 0; i < targets.length; i++) {
     $(targets[i]).on('click', openLayer);
@@ -134,9 +133,9 @@ function openCity(evt, cityName) {
 
 //임시 header, footer영역 로드
 function layout() {
-  $("#header").load("../common.html .header_inner", function () {
+  $("#header").load("../adm_common.html .header_inner", function () {
   });
-  $("#footer").load("../common.html .footer_inner", function () {
+  $("#footer").load("../adm_common.html .footer_inner", function () {
   });
 }
 
