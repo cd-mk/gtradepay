@@ -692,6 +692,120 @@ button {
 }
 .tab.col3 button {width:33.333%;}
 
+/* table */
+.table_wrap {
+  margin-top:12px;
+}
+
+.table_wrap table {
+  width:100%;
+}
+
+.table_wrap table thead {
+  background-color:#eee;
+  border:1px solid #e1e1e1;
+}
+
+.table_wrap table th {
+  position:relative;
+  height:55px;
+  font-weight:500;
+  box-sizing:border-box;
+  vertical-align: middle;
+}
+
+.table_wrap table th:before {
+  content:'';
+  position:absolute;
+  top:50%;
+  right:0;
+  margin-top:-7.5px;
+  width:1px;
+  height:15px;
+  background-color:#d4d4d4;
+}
+
+.table_wrap table th:last-child:before {
+  display:none;
+}
+
+.table_wrap table tr > td {
+  box-sizing:border-box;
+  height:55px;
+  vertical-align: middle;
+  border-bottom:1px solid #e1e1e1;
+  text-align:center;
+  color:#666;
+}
+
+/* table sort */
+.sort_wrap {
+  margin-top:40px;
+}
+.sort_wrap:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.sort_wrap .align_left {
+  float:left;
+  margin-top:11px;
+}
+.sort_wrap .align_left li {
+  float:left;
+  position:relative;
+  padding:0 10px;
+}
+.sort_wrap .align_left li:before {
+  content:'';
+  position:absolute;
+  top:50%;
+  right:0;
+  margin-top:-6px;
+  width:1px;
+  height:12px;
+  background-color:#d4d4d4;
+}
+.sort_wrap .align_left li:last-child:before {
+  display:none;
+}
+.sort_wrap .align_left li:first-child {
+  padding-left:0;
+}
+.sort_wrap .align_left li:last-child {
+  padding-right:0;
+}
+.tab_active a {
+  color:#36ae53;
+}
+.sort_wrap .align_right {
+  float:right;
+}
+.sort_wrap select.select_sort {
+  float:left;
+  width:100px;
+  background-position: 90% 50%;
+  vertical-align: middle;
+}
+.sort_wrap .input_search {
+  float:left;
+  margin-left:5px;
+}
+.sort_wrap input.input_sort {  
+  float:left;
+  width: calc(100% - 44px);
+  vertical-align: middle;
+}
+.sort_wrap .btn_search {
+  float:left;
+  width:44px;
+  height:44px;
+  color:transparent;
+  background:#666 url('../../images/common/btn_search.png') no-repeat center;
+  background-size:16px;
+  vertical-align: middle;
+}
+
 
 /* mobile */
 @media screen and (max-width: 768px) {
@@ -838,6 +952,14 @@ button {
     font-weight: 700;
     color: #3cb95d;
     text-align: center;
+  }
+  
+  .table_wrap {
+    padding-top:6px;
+    overflow-x:scroll;
+  }
+  .table_wrap table {
+    width:900px;
   }
 }
 
