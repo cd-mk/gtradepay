@@ -71,6 +71,7 @@
 }
 .main.container section {
   margin:0 auto;
+  padding-bottom:100px;
   max-width:1280px;
   text-align:center;
 }
@@ -84,61 +85,155 @@
   color:#666;
   line-height:1;
 }
-.main .section01 {
+.section_main01 {
   padding-top:135px;
 }
-.main .section01 .list_deal {
+.section_main01:after {
+  background:;
+}
+.section_main01 .list_deal {
   margin:50px auto 0;
   max-width:957px;
 }
-.main .section01 .list_deal:after {
+.section_main01 .list_deal:after {
   content:'';
   display:block;
   clear:both;
 }
-.main .section01 .list_deal li {
+.section_main01 .list_deal li {
   float:left;
   width: 20%;
 }
-.main .section01 .list_deal li div {
+.section_main01 .list_deal li div {
   position:relative;
-  margin-left:8px;
+  margin:0 4px;
   padding:140px 37px 0 30px;
   box-sizing:border-box;
   height:230px;
   border:1px solid #e1e1e1;
   text-align:left;
 }
-.main .section01 .list_deal li:first-child div {
+.section_main01 .list_deal li:first-child div {
   margin-left:0;
-  background:url('../../images/main/ico_deal01.png') no-repeat;
-  background-position:30px 78px;
-  background-size:34px 41px;
 }
-.main .section01 .list_deal li:nth-child(2) div {
-  background:url('../../images/main/ico_deal02.png') no-repeat;
-  background-position:30px 82px;
-  background-size:45px 35px;
+.section_main01 .list_deal li:last-child div {
+  margin-right:0;
 }
-.main .section01 .list_deal li:nth-child(3) div {
-  background:url('../../images/main/ico_deal03.png') no-repeat;
-  background-position:30px 79px;
-  background-size:41px 40px; 
+.section_main01 .list_deal li div:after {
+  content:'';
+  position:absolute;
+  top:79px;
+  height:41px;
+  background:url('../../images/main/ico_deal.png') no-repeat;
 }
-.main .section01 .list_deal li:nth-child(4) div {
-  background:url('../../images/main/ico_deal04.png') no-repeat;
-  background-position:30px 81px;
-  background-size:41px 37px;  
+.section_main01 .list_deal li:first-child div:after {
+  width:33px;
+  background-position:-1px 0;
 }
-.main .section01 .list_deal li:last-child div {
-  background:url('../../images/main/ico_deal05.png') no-repeat;
-  background-position:30px 79px;
-  background-size:42px 41px; 
+.section_main01 .list_deal li:nth-child(2) div:after {
+  width:51px;
+  background-position:-35px 0;
 }
-.main .section01 .list_deal li span {
+.section_main01 .list_deal li:nth-child(3) div:after {
+  width:42px;
+  background-position:-88px 0;
+}
+.section_main01 .list_deal li:nth-child(4) div:after {
+  width:44px;
+  background-position:-132px 0;  
+}
+.section_main01 .list_deal li:last-child div:after {
+  width:41px;
+  background-position:-178px 0;
+}
+.section_main01 .list_deal li span {
   position:absolute;
   top:20px;
   right:20px;
   color:#36ae53;
   font-size:24px;
 }
+.section_main01 .text_main01 {
+  margin:0 auto;
+  clear:both;
+  padding:26px 0 0;
+  width:957px;
+}
+.section_main01 .text_main01 p {
+  position:relative;
+  margin-left:41.06%;
+  width:364px;
+  text-indent:11px;
+  color:#fff;
+  line-height:48px;
+  border-radius:25px;
+  background-image:url('../../images/main/ico_lock.png');
+  background-repeat:no-repeat;
+  background-position:25px;
+  font-size:16px;
+}
+.section_main01 .text_main01 p:before {
+  content:'';
+  position:absolute;
+  top:-30px;
+  left:-112px;
+  width:587px;
+  height:53px;
+  background:url('../../images/main/border_deal.png') no-repeat;
+}
+
+.section_main02  {
+  background:url('../../images/main/bg_section02.png') no-repeat;
+}
+.section_main02 .img_company {
+  margin-top:60px;
+  width:56.64%;
+}
+.section_main02 .btn_wrap {
+  margin:50px auto 0;
+  width:250px;
+}
+.section_main03 {
+  background:url('../../images/main/bg_section03.png') no-repeat;
+}
+.section_main03 .img_company {
+  margin-top:50px;
+  width:58.35%;
+}
+.section_main03 .btn_wrap {
+  margin:56px auto 0;
+  width:250px;
+}
+.section_main02,
+.section_main03 {
+  padding-top:220px;
+  background-size:100%;
+}
+
+.main.container .section_main04 {
+  padding:45px 0;
+  max-width:100%;
+  background:rgba(216,216,216,0.34);
+}
+.section_main04 .img_logo {
+  display:block;
+  margin:0 auto;
+  width:162px;
+  height:35px;
+}
+.section_main04 b {
+  font-size:26px;
+  font-weight:500;
+  line-height:32px;
+}
+.section_main04 p {
+  margin-top:16px;
+  color:#666;
+  line-height:24px;
+}
+.section_main04 .btn_wrap {
+  margin:40px auto 0;
+  width:250px;
+}
+
+
