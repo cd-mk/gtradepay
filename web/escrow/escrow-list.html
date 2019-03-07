@@ -27,15 +27,15 @@
         </div>
         <div class="sort_wrap">
           <ul class="align_left">
-              <li class="tab_active"><a href="escrow-list.html">전체</a></li>
-              <li><a href="escrow-list-import.html">수입</a></li>
-              <li><a href="escrow-list-export.html">수출</a></li>
+            <li class="tab_active"><a href="escrow-list.html">전체</a></li>
+            <li><a href="escrow-list-import.html">수입</a></li>
+            <li><a href="escrow-list-export.html">수출</a></li>
           </ul>
           <div class="align_right">
             <select class="select_sort" title="검색 조건 선택">
-                <option>전체</option>
-                <option>거래처명</option>
-                <option>계약명</option>
+              <option>전체</option>
+              <option>거래처명</option>
+              <option>계약명</option>
             </select> 
             <span class="input_search">
               <input type="text" class="input_sort" title="검색어 입력">
@@ -48,132 +48,156 @@
             <caption>신청내역 조회 내역 수출 확인을 위한 표</caption>               
             <thead>
                 <tr>
-                    <th scope="col" width="6.15%">No</th>
-                    <th scope="col" width="6.88%">구분</th>
-                    <th scope="col" width="10.32%">계약일</th>
-                    <th scope="col" width="15.84%">거래처명</th>
-                    <th scope="col">계약명</th>
-                    <th scope="col" width="11.67%">거래금액</th>
-                    <th scope="col" width="19.39%">상태</th>
+                  <th scope="col" width="6.15%">No</th>
+                  <th scope="col" width="6.88%">구분</th>
+                  <th scope="col" width="10.32%">계약일</th>
+                  <th scope="col" width="15.84%">거래처명</th>
+                  <th scope="col">계약명</th>
+                  <th scope="col" width="11.67%">거래금액</th>
+                  <th scope="col" width="19.39%">상태</th>
                 </tr>
             </thead>
             <tbody>
               <tr>
-                  <td>1</td>
-                  <td>수입</td>
-                  <td>2019/01/05</td>
-                  <td>그랜드 센트럴 상하이</td>
-                  <td>PIXNET Mobile 모바일 패널</td>
-                  <td>500,000 USD</td>
-                  <td><span class="status wait_appro">승인대기</span></td>
+                <td>1</td>
+                <td>수입</td>
+                <td>2019/01/05</td>
+                <td>그랜드 센트럴 상하이</td>
+                <td>PIXNET Mobile 모바일 패널</td>
+                <td>500,000 USD</td>
+                <td><span class="status wait_appro">승인대기</span></td>
               </tr>
               <tr>
-                  <td>2</td>
-                  <td>수출</td>
-                  <td>2019/01/05</td>
-                  <td>중국철강회사</td>
-                  <td>아이오페 라이브 리프트 세트</td>
-                  <td>500,000 USD</td>
-                  <td><span class="status es_comp_dep">에스크로 입금완료</span></td>
+                <td>2</td>
+                <td>수출</td>
+                <td>2019/01/05</td>
+                <td>중국철강회사</td>
+                <td>아이오페 라이브 리프트 세트</td>
+                <td>500,000 USD</td>
+                <td><span class="status es_comp_dep">에스크로 입금완료</span></td>
               </tr>
               <tr>
-                  <td>3</td>
-                  <td>수입</td>
-                  <td>2019/01/05</td>
-                  <td>샤오미 휴대폰</td>
-                  <td>PIXNET Mobile 모바일 패널</td>
-                  <td>500,000 USD</td>
-                  <td>
-                    <span class="js-popup-btn status es_wait_dep"><a href="#a">에스트로 입금대기</a></span>
-                    <div class="popup escrow_pop01">
-                      <div class="head_pop"><span>에스크로 신청내역</span><button class="btn_close_pop" type="button">닫기</button></div>
-                      <div class="content_pop">
-                        <dl>
-                          <dt><label for="ip_escrow01"><span>결제금액</span></label></dt>
-                          <dd class="pop_content01">
-                            <input type="text" id="ip_escrow01">
-                            <select>
-                              <option>선택</option>
-                              <option>원(KRW)</option>
-                              <option>달러(USD)</option>
-                            </select>
-                          </dd>
-                          <dt class="pop_sub_title">결제은행</dt>
-                          <dd class="pop_content02">Unionpay</dd>
-                        </dl>
-                        <div class="btn_wrap">
-                          <a href="#a" class="js-popup-btn btn point_green"><span>입금</span></a>                          
-                          <a href="#a" class="btn point_white btn_close_pop"><span>닫기</span></a>
-                        </div>   
-                      </div>
-                    </div>
-                    <div class="popup escrow_pop02">
-                        <div class="head_pop"><span>입금완료</span><button class="btn_close_pop" type="button">닫기</button></div>
-                        <div class="content_pop">
-                          <p>입금 완료 되었습니다.</p>
-                          <span>감사합니다.</span>
-                        </div>
-                    </div>            
-                  </td>
-              </tr>
-              <tr>
-                  <td>4</td>
-                  <td>수출</td>
-                  <td>2019/01/05</td>
-                  <td>샤오미 휴대폰</td>
-                  <td>아이오페 라이브 리프트 세트</td>
-                  <td>500,000 USD</td>
-                  <td><span class="status comp_wd">출금완료</span></td>
-              </tr>
-              <tr>
-                  <td>5</td>
-                  <td>수입</td>
-                  <td>2019/01/05</td>
-                  <td>샤오미 휴대폰</td>
-                  <td>PIXNET Mobile 모바일 패널</td>
-                  <td>500,000 USD</td>
-                  <td>
-                    <span class="js-popup-btn status es_wait_dep"><a href="#a">에스트로 출금대기</a></span>
-                    <div class="popup escrow_pop03">
-                        <div class="head_pop"><span>에스크로 출금</span><button class="btn_close_pop" type="button">닫기</button></div>
-                        <div class="content_pop">
-                          <ul class="btn_wrap">
-                            <li><a href="#a" class="btn point_white"><span>기간연장</span></a></li>
-                            <li><a href="#a" class="btn point_white"><span>거래정지</span></a></li>
-                            <li><a href="#a" class="btn point_green"><span>거래완료</span></a></li>
-                          </ul>
-                        </div>
-                    </div>
-                    <div class="popup escrow_pop04">
-                        <div class="head_pop"><span>거래정지</span><button class="btn_close_pop" type="button">닫기</button></div>
-                        <div class="content_pop">
-                          <p>거래를 정지하시겠습니까?</p>
-                          <span>사유를 입력해주시면<br>관리자 확인 후 거래 정지처리 됩니다.</span>
-                          <textarea placeholder="전자상거래에서의 매매 보호 서비스. 비대면 거래의 피해를 방지를 위해 거래대금의 입풀금 제3의 회사에 맡기는 제도이다."></textarea>
-                          <div class="btn_wrap">
-                            <span><a href="#a" class="btn point_green">확인</a></span>
+                <td>3</td>
+                <td>수입</td>
+                <td>2019/01/05</td>
+                <td>샤오미 휴대폰</td>
+                <td>PIXNET Mobile 모바일 패널</td>
+                <td>500,000 USD</td>
+                <td>
+                  <span class="status es_wait_dep">
+                    <a href="#a" class="js-open-popup">에스트로 입금대기</a>
+                    <!-- 입금 대기 팝업 -->
+                    <div class="layer_popup wait_deposit">
+                      <div class="popup_box">
+                        <h4 class="title_popup">입금하기</h4>
+                        <div class="content_popup">
+                          <dl>
+                            <dt>결제 금액</dt>
+                            <dd>
+                              <label for="price" class="blind">결제 금액 입력</label>
+                              <input type="text" name="" id="price">
+                              <select name="" id="">
+                                <option value="">선택</option>
+                                <option value="">USD</option>
+                                <option value="">KRW</option>
+                              </select>
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>결제 은행</dt>
+                            <dd>
+                              <p class="txt_gray">UnionPay</p>
+                            </dd>
+                          </dl>
+                          <div class="btn_wrap col2">
+                            <button type="button" class="btn point_green js-next-popup"><span>입금</span></button>
+                            <button type="button" class="btn point_white js-close-popup"><span>취소</span></button>
                           </div>
                         </div>
+                        <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                      </div>
+                      <div class="dim"></div>
                     </div>
-                  </td>
+
+                    <!-- 입금 완료 팝업 -->
+                    <div class="layer_popup complete_deposit">
+                      <div class="popup_box">
+                        <h4 class="title_popup">입금완료</h4>
+                        <div class="content_popup">
+                          <strong>입금 완료되었습니다.</strong>
+                          <p class="txt_gray">감사합니다.</p>
+                        </div>
+                        <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                      </div>
+                      <div class="dim"></div>
+                    </div>
+                  </span>
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>수출</td>
+                <td>2019/01/05</td>
+                <td>샤오미 휴대폰</td>
+                <td>아이오페 라이브 리프트 세트</td>
+                <td>500,000 USD</td>
+                <td><span class="status comp_wd">출금완료</span></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>수입</td>
+                <td>2019/01/05</td>
+                <td>샤오미 휴대폰</td>
+                <td>PIXNET Mobile 모바일 패널</td>
+                <td>500,000 USD</td>
+                <td>
+                  <span class="js-popup-btn status es_wait_dep">
+                    <a href="#a" class="js-open-popup">에스트로 출금대기</a>
+                    <!-- 출금 대기 팝업 -->
+                    <div class="layer_popup wait_withdraw">
+                      <div class="popup_box">
+                        <h4 class="title_popup">에스크로 출금</h4>
+                        <div class="content_popup">
+                          <div class="btn_wrap">
+                            <button type="button" class="btn point_white"><span>기간 연장</span></button>
+                            <button type="button" class="btn point_white"><span>거래정지</span></button>
+                            <button type="button" class="btn point_green js-next-popup"><span>거래완료</span></button>
+                          </div>
+                        </div>
+                        <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                      </div>
+                      <div class="dim"></div>
+                    </div>
+                    <!-- 거래 정지 팝업 -->
+                    <div class="layer_popup stop_deal">
+                      <div class="popup_box">
+                        <h4 class="title_popup">거래정지</h4>
+                        <div class="content_popup">
+                          <div class="text_box">
+                            <strong>거래를 정지하시겠습니까?</strong>
+                            <p class="txt_gray">
+                              사유를 입력해주시면<br>
+                              관리자 확인 후 거래 정지처리 됩니다.
+                            </p>
+                          </div>
+                          <textarea name="" id="" placeholder="전자상거래에서의 매매 보호 서비스. 비대면 거래의 피해를 방지를 위해 거래대금의 입출금제3의 회사에 맡기는 제도이다."></textarea>
+                          <div class="btn_wrap">
+                            <button type="button" class="btn point_green"><span>확인</span></button>
+                          </div>
+                        </div>
+                        <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                      </div>
+                      <div class="dim"></div>
+                    </div>
+                  </span>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="btn_wrap"><a href="#a" class="btn_more">더보기</a></div>
       </div>
-    </div>
-    <div id="footer">
-      <p class="foot_title">Global <span>Trade</span> Payments Corporation</p>
-      <div class="foot_logo">
-        <img src="../assets/images/common/img-ssl-logo.jpg" alt="COMODO AUTHENTIC SITE SECURED BY SSL">
-        <p>USD 250,000 배상보험 가입</p>
-      </div>
-      <p class="foot_desc">GTadePay.com의 모든 거래는 최신, 최고의 정보 보안상태로 보호되고 있으며, 거래당 25만불의  배상 책임 보험에 가입되어 있습니다.</p>
-      <p class="foot_cpr">
-        &copy; 2018. Global Trade payments Corporation. All Rights Reserved.<br>
-        ​Powered by GET corp. a member of Global e trade.
-      </p>
     </div>
 
 	<!-- footer area -->
