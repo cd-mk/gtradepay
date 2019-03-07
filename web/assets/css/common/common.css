@@ -597,13 +597,14 @@ button {
 .txt_green {
   color:#36ae53;
 }
-
 .txt_red {
   color:#ff3d00;
 }
-
 .txt_gray {
   color:#666;
+}
+.txt_blue {
+  color: #004c7a;
 }
 
 /* layer popup */

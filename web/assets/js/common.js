@@ -91,6 +91,12 @@ var setAccordian = function() {
   });
 };
 
+var setContentAccordian = function() {
+  $('.js-open-accordian').on('click', function() {
+    $(this).next().toggleClass('on');
+  });
+};
+
 var layerPopup = function() {
   function openPopup() {
     $('.js-open-popup').on('click', function() {
@@ -129,6 +135,9 @@ $(document).ready(function() {
   }
   if ($('.js-accordian').length) {
     setAccordian();
+  }
+  if ($('.js-open-accordian').length) {
+    setContentAccordian();
   }
   layerPopup();
 });
