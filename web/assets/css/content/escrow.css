@@ -50,6 +50,7 @@
 .sort_wrap select.select_sort {
   float:left;
   width:100px;
+  background-position: 90% 50%;
   vertical-align: middle;
 }
 
@@ -141,115 +142,75 @@
   line-height:40px;
 }
 
-/* 팝업 */
-.escrow_pop01 .content_pop {
-  padding:40px 30px 30px; 
-  box-sizing: border-box;
+/* 입금 팝업 스타일 */
+.layer_popup.wait_deposit dl {
+  margin-top: 20px;
+}
+.layer_popup.wait_deposit dl:first-child {
+  margin-top: 0;
+}
+.layer_popup.wait_deposit dl dt {
+  font-weight: 500;
+}
+.layer_popup.wait_deposit dl dd {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.layer_popup.wait_deposit dl dd input {
+  float: left;
+  width: 66%;
+}
+.layer_popup.wait_deposit dl dd select {
+  width: 33%;
+  margin-left: 1%;
+  background-position: 90% 50%;
+}
+.layer_popup.wait_deposit .btn_wrap {
+  width: 205px;
+  margin: 20px auto 0;
 }
 
-.escrow_pop01 .content_pop dt {
-  display:block;
-  font-weight:500;
-  color:#222;    
-  text-align:left;
-  line-height:20px;
+.layer_popup.complete_deposit .content_popup {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.layer_popup.complete_deposit .content_popup strong {
+  font-size: 20px;
+}
+.layer_popup.complete_deposit .content_popup p {
+  margin-top: 5px;
 }
 
-.pop_content01 {
-  margin-top:10px;
+/* 출금 팝업 스타일 */
+.layer_popup.wait_withdraw .content_popup {
+  padding: 60px 9.7%;
 }
+.layer_popup.wait_withdraw .btn_wrap .btn {
+  float: left;
+  width: calc(100% / 3);
+}
+.layer_popup.wait_withdraw .btn_wrap .btn:first-child,
+.layer_popup.wait_withdraw .btn_wrap .btn:nth-child(2) {
+  border-right: 0;
+} 
 
-.pop_content01:after {
-  content:'';
-  display:block;
-  clear:both;
+.layer_popup.stop_deal .text_box strong {
+  font-size: 20px;
 }
-
-.escrow_pop01 input {
-  float:left;
-  width:200px;
-  line-height:44px;
-  vertical-align: middle;
+.layer_popup.stop_deal .text_box p {
+  margin-top: 10px;
+  line-height: 1.4;
 }
-.escrow_pop01 select {
-  float:left;
-  margin-left:5px;
-  width:103px;
-  line-height:44px;
-  vertical-align: middle;
+.layer_popup.stop_deal textarea {
+  height: 100px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  line-height: 1.4;
+  resize: none;
 }
-.pop_sub_title {
-  margin-top:20px;
-}
-
-.escrow_pop01 .pop_content02 {
-  margin-top:10px;
-  text-align:left;
-  color:#666;
-  line-height:20px;
-}
-
-.escrow_list .escrow_pop01 .btn_wrap {
-  margin-top:20px;
-  width:auto;
-  line-height:normal;
-}
-.escrow_list .escrow_pop01 .btn_wrap a {
-  vertical-align: middle;
-
-}
-.escrow_pop02 .content_pop {
-  padding:40px 93px;
-}
-.escrow_pop02 .content_pop p {
-  color:#222;
-  font-size:20px;
-  font-weight:500;
-  line-height:normal;
-}
-.escrow_pop02 .content_pop span {
-  color:#666;
-  font-size:15px;
-}
-.escrow_pop03 .content_pop {
-  padding:60px 34px;
-}
-.escrow_pop03 .content_pop ul:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-
-.escrow_pop03 .content_pop li {
-  float:left;
-}
-.escrow_pop03 .content_pop .point_white {
-  border-right:none;
-}
-.escrow_pop04 .content_pop {
-  padding:40px 30px 30px;
-  text-align:left;
-}
-.escrow_pop04 .content_pop p {
-  color:#222;
-  font-size:20px;
-  font-weight:500;
-  line-height:1;
-}
-.escrow_pop04 .content_pop > span {
-  display:block;
-  margin-top:10px;
-  color:#666;
-  line-height:normal;
-}
-.escrow_pop04 .content_pop textarea {
-  margin:20px 0 16px;
-  padding:15px 20px;
-  height:100px;
-  border:1px solid #e1e1e1;
-}
-.escrow_pop04 .content_pop textarea::placeholder {
-  color:999;
+.layer_popup.stop_deal .btn_wrap {
+  width: 100px;
+  margin: 20px auto 0;
 }
 
 
@@ -286,6 +247,7 @@
   .tb_escrow {
     width:900px;
   }
+
 }
 
 /* 에스크로 신청내역 view */
