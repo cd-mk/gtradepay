@@ -93,6 +93,7 @@ var setAccordian = function() {
 
 var setContentAccordian = function() {
   $('.js-open-accordian').on('click', function() {
+    $(this).toggleClass('on');
     $(this).next().toggleClass('on');
   });
 };
