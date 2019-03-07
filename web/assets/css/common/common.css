@@ -759,7 +759,9 @@ button {
   text-align:center;
   color:#666;
 }
-
+.table_wrap table tr > td a {
+  color:#666;
+}
 /* table sort */
 .sort_wrap {
   margin-top:40px;
@@ -977,7 +979,6 @@ button {
   }
   
   .table_wrap {
-    padding-top:6px;
     overflow-x:scroll;
   }
   .table_wrap table {
