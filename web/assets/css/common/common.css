@@ -607,6 +607,20 @@ button {
   color: #004c7a;
 }
 
+/* common text */
+.txt_alert::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 2px;
+  width: 20px; height: 20px;
+  background: url(../../images/common/ico-alert.png) no-repeat 0 0;
+}
+.txt_alert {
+  position: relative;
+  padding-left: 31px;
+  box-sizing: border-box;
+}
+
 /* layer popup */
 .layer_popup {
   display: none;
