@@ -1,25 +1,33 @@
 <div class="header_inner">
 	<a href="/web/main/main.html" class="logo"><img src="../assets/images/common/logo.png" alt="GTradePay"></a>
 	<ul class="gnb">
-		<li class="active">
-			<a href="/admin/">메인</a>
-		</li>
-		<li><a href="/admin/">회원관리</a></li>
+		<li class="active"><a href="/admin/main/admin-main.html">메인</a></li>
+		<li><a href="/admin/member/admin-member-list.html">회원관리</a></li>
 		<li>
-			<a href="/admin/">에스크로 신청관리</a>
-			<ul>
-				<li><a href="#">전체</a></li>
-				<li><a href="#">수입</a></li>
-				<li><a href="#">수출</a></li>
-				<li><a href="#">승인현황</a></li>
+			<a href="admin/escrow/admin-escrow-list.html">에스크로 신청관리</a>
+			<ul class="snb">
+				<li><a href="/admin/escrow/admin-escrow-list.html">전체</a></li>
+				<li><a href="/admin/escrow/admin-escrow-list.html">수입</a></li>
+				<li><a href="/admin/escrow/admin-escrow-list.html">수출</a></li>
+				<li><a href="/admin/escrow/admin-escrow-status.html">승인현황</a></li>
 			</ul>
 		</li>
-		<li><a href="/admin/">관리자 메뉴</a></li>
+		<li>    
+
+			<a href="/admin/mgt/admin-mgt-list.html">관리자 메뉴</a>
+			<ul class="snb">
+				<li><a href="/admin/mgt/admin-mgt-list.html">관리자 현황</a></li>
+				<li><a href="javascript:void();">자료실 관리</a></li>
+				<li><a href="javascript:void();">게시판 관리</a></li>
+				<li><a href="javascript:void();">API연동 현황</a></li>
+				<li><a href="javascript:void();">API 버전관리</a></li>
+			</ul>
+		</li>
 	</ul>
 	<div class="my_box">
 		<div class="login_box">
 			<!-- login 상태일 경우 -->
-			<a href="#url" class="btn_login login">kongkong님</a>
+			<a href="javascript:void();" class="btn_login login">kongkong님</a>
 			<!-- logout 상태일 경우 -->
 			<!-- <a href="/web/member/login.html" class="btn_login logout">로그인</a> -->
 			<!-- //logout 상태일 경우 -->

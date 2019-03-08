@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>회원관리</title>
+<!-- plugin.css -->
+  <link rel="stylesheet" href="../assets/css/plugins/jquery-ui.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../assets/css/adm_common.css">
+  <link rel="stylesheet" href="../assets/css/adm_default.css">
+</head>
+<body>
+  <div id="wrap">
+  	<!-- header area -->
+    <div id="header">
+    </div>
+	<!-- header area -->
+    <div class="container">
+        <div class="escrow_list">
+            <div class="page_title">
+                <h2 class="txt_title">신청현황</h2>
+            </div>
+            <div class="sort_wrap">
+                <ul class="align_left">
+                    <li class="tab_active"><a href="escrow-list.html">전체</a></li>
+                    <li><a href="escrow-list-import.html">수입</a></li>
+                    <li><a href="escrow-list-export.html">수출</a></li>
+                </ul>
+                <div class="align_right">
+                    <select class="select_sort" title="검색 조건 선택">
+                        <option>전체</option>
+                        <option>거래처명</option>
+                        <option>계약명</option>
+                    </select>
+                    <span class="input_search">
+                        <input type="text" class="input_sort" title="검색어 입력">
+                        <button type="button" class="btn_search">찾기</button>
+                    </span>
+                </div>
+            </div>
+            <div class="table_wrap tb_type01">
+                <table>
+                    <caption>신청현황 표</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">구분</th>
+                            <th scope="col">계약일</th>
+                            <th scope="col">거래처명</th>
+                            <th scope="col">계약명</th>
+                            <th scope="col">거래금액</th>
+                            <th scope="col">무역견적서</th>
+                            <th scope="col">Invoice</th>
+                            <th scope="col">첨부서류</th>
+                            <th scope="col">상태</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>수입</td>
+                            <td>2019/01/05</td>
+                            <td>그랜드 센트럴 상하이</td>
+                            <td>PIXNET Mobile 모바일 패널</td>
+                            <td>500,000 USD</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><span class="status wait_appro">승인대기</span></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>수입</td>
+                            <td>2019/01/05</td>
+                            <td>그랜드 센트럴 상하이</td>
+                            <td>PIXNET Mobile 모바일 패널</td>
+                            <td>500,000 USD</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><span class="status wait_appro">승인대기</span></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>수입</td>
+                            <td>2019/01/05</td>
+                            <td>그랜드 센트럴 상하이</td>
+                            <td>PIXNET Mobile 모바일 패널</td>
+                            <td>500,000 USD</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><span class="status wait_appro">승인대기</span></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>수입</td>
+                            <td>2019/01/05</td>
+                            <td>그랜드 센트럴 상하이</td>
+                            <td>PIXNET Mobile 모바일 패널</td>
+                            <td>500,000 USD</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td><span class="status wait_appro">승인대기</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_wrap"><a href="#a" class="btn_more">더보기</a></div>
+        </div>
+    </div>
+	<!-- footer area -->
+	<div id="footer">
+	</div>
+	<!-- //footer area -->
+  </div>
+  <!-- js -->
+  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/adm_common.js"></script>
+	<script>
+		layout();
+	</script>
+</html>

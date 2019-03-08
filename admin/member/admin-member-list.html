@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>회원관리</title>
+<!-- plugin.css -->
+  <link rel="stylesheet" href="../assets/css/plugins/jquery-ui.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../assets/css/adm_common.css">
+  <link rel="stylesheet" href="../assets/css/adm_default.css">
+</head>
+<body>
+  <div id="wrap">
+  	<!-- header area -->
+    <div id="header">
+    </div>
+	<!-- header area -->
+    <div class="container">
+        <div class="escrow_list">
+            <div class="page_title">
+                <h2 class="txt_title">회원관리</h2>
+            </div>
+            <div class="sort_wrap">
+                <ul class="align_left">
+                    <li class="tab_active"><a href="escrow-list.html">전체</a></li>
+                    <li><a href="escrow-list-import.html">수입</a></li>
+                    <li><a href="escrow-list-export.html">수출</a></li>
+                </ul>
+                <div class="align_right">
+                    <select class="select_sort" title="검색 조건 선택">
+                        <option>전체</option>
+                        <option>거래처명</option>
+                        <option>계약명</option>
+                    </select>
+                    <span class="input_search">
+                        <input type="text" class="input_sort" title="검색어 입력">
+                        <button type="button" class="btn_search">찾기</button>
+                    </span>
+                </div>
+            </div>
+            <div class="table_wrap">
+                <table class="tb_escrow">
+                    <caption>회원관리 목록</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">No</th>
+                            <th scope="col" rowspan="2">구분</th>
+                            <th scope="col" rowspan="2">계약일</th>
+                            <th scope="col" rowspan="2">소속</th>
+                            <th scope="col" colspan="3">사용자 정보</th>
+                            <th scope="col" rowspan="2">상태</th>
+                            <th scope="col" rowspan="2">승인일</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">아이디</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">부서/직급</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>법인</td>
+                            <td>2019/01/05</td>
+                            <td>길동상사</td>
+                            <td>gilhong</td>
+                            <td>홍길동</td>
+                            <td>과장</td>
+                            <td>
+                                <span class="js-popup-btn status es_wait_dep">
+                                    <a href="#a" class="js-open-popup">승인대기</a>
+                                    <!-- 출금 대기 팝업 -->
+                                    <div class="layer_popup es_wait_dep">
+                                        <div class="popup_box">
+                                            <h4 class="title_popup">승인 관리자</h4>
+                                            <p>아이디 : mater</p>
+                                            <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                                        </div>
+                                        <div class="dim"></div>
+                                    </div>
+                                </span>
+                            </td>
+                            <td>2019/01/05</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_wrap"><a href="#a" class="btn_more">더보기</a></div>
+        </div>
+    </div>
+	<!-- footer area -->
+	<div id="footer">
+	</div>
+	<!-- //footer area -->
+  </div>
+  <!-- js -->
+  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/adm_common.js"></script>
+	<script>
+		layout();
+	</script>
+</html>
