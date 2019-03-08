@@ -174,7 +174,6 @@ function openCity(evt, cityName) {
 //임시 header, footer영역 로드
 function layout() {
   $("#header").load("../common.html .header_inner", function () {
-    console.log('ss');
   });
   $("#footer").load("../common.html .footer_inner", function () {
   });
