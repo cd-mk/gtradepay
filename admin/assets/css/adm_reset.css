@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-family: 'notokr';
 	font-size: 100%;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -48,4 +49,10 @@ caption {
 }
 em {
 	font-style: normal;
+}
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
 }

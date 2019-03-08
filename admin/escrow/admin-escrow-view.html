@@ -36,27 +36,27 @@
                             <caption>거래 정보를 나열한 표</caption>
                             <tbody>
                                 <tr>
-                                    <th>등록일</th>
+                                    <th scope="row">등록일</th>
                                     <td>2019-02-11</td>
                                 </tr>
                                 <tr>
-                                    <th>계약일</th>
+                                    <th scope="row">계약일</th>
                                     <td>2019-02-11</td>
                                 </tr>
                                 <tr>
-                                    <th>거래처 이름</th>
+                                    <th scope="row">거래처 이름</th>
                                     <td>흥부상사</td>
                                 </tr>
                                 <tr>
-                                    <th>거래처 이메일</th>
+                                    <th scope="row">거래처 이메일</th>
                                     <td>heung@gmail.com</td>
                                 </tr>
                                 <tr>
-                                    <th>거래금액</th>
+                                    <th scope="row">거래금액</th>
                                     <td>10,000USD</td>
                                 </tr>
                                 <tr class="last_txt">
-                                    <th>거래내용</th>
+                                    <th scope="row">거래내용</th>
                                     <td>전자상거래에서의 매매 보호 서비스. 비대면 거래의
                                         피해를 방지를 위해 거래대금의 입출금을 제3의
                                         회사에 맡기는 제도이다. 전자상거래에서 소비자의
@@ -71,8 +71,7 @@
                         <h3>첨부 서류</h3>
                         <div class="group_wrap">
                             <div class="accordian_inp">
-                                <a href="#url" class="title_accordian js-accordian">무역 견적서 <span class="text_state">바로
-                                        보기</span></a>
+                                <a href="#url" class="title_accordian js-accordian">무역 견적서 입력 완료 <span class="text_state">바로 보기</span></a>
                                 <div class="inp_wrap">
                                     <dl class="group_inp">
                                         <dt>수신인(Consignee)</dt>
@@ -175,8 +174,7 @@
                                 </div>
                             </div>
                             <div class="accordian_inp">
-                                <a href="#url" class="title_accordian js-accordian">인보이스 <span class="text_state">바로
-                                        보기</span></a>
+                                <a href="#url" class="title_accordian js-accordian">인보이스 입력 완료 <span class="text_state">바로 보기</span></a>
                                 <div class="inp_wrap">
                                     <dl class="group_inp">
                                         <dt>Shipper / Exporter</dt>
@@ -331,66 +329,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <dl class="group_inp">
-                                <dt>Packing List</dt>
-                                <dd class="file_inp_box">
-                                    <input type="text" readonly value="" class="input_with_btn js-file_name">
-                                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                    <label for="file1">찾아보기</label>
-                                    <input type="file" id="file1" class="file_inp">
-                                </dd>
-                            </dl>
-                            <dl class="group_inp">
-                                <dt>은행통장사본</dt>
-                                <dd class="file_inp_box">
-                                    <input type="text" readonly value="" class="input_with_btn js-file_name">
-                                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                    <label for="file2">찾아보기</label>
-                                    <input type="file" id="file2" class="file_inp">
-                                </dd>
-                            </dl>
-                            <dl class="group_inp">
-                                <dt>기타 첨부 1</dt>
-                                <dd class="file_inp_box">
-                                    <input type="text" readonly value="" class="input_with_btn js-file_name">
-                                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                    <label for="file3">찾아보기</label>
-                                    <input type="file" id="file3" class="file_inp">
-                                </dd>
-                            </dl>
-                            <dl class="group_inp">
-                                <dt>기타 첨부 2</dt>
-                                <dd class="file_inp_box">
-                                    <input type="text" readonly value="" class="input_with_btn js-file_name">
-                                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                    <label for="file4">찾아보기</label>
-                                    <input type="file" id="file4" class="file_inp">
-                                </dd>
-                            </dl>
-                            <dl class="group_inp">
-                                <dt>기타 첨부 3</dt>
-                                <dd class="file_inp_box">
-                                    <input type="text" readonly value="" class="input_with_btn js-file_name">
-                                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                    <label for="file5">찾아보기</label>
-                                    <input type="file" id="file5" class="file_inp">
-                                </dd>
-                            </dl>
-                            <dl class="group_inp">
-                                <dt>기타 첨부 4</dt>
-                                <dd class="file_inp_box">
-                                    <input type="text" readonly value="" class="input_with_btn js-file_name">
-                                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                    <label for="file6">찾아보기</label>
-                                    <input type="file" id="file6" class="file_inp">
-                                </dd>
-                            </dl>
+                            <br>
+                            <table>
+                                <caption>첨부파일 목록 표</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Packing List</th>
+                                        <td><a href="#url">패킹리스트. jpg</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">은행통장사본</th>
+                                        <td><a href="#url">은행통장사본. jpg</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">기타 첨부 1</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">기타 첨부 2</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">기타 첨부 3</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">기타 첨부 4</th>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div class="con_box">
@@ -399,19 +367,19 @@
                             <caption>거래처 입력 사항 정보를 나열한 표</caption>
                             <tbody>
                                 <tr>
-                                    <th>계약번호</th>
+                                    <th scope="row">계약번호</th>
                                     <td>2019-02-11</td>
                                 </tr>
                                 <tr>
-                                    <th>Hscode</th>
+                                    <th scope="row">Hscode</th>
                                     <td>FR776-GT999-0000</td>
                                 </tr>
                                 <tr>
-                                    <th>통관구분</th>
+                                    <th scope="row">통관구분</th>
                                     <td>FR776-GT999-0000</td>
                                 </tr>
                                 <tr>
-                                    <th>B/L</th>
+                                    <th scope="row">B/L</th>
                                     <td>FR776-GT999-0000</td>
                                 </tr>
                             </tbody>
@@ -423,32 +391,29 @@
                             <caption>수수료 정보를 나열한 표</caption>
                             <tbody>
                                 <tr>
-                                    <th>에스크로 수수료</th>
+                                    <th scope="row">에스크로 수수료</th>
                                     <td><strong class="txt_green">0.5</strong> %</td>
                                 </tr>
                                 <tr>
-                                    <th>MP수수료</th>
+                                    <th scope="row">MP수수료</th>
                                     <td><strong class="txt_green">0.05</strong> %</td>
                                 </tr>
                                 <tr>
-                                    <th>현지은행수수료</th>
+                                    <th scope="row">현지은행수수료</th>
                                     <td><strong class="txt_green">100</strong> RMB</td>
                                 </tr>
                                 <tr>
-                                    <th>송금수수료</th>
+                                    <th scope="row">송금수수료</th>
                                     <td><strong class="txt_green">20</strong> USD</td>
                                 </tr>
                                 <tr>
-                                    <th>통관수수료</th>
+                                    <th scope="row">통관수수료</th>
                                     <td><strong class="txt_green">1</strong> USD</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="btn_wrap col2">
-                        <button type="submit" class="btn point_green"><span>수정</span></button>
-                        <button type="button" class="btn point_white"><span>취소</span></button>
-                    </div>
+                  
                 </fieldset>
             </form>
         </div>
@@ -460,6 +425,7 @@
     </div>
     <!-- js -->
     <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/plugins/jquery-ui.min.js"></script>
     <script src="../assets/js/adm_common.js"></script>
     <script>
         layout();

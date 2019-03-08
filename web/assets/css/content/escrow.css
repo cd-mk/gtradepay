@@ -226,7 +226,7 @@
     width: 37%;
   }
 }
-
+/* 상태 버튼 및 표시 */
 .status {
   display: inline-block;
   line-height: 40px;

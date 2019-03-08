@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>관리자 현황</title>
+<!-- plugin.css -->
+  <link rel="stylesheet" href="../assets/css/plugins/jquery-ui.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../assets/css/adm_common.css">
+  <link rel="stylesheet" href="../assets/css/adm_default.css">
+</head>
+<body>
+  <div id="wrap">
+  	<!-- header area -->
+    <div id="header">
+    </div>
+	<!-- header area -->
+    <div class="container">
+        <div class="bbs_wrap">
+            <div class="page_title">
+                <h2 class="txt_title">관리자 현황</h2>
+            </div>
+            <div class="sort_wrap">
+     
+                <div class="align_right">
+                    <select class="select_sort" title="검색 조건 선택">
+                        <option>전체</option>
+                        <option>아이디</option>
+                        <option>소속</option>
+                    </select>
+                    <span class="input_search">
+                        <input type="text" class="input_sort" title="검색어 입력">
+                        <button type="button" class="btn_search">찾기</button>
+                    </span>
+                </div>
+            </div>
+            <div class="table_wrap tb_type01">
+                <table>
+                    <caption>관리자 현황 표</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">등록일</th>
+                            <th scope="col">소속</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">아이디</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">최근접속일</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Master</td>
+                            <td>2019/01/05</td>
+                            <td>전체관리자</td>
+                            <td>홍길동</td>
+                            <td>admin</td>
+                            <td><span class="status end_appro">사용가능</span></td>
+                            <td>2019/01/05</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>일반</td>
+                            <td>2019/01/05</td>
+                            <td>GTP</td>
+                            <td>홍길동</td>
+                            <td>gtpmaster</td>
+                            <td><span class="status end_appro">승인대기</span></td>
+                            <td>2019/01/05</td>
+                            <td><span class="status end_appro">승인</span></td>
+                        </tr>
+                        <tr>
+                            <td>일반</td>
+                            <td>2019/01/05</td>
+                            <td>GTP</td>
+                            <td>홍길동</td>
+                            <td>master</td>
+                            <td><span class="status end_appro">사용불가</span></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>일반</td>
+                            <td>2019/01/05</td>
+                            <td>GTP</td>
+                            <td>홍길동</td>
+                            <td>gtp</td>
+                            <td><span class="status end_appro">사용가능</span></td>
+                            <td>2019/01/05</td>
+                            <td><span class="status end_appro">사용종료</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_wrap"><a href="#a" class="btn_more">더보기</a></div>
+        </div>
+    </div>
+	<!-- footer area -->
+	<div id="footer">
+	</div>
+	<!-- //footer area -->
+  </div>
+  <!-- js -->
+  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../assets/js/adm_common.js"></script>
+	<script>
+		layout();
+	</script>
+</html>

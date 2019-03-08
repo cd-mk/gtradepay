@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자료실 관리</title>
+<!-- plugin.css -->
+  <link rel="stylesheet" href="../assets/css/plugins/jquery-ui.css">
+  <!-- css -->
+  <link rel="stylesheet" href="../assets/css/adm_common.css">
+  <link rel="stylesheet" href="../assets/css/adm_default.css">
+</head>
+<body>
+  <div id="wrap">
+  	<!-- header area -->
+    <div id="header">
+    </div>
+	<!-- header area -->
+    <div class="container">
+        <div class="bbs_wrap">
+            <div class="page_title">
+                <h2 class="txt_title">자료실 관리</h2>
+            </div>
+            <div class="sort_wrap">
+     
+                <div class="align_right">
+                    <select class="select_sort" title="검색 조건 선택">
+                        <option>전체</option>
+                        <option>아이디</option>
+                        <option>소속</option>
+                    </select>
+                    <span class="input_search">
+                        <input type="text" class="input_sort" title="검색어 입력">
+                        <button type="button" class="btn_search">찾기</button>
+                    </span>
+                </div>
+            </div>
+            <div class="table_wrap tb_type01">
+                <table>
+                    <caption>자료실 관리 목록 표</caption>
+                    <colgroup>
+                        <col style="width:60px">
+                        <col>
+                        <col style="width:100px">
+                        <col style="width:100px">
+                        <col style="width:80px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">자료명</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">등록일</th>
+                            <th scope="col">조회</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>신청서 양식</td>
+                            <td>관리자</td>
+                            <td>2019/01/05</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>신청서 양식</td>
+                            <td>관리자</td>
+                            <td>2019/01/05</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>신청서 양식</td>
+                            <td>관리자</td>
+                            <td>2019/01/05</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>신청서 양식</td>
+                            <td>관리자</td>
+                            <td>2019/01/05</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>신청서 양식</td>
+                            <td>관리자</td>
+                            <td>2019/01/05</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_wrap">
+                <button type="submit" class="btn point_green"><span>등록</span></button>
+            </div>
+        </div>
+    </div>
+	<!-- footer area -->
+	<div id="footer">
+	</div>
+	<!-- //footer area -->
+  </div>
+  <!-- js -->
+  <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
+  <script src="../assets/js/plugins/jquery-ui.min.js"></script>
+  <script src="../assets/js/adm_common.js"></script>
+	<script>
+		layout();
+	</script>
+</html>

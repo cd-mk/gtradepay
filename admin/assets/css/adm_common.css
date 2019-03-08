@@ -23,6 +23,7 @@
   url('../font/notokr-regular.ttf') format('truetype'),
   url('../font/notokr-regular.svg#notokr-regular') format('svg');}
 
+
 body {
   font-family: 'notokr';
   font-size: 14px;
@@ -49,7 +50,8 @@ a {
 h1,h2,h3,h4,h5,h6,strong {
   font-weight: 500;
 }
-
+#wrap {padding-bottom:186px;position: relative;height:100%;}
+body{height:100vh;}
 /* header */
 #header {
   position: relative;
@@ -135,9 +137,16 @@ h1,h2,h3,h4,h5,h6,strong {
 
 /* footer */
 #footer {
-  position: relative;
-  padding: 40px 15%;
+  position: absolute;
+  bottom: 0;
   background: #fafafa;
+  height: 186px;
+  padding:40px 0;
+  width:100%;
+}
+#footer .footer_inner {
+  width:960px;
+  margin: 0 auto;
 }
 #footer .foot_title {
   font-size: 18px;
@@ -178,6 +187,7 @@ h1,h2,h3,h4,h5,h6,strong {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 .page_title {
   padding: 50px 0;
@@ -344,6 +354,9 @@ button {
   color: #fff;
   text-align: center;
 }
+.btn_delete.hide {
+  display: none;
+}
 .btn span {
   font-size: 14px;
   font-weight: 500;
@@ -354,9 +367,11 @@ button {
 }
 .btn_wrap {
   overflow: hidden;
+  text-align: center;
+  margin-top:30px;
 }
 .btn_wrap .btn {
-  width: 100%;
+  width:200px;
   height: 50px;
   line-height: 50px;
 }
@@ -372,17 +387,16 @@ button {
   margin-right: 5px;
 }
 .btn_wrap .btn_more {
-    color: #222;
-    font-weight: 500;
-    display: block;
-    line-height: 50px;
-    background-color: #fff;
-    border: 1px solid #999;
-    width: 150px;
-    text-align: center;
-    margin: 30px auto 120px;
+  color: #222;
+  font-weight: 500;
+  display: block;
+  line-height: 50px;
+  background-color: #fff;
+  border: 1px solid #999;
+  width: 150px;
+  text-align: center;
+  margin: 30px auto 120px;
 }
-
 
 /* button color */
 .point_gray {
