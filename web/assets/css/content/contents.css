@@ -50,9 +50,9 @@
   background: #666;
 }
 .history {margin-top:58px;}
-.history > ul > li {float:left;padding-left:21px;margin-bottom:25px;font-size: 0;}
+.history > ul > li {float:left;padding-left:21px;font-size: 0;}
 .history > ul {margin-left:-21px;}
-.history li .inner_box {border:1px solid #d8d8d8;width:306px;}
+.history li .inner_box {border:1px solid #d8d8d8;width:306px;margin-bottom:25px;}
 .history h4 {font-size: 16px; font-weight: 500; color: #222222;line-height:1.7;padding:30px 20px 0;}
 .history h5 {font-size: 14px;font-weight: 500;color: #666666;margin-top:15px;padding:0 20px;}
 .history ul li ul {margin-top:5px;padding:0 20px;font-size: 0;}
