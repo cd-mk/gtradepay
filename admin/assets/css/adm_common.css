@@ -50,8 +50,8 @@ a {
 h1,h2,h3,h4,h5,h6,strong {
   font-weight: 500;
 }
-#wrap {padding-bottom:186px;position: relative;height:100%;}
-body{height:100vh;}
+#wrap {padding-bottom:186px;position: relative;}
+html, body, #wrap{min-height: 100%;}
 /* header */
 #header {
   position: relative;
@@ -60,6 +60,7 @@ body{height:100vh;}
   box-sizing: border-box;
   text-align:center
 }
+
 
 #header .header_inner {height:60px;background: #01426a;padding:0 40px;}
 #header .logo {float: left; width: 119px; padding-top:16px;}
