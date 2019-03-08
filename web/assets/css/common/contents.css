@@ -394,14 +394,24 @@
 .finance_wrap .finance_info .chart_guide .chart_color:first-child {
   margin-left: 0;
 }
-.finance_wrap .finance_info .ir_box {
+.finance_wrap .finance_info .img_box {
   margin-top: 27px;
 }
-.finance_wrap .finance_info .ir_box img {
-  width: 100%;
+.finance_wrap .finance_info .img_box img {
+  max-width: 100%;
+}
+.finance_wrap .finance_info .img_box .mo_img {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .finance_wrap .finance_info {
     width: 100%;
+  }
+  .finance_wrap .finance_info .img_box .pc_img {
+    display: none;
+  }
+  .finance_wrap .finance_info .img_box .mo_img {
+    display: block;
+    margin: 0 auto;
   }
 }
