@@ -124,10 +124,15 @@ var layerPopup = function() {
   openNextPopup();
 };
 
-$(document).ready(function() {
+// header load 후 header관련 function 실행
+$(window).on('load', function() {
   miniLayer();
   setGnb();
   mobileGnb();
+});
+$(document).ready(function() {
+  // header, footer load
+  layout();
   if ($('.file_inp').length) {
     inputFile();
   }
@@ -169,6 +174,7 @@ function openCity(evt, cityName) {
 //임시 header, footer영역 로드
 function layout() {
   $("#header").load("../common.html .header_inner", function () {
+    console.log('ss');
   });
   $("#footer").load("../common.html .footer_inner", function () {
   });
