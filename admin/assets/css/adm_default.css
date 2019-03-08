@@ -397,4 +397,7 @@
 .status.stop_tran a {color: #fff;background-color: #36ae53;}
 
 
-/* 자료실 */
+/* 메인 */
+.main .con_box {
+    margin-top: 40px;
+}
