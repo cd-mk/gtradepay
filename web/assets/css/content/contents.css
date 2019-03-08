@@ -1,52 +1,66 @@
-.tabcontent .reason {
+
+/* 사업연혁 */
+.gtp_raunching {
   padding: 10px 0 120px;
 }
 
-.tabcontent .reason div {
+.gtp_raunching .inner_box {
   position: relative;
   margin-top: 20px;
   padding: 40px 0;
   border: 1px solid #d8d8d8;
 }
 
-.tabcontent .reason div .thumb {
+.gtp_raunching .inner_box .thumb {
   position: absolute;
   left: 40px; top: 50%;
   width: 96px; height: 96px;
   margin-top: -48px;
 }
 
-.tabcontent .reason .txt,
-.tabcontent .reason dl {
+.gtp_raunching .txt,
+.gtp_raunching dl {
   padding-left: 176px;
 }
 
-.tabcontent .reason .txt {
+.gtp_raunching .txt {
   font-size: 16px;
   font-weight: 500;
 }
 
-.tabcontent .reason dl {
+.gtp_raunching dl {
   margin-top: 15px;
   color: #666;
 }
 
-.tabcontent .reason dt {
+.gtp_raunching dt {
   font-weight: 500;
 }
 
-.tabcontent .reason dd {
+.gtp_raunching dd {
   position: relative;
   padding: 7px 0 0 6px;
 }
 
-.tabcontent .reason dd::before {
+.gtp_raunching dd::before {
   content: '';
   position: absolute;
   left: 0; top: 60%;
   width: 2px; height: 2px;
   background: #666;
 }
+.history {margin-top:58px;}
+.history > ul > li {float:left;padding-left:21px;margin-bottom:25px;font-size: 0;}
+.history > ul {margin-left:-21px;}
+.history li .inner_box {border:1px solid #d8d8d8;width:306px;}
+.history h4 {font-size: 16px; font-weight: 500; color: #222222;line-height:1.7;padding:30px 20px 0;}
+.history h5 {font-size: 14px;font-weight: 500;color: #666666;margin-top:15px;padding:0 20px;}
+.history ul li ul {margin-top:5px;padding:0 20px;font-size: 0;}
+.history ul li ul li {font-size: 14px;color: #666666;font-size: 14px;font-weight: 400;}
+.history ul li ul li:before {width: 2px; height: 2px; background-color: #666666;content: "";display: inline-block;margin-right:4px;vertical-align: middle;}
+.history .photo_box {margin-top:35px;border-top:1px solid #d8d8d8;}
+.history .photo_box span {width:50%;float:left;display:block;}
+.history .photo_box span img {width:100%;;}
 
 /* 서비스 faq */
 .service_faq {
@@ -415,3 +429,7 @@
     margin: 0 auto;
   }
 }
+
+
+
+
