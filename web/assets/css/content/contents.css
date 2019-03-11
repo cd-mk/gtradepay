@@ -430,6 +430,7 @@
   }
 }
 
+<<<<<<< HEAD
 /* 서비스 이용 대상 */
 .service_target {
   padding: 40px 0 120px;
@@ -548,6 +549,197 @@
     border-bottom: 0;
   }
 }
+=======
+/* 회사소개 */
+.company_wrap {
+  padding:40px 0 100px;
+}
+.section_company01 .txt_green {
+  display:block;
+  line-height:16px;
+  letter-spacing: -0.09px;
+  font-size:16px;
+  text-align:center;
+}
+.section_company01 h3.title_section {
+  margin-top:10px;
+  letter-spacing: -0.2px;
+  line-height:36px;
+  font-size:36px;
+  font-weight:400;
+  text-align:center;
+}
+.section_company01 h3.title_section br {
+  display:none;
+}
+.section_company01 .txt_box:before {
+  content:'';
+  display:block;
+  width:100%;
+  height:300px;
+  background:url('../../images/contents/bg_section_company01.jpg') no-repeat center; 
+  background-size:cover;
+}
+.section_company01 .txt_box {
+  margin-top:40px;
+  padding:0 0 100px;
+}
+.section_company01 .txt_box span {
+  display:block;
+  margin-top:40px;
+  line-height:1.56;
+  text-align:left;
+  font-size:18px;
+  font-weight:500;
+}
+.section_company01 .txt_box p {
+  margin-top:20px;
+  padding-bottom:40px;
+  box-sizing:border-box;
+  border-bottom:1px solid #d8d8d8;
+  line-height:1.71;
+  text-align:left;
+  white-space: pre-line;
+}
+.section_company01 .txt_box h4 {
+  margin-top:45px;
+  font-size:18px;
+  font-weight:500;
+}
+.section_company01 .txt_box ul {
+  margin-top:20px;
+}
+.section_company01 .txt_box ul li {
+  line-height:24px;
+}
+.section_company02 {
+  padding-top:206px;
+  position: relative;
+}
+.section_company02:before {
+  content:'';
+  z-index: -1;
+  display: block;
+  position: absolute;
+  top:0;
+  width:100%;
+  height:340px;
+  background:url('../../images/contents/bg_section_company02.jpg') no-repeat center;
+  background-size:cover;
+}
+.section_company02 h3 {
+  font-size:0;
+}
+.section_company02 table {
+  margin:0 auto;
+  width:52.60%;
+}
+.section_company02 table th {
+  padding:22px 0 20px 20px;
+  width:31.08%;
+  box-sizing: border-box;
+  border-bottom:1px solid #e1e1e1;
+  text-align:left;
+  line-height:14px;
+}
+.section_company02 table td {
+  padding:22px 0 20px;
+  height:55px;
+  box-sizing: border-box;
+  border-bottom:1px solid #e1e1e1;
+  line-height:14px;
+}
+
+.section_company02 table td p {
+  line-height:24px;
+}
+.section_company02 table td span {
+  display:block;
+  line-height:14px;
+}
+.section_company02 table td span:nth-child(2) {
+  margin:10px 0;
+}
+.section_company02 tr:first-child th,
+.section_company02 tr:first-child td {
+  padding-top:0;
+}
+.section_company02 tr:last-child th,
+.section_company02 tr:last-child td {
+  padding-bottom:0;
+  border-bottom:none;
+}
+
+@media screen and (max-width: 768px) {
+  .container_company {
+    padding:0;
+  }
+  .section_company01 {
+    padding:0 4.26%;
+  }
+  .section_company01 h3.title_section br {
+    display:block;
+    line-height:46px;
+  }
+  .section_company01 .txt_box {
+    padding:0 0 80px ;
+  }
+  .section_company01 .txt_box:before {
+    content:'';
+    display:block;
+    width:100%;
+    height:230px;
+    background:url('../../images/contents/bg_section_company01_m.jpg') no-repeat center; 
+    background-size:cover;
+  }
+  .section_company02:before {
+    height:310px;
+    background:url('../../images/contents/bg_section_company02_m.jpg') no-repeat center;
+    background-size:cover;
+  }
+  .section_company02 {
+    padding-top:35px;
+  }
+  .section_company02 h3 {
+    margin:0 auto;
+    width:77.33%;
+    color:#fff;
+    line-height:1.31;
+    text-align:center;
+    font-size:26px;
+  }
+  .section_company02 table {
+    margin:75px auto 0;
+    width:70.13%;
+  }
+  .section_company02 table th {
+    display:block;
+    width:100%;
+    padding:21px 0 15px;
+    border-bottom:none;
+  }
+  .section_company02 table td {
+    width:100%;
+    display:block;
+    padding:0 0 21px;
+    height:auto;
+  }
+  .section_company02 table td p br {
+    display:none;
+  }
+  .section_company02 table td span:nth-child(2) {
+    margin:0;
+  }
+  .section_company02 table td span {
+    line-height:1.71;
+  }
+  .section_company02 tr:last-child th {
+    padding:21px 0 15px;
+  }
+}
+
+
+>>>>>>> creat 회사소개
 
 /* 서비스 이용약관 */
 .service_terms {
