@@ -24,15 +24,18 @@
             </div>
             <div class="sort_wrap">
                 <ul class="align_left">
-                    <li class="tab_active"><a href="escrow-list.html">전체</a></li>
-                    <li><a href="escrow-list-import.html">수입</a></li>
-                    <li><a href="escrow-list-export.html">수출</a></li>
+                    <li class="tab_active"><a href="#url">전체</a></li>
+                    <li><a href="#url">승인대기</a></li>
+                    <li><a href="#url">승인완료</a></li>
+                    <li><a href="#url">승인보류</a></li>
                 </ul>
                 <div class="align_right">
                     <select class="select_sort" title="검색 조건 선택">
                         <option>전체</option>
-                        <option>거래처명</option>
-                        <option>계약명</option>
+                        <option>회사명</option>
+                        <option>아이디</option>
+                        <option>이름</option>
+
                     </select>
                     <span class="input_search">
                         <input type="text" class="input_sort" title="검색어 입력">
@@ -69,23 +72,86 @@
                             <td>홍길동</td>
                             <td>과장</td>
                             <td>
-                                <span class="js-popup-btn status es_wait_dep">
-                                    <a href="#a" class="js-open-popup">승인대기</a>
-                                    <!-- 출금 대기 팝업 -->
-                                    <div class="layer_popup es_wait_dep">
+                                <span class="status wait_appro">승인대기</span>
+                            </td>
+                            <td>2019/01/05</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>법인</td>
+                            <td>2019/01/05</td>
+                            <td>길동상사</td>
+                            <td>gilhong</td>
+                            <td>홍길동</td>
+                            <td>과장</td>
+                            <td>
+                                <span class="js-popup-btn status end_appro">
+                                    <a href="#a" class="js-open-popup">승인완료</a>
+                                    <!-- 승인관리자 팝업 -->
+                                    <div class="layer_popup end_appro">
                                         <div class="popup_box">
                                             <h4 class="title_popup">승인 관리자</h4>
-                                            <p>아이디 : mater</p>
+                                            <div class="content_popup">
+                                                <dl>
+                                                    <dt>아이디</dt>
+                                                    <dd>
+                                                        <p class="txt_gray">mater</p>
+                                                    </dd>
+                                                </dl>
+                                                <div class="btn_wrap">
+                                                    <button type="button" class="btn point_green"><span>확인</span></button>
+                                                </div>
+                                            </div>
                                             <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
                                         </div>
                                         <div class="dim"></div>
                                     </div>
+                                    <!-- //승인관리자 팝업 -->
+                                </span>
+                            </td>
+                            <td>2019/01/05</td>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>법인</td>
+                            <td>2019/01/05</td>
+                            <td>길동상사</td>
+                            <td>gilhong</td>
+                            <td>홍길동</td>
+                            <td>과장</td>
+                            <td>
+                                <span class="js-popup-btn status reject_appro">
+                                    <a href="#a" class="js-open-popup">승인 거절</a>
+                                    <!-- 승인관리자 팝업 -->
+                                    <div class="layer_popup reject_appro">
+                                        <div class="popup_box">
+                                            <h4 class="title_popup">승인 관리자</h4>
+                                            <div class="content_popup">
+                                                <dl>
+                                                    <dt>아이디</dt>
+                                                    <dd>
+                                                        <p class="txt_gray">mater</p>
+                                                    </dd>
+                                                </dl>
+                                                <div class="btn_wrap">
+                                                    <button type="button" class="btn point_green"><span>확인</span></button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                                        </div>
+                                        <div class="dim"></div>
+                                    </div>
+                                    <!-- //승인관리자 팝업 -->
                                 </span>
                             </td>
                             <td>2019/01/05</td>
                         </tr>
                     </tbody>
                 </table>
+
+
             </div>
             <div class="btn_wrap"><a href="#a" class="btn_more">더보기</a></div>
         </div>

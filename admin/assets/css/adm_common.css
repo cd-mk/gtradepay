@@ -114,17 +114,29 @@ html, body, #wrap{min-height: 100%;}
 }
 #header .my_box .login_box .login_layer .btn_wrap {
   position: relative;
-  padding: 20px 18px;
+  padding:2px 0;
   background: #fff;
   box-sizing: border-box;
   z-index: 15;
+  margin:0;
 }
 #header .my_box .login_box .login_layer .btn_wrap a {
   display: block;
-  margin-top: 8px;
-  font-size: 14px;
-  color: #666;
+  font-size: 13px;
+  color: #000;
   white-space: nowrap;
+  border-top:1px solid #e1e1e1;
+  height:29px;
+  line-height:29px;
+  font-weight:400;
+}
+#header .my_box .login_box .login_layer .btn_wrap span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  padding:12px 0 12px 15px;
+  text-align: left;
+  font-weight:400;
 }
 #header .my_box .login_box .login_layer .btn_wrap a:first-child {
   margin-top: 0;
@@ -390,13 +402,12 @@ button {
 .btn_wrap .btn_more {
   color: #222;
   font-weight: 500;
-  display: block;
+  display: inline-block;
   line-height: 50px;
   background-color: #fff;
   border: 1px solid #999;
   width: 150px;
   text-align: center;
-  margin: 30px auto 120px;
 }
 
 /* button color */
@@ -642,6 +653,16 @@ button {
 .layer_popup.open {
   display: block;
 }
+.layer_popup dl {
+    font-size:16px;
+    text-align: center;
+}
+.layer_popup dl dt {
+    font-weight: 700;
+    color:#000;
+}
+
+
 
 /* table */
 .table_wrap {
@@ -659,25 +680,19 @@ button {
 
 .table_wrap table th {
   position:relative;
-  height:55px;
+  padding:10px 20px;
   font-weight:500;
   box-sizing:border-box;
   vertical-align: middle;
+  border-left:1px solid #e1e1e1;
 }
 
-.table_wrap table th:before {
-  content:'';
-  position:absolute;
-  top:50%;
-  right:0;
-  margin-top:-7.5px;
-  width:1px;
-  height:15px;
-  background-color:#d4d4d4;
-}
 
-.table_wrap table th:last-child:before {
-  display:none;
+.table_wrap table th:first-child {
+  border-left:0;
+}
+.table_wrap table th[colspan] {
+  border-bottom:1px solid #e1e1e1;
 }
 
 .table_wrap table tr > td {
