@@ -662,8 +662,8 @@ button {
     color:#000;
 }
 
-
-
+.layer_popup.attach .popup_box{width:550px;}
+.layer_popup.attach img {max-width:100%;}
 /* table */
 .table_wrap {
   margin-top:12px;
@@ -680,7 +680,7 @@ button {
 
 .table_wrap table th {
   position:relative;
-  padding:10px 20px;
+  padding:10px;
   font-weight:500;
   box-sizing:border-box;
   vertical-align: middle;

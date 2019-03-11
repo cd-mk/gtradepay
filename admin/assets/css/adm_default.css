@@ -379,12 +379,12 @@
   display: inline-block;
   line-height: 40px;
   text-align:center;
-  width:145px;
 }
 .status a {
   display: block;
   line-height: 40px;
   text-decoration: none;
+    width:145px;
 }
 
 .status.wait_appro {color: #666;}
