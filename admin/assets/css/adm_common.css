@@ -203,12 +203,11 @@ html, body, #wrap{min-height: 100%;}
   padding-bottom: 40px;
 }
 .page_title {
-  padding: 50px 0;
-  border-bottom: 1px solid #d8d8d8;
+  padding: 40px 0 47px 0;
   text-align: center;
 }
 .page_title .txt_title {
-  font-size: 32px;
+  font-size: 26px;
 }
 .page_title .txt_desc {
   margin-top: 16px;
@@ -384,7 +383,7 @@ button {
   margin-top:30px;
 }
 .btn_wrap .btn {
-  width:200px;
+  width:150px;
   height: 50px;
   line-height: 50px;
 }
@@ -393,8 +392,6 @@ button {
   font-weight: 700;
 }
 .btn_wrap.col2 .btn {
-  float: left;
-  width: calc(50% - 2.5px);
 }
 .btn_wrap.col2 .btn:first-child {
   margin-right: 5px;

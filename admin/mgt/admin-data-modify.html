@@ -19,39 +19,43 @@
         <div id="header">
         </div>
         <!-- header area -->
-    <div class="container">
-        <div class="page_title">
-            <h2 class="txt_title">자료실 관리</h2>
-        </div>
-        <div class="escrow_view">
-            <div class="con_box">
-                <table>
-                    <caption>자료실 관리 상세</caption>
-                    <tbody>
-                        <tr>
-                            <th scope="row">등록일</th>
-                            <td>2019-02-11</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">작성자</th>
-                            <td>관리자</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">조회</th>
-                            <td>10</td>
-                        </tr>
-                       
-                        <tr class="last_txt">
-                            <td colspan="2">
-                                회원가입 시 필요한 서류 및 방법에 대해 정리한 문서 입니다.
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="container">
+            <div class="page_title">
+                <h2 class="txt_title">자료실 수정</h2>
+            </div>
+            <div class="bbs_wr">
+                <div class="con_box">
+                    <table>
+                        <caption>자료실 수정</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><label for="data-subject">제목</label></th>
+                                <td><input type="text" name="" id="data-subject"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="data-con">내용</label></th>
+                                <td><textarea name="" id="data-con"></textarea></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">첨부파일</th>
+                                <td class="file_inp_box">
+                                    <input type="text" readonly="" value="" class="input_with_btn js-file_name">
+                                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                                    <button type="button"
+                                        class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                                    <label for="file1">찾아보기</label>
+                                    <input type="file" id="file1" class="file_inp">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn_wrap col2">
+                    <button type="submit" class="btn point_green"><span>등록</span></button>
+                    <button type="button" class="btn point_white"><span>취소</span></button>
+                </div>
             </div>
         </div>
-    </div>
         <!-- footer area -->
         <div id="footer">
         </div>

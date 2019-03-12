@@ -74,7 +74,23 @@
                             <td>2019/01/05</td>
                             <td>그랜드 센트럴 상하이</td>
                             <td>PIXNET Mobile 모바일 패널</td>
-                            <td><span class="status stop_tran"><a href="#url">거래정지</a></span></td>
+                            <td>
+                                <span class="status stop_tran">
+                                    <a href="#url" class="js-open-popup">거래정지</a>
+                                    <!-- 승인관리자 팝업 -->
+                                    <div class="layer_popup stop_tran">
+                                        <div class="popup_box">
+                                            <h4 class="title_popup">거래정지 사유</h4>
+                                            <div class="content_popup">
+                                                사유
+                                            </div>
+                                            <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                                        </div>
+                                        <div class="dim"></div>
+                                    </div>
+                                    <!-- //승인관리자 팝업 -->
+                                </span>
+                            </td>
                             <td>2019/01/05</td>
                             <td><span class="status wait_appro">Hong</span></td>
                         </tr>
