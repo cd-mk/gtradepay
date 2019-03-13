@@ -23,7 +23,7 @@
             <div class="page_title">
                 <h2 class="txt_title">자료실 수정</h2>
             </div>
-            <div class="bbs_wr">
+            <div class="bbs_write">
                 <div class="con_box">
                     <table>
                         <caption>자료실 수정</caption>
@@ -39,20 +39,47 @@
                             <tr>
                                 <th scope="row">첨부파일</th>
                                 <td class="file_inp_box">
-                                    <input type="text" readonly="" value="" class="input_with_btn js-file_name">
+
+                                    <input type="text" readonly="" value="신청서양식.hwp" class="input_with_btn js-file_name">
                                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                    <button type="button"
-                                        class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                    <label for="file1">찾아보기</label>
-                                    <input type="file" id="file1" class="file_inp">
+                                    <button type="button" class="btn point_gray btn_delete"><span>삭제</span></button>
+                                    <label for="file1" class="hide">찾아보기</label><input type="file" id="file1" class="file_inp">
+                                    <button type="button" onclick="add_item()" class="btn-active add">추가</button>
+
+                                    <!-- S : 추가 생성 -->
+                                    <div id="pre_set" style="display:none;">
+                                        <input type="text" readonly="" value="" class="input_with_btn js-file_name">
+                                        <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                                        <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                                        <label for="file1">찾아보기</label><input type="file" id="file1" class="file_inp">
+                                        <button type="button" onclick="remove_item(this)" class="btn-active del">삭제</button>
+                                    </div>
+                                    <!-- E : 추가 영역 -->
+
+                                    <div id="field"></div>
+
+
+                                    <script type="text/javascript">
+                                        function add_item() {
+                                            // pre_set 에 있는 내용을 읽어와서 처리..
+                                            var div = document.createElement('div');
+                                            div.innerHTML = document.getElementById('pre_set').innerHTML;
+                                            document.getElementById('field').appendChild(div);
+                                        }
+
+                                        function remove_item(obj) {
+                                            // obj.parentNode 를 이용하여 삭제
+                                            document.getElementById('field').removeChild(obj.parentNode);
+                                        }
+                                    </script>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="btn_wrap col2">
-                    <button type="submit" class="btn point_green"><span>등록</span></button>
-                    <button type="button" class="btn point_white"><span>취소</span></button>
+                    <button type="submit" class="btn type_01"><span>수정</span></button>
+                    <button type="button" class="btn type_02"><span>취소</span></button>
                 </div>
             </div>
         </div>

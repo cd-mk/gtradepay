@@ -239,8 +239,38 @@ input::placeholder {
 }
 .input_with_btn {
   float: left;
-  width: 77%;
+  width: 60%;
 }
+.btn.add {
+    width: 35px;
+    height: 30px;
+    background: #333;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    vertical-align: top;
+    font-size: 0;
+    position: relative;
+    display: inline-block;
+    border: 0;
+}
+.btn.del {
+    width: 35px;
+    height: 30px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    vertical-align: top;
+    font-size: 0;
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+}
+
 input[type="text"].id_vaild {
   padding-right: 46px;
   background: url(../images/common/ico-vaild.png) no-repeat 94.5% 50%;
@@ -344,6 +374,7 @@ textarea {
   color: #666;
   box-sizing: border-box;
   resize: vertical;
+  font-family: 'notokr';
 }
 textarea.textarea_midium {
   height: 100px;
@@ -418,6 +449,14 @@ button {
   background: #36ae53;
 }
 .point_white {
+  background: #fff;
+  color: #222;
+  border: 1px solid #999;
+}
+.btn.type_01 {
+  background: #666;
+}
+.btn.type_02 {
   background: #fff;
   color: #222;
   border: 1px solid #999;
