@@ -458,7 +458,6 @@
   }
 }
 
-<<<<<<< HEAD
 /* 서비스 이용 대상 */
 .service_target {
   padding: 40px 0 120px;
@@ -771,7 +770,6 @@
   }
   .section_company02 tr:last-child th {
     padding:21px 0 15px;
-=======
 /* 글로벌 금융네트워크 */
 .txt_sub {
   color:#666;
@@ -826,13 +824,11 @@
     width: 342px; height: 384px;
     margin-left: 0;
     margin-top: 20px;
->>>>>>> de509d7766916ff801c7112c1aaef4c86af94de0
   }
 }
 
 
 
-<<<<<<< HEAD
 /* 서비스 이용약관 */
 .service_terms {
   padding: 40px 0 120px;
@@ -989,13 +985,6 @@
   line-height: 1.7;
   color: #666;
 }
-=======
-
-
-
-
-
->>>>>>> de509d7766916ff801c7112c1aaef4c86af94de0
 
 @media screen and (max-width: 768px) {
   .service_commission .top_commission {
