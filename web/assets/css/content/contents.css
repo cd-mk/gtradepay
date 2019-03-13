@@ -552,6 +552,9 @@
 .company_wrap {
   padding:40px 0 100px;
 }
+.company_wrap .mo_br {
+  display:none;
+}
 .section_company01 .txt_green {
   display:block;
   line-height:16px;
@@ -611,10 +614,11 @@
   line-height:24px;
 }
 .section_company02 {
-  padding-top:206px;
+  padding-top:45px;
   position: relative;
+  text-align:center;
 }
-.section_company02:before {
+.section_company02 h3:before {
   content:'';
   z-index: -1;
   display: block;
@@ -626,11 +630,14 @@
   background-size:cover;
 }
 .section_company02 h3 {
-  font-size:0;
+  color:#fff;
+  line-height:36px;
+  font-size:26px;
 }
 .section_company02 table {
-  margin:0 auto;
+  margin:89px auto 0;
   width:52.60%;
+  text-align:left;
 }
 .section_company02 table th {
   padding:22px 0 20px 20px;
@@ -672,6 +679,9 @@
   .container_company {
     padding:0;
   }
+  .company_wrap .mo_br {
+    display:block;
+  }
   .section_company01 {
     padding:0 4.26%;
   }
@@ -690,7 +700,7 @@
     background:url('../../images/contents/bg_section_company01_m.jpg') no-repeat center; 
     background-size:cover;
   }
-  .section_company02:before {
+  .section_company02 h3:before {
     height:310px;
     background:url('../../images/contents/bg_section_company02_m.jpg') no-repeat center;
     background-size:cover;
@@ -700,7 +710,6 @@
   }
   .section_company02 h3 {
     margin:0 auto;
-    width:77.33%;
     color:#fff;
     line-height:1.31;
     text-align:center;
@@ -934,4 +943,312 @@
   .service_commission .info_list li {
     word-break: keep-all;
   }
+}
+
+/* 서비스 소개 */
+.service_info {
+  padding:40px 0 483px;
+}
+.service_info .mo_br {
+  display:none;
+}
+.service_info .text_box  {
+  text-align:center;
+}
+.service_info .text_box h3 {
+  font-size:36px;
+  line-height:1.28;
+}
+.service_info .text_box p { 
+  line-height:1.71;
+}
+.service_info .text_box01 p {
+  margin-top:30px;
+}
+.service_info .text_risk {
+  display:block;
+  margin-top:40px;
+  line-height:1.33;
+  text-align:center;
+  font-size:18px;
+  font-weight:700;
+}
+.service_info .risk_list {
+  position:relative;
+  margin-top:33px;
+  text-align:center;
+}
+.risk_list > div span {
+  display:block;
+  line-height:normal;
+  font-weight:700;
+  font-size:18px;
+}
+.risk_list > div span.txt_blue {
+  margin-top:8px;
+}
+.risk_list > div {
+  clear:both;
+  position:relative;
+  margin:0 auto;
+  width:27.11%; height:560px;
+  line-height:46px;
+}
+.service_info .risk_list > div p {
+  border-radius: 22px;
+  color:#fafafa;
+  font-size:26px;
+  font-weight:400;
+}
+.risk_list > div h4:last-child {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+/* list border style */
+.service_info .circle01:before,
+.service_info .circle01:after,
+.service_info .circle02:after,
+.service_info .circle02:before {
+  content:'';
+  display:block;
+  width:9px;
+}
+.service_info .circle01:before {
+  margin:5px auto 0;
+  height:42px;
+  background:url('../../images/contents/arrow_green02.png') no-repeat top;
+}
+.service_info .circle01:after {
+  margin:0 auto 5px;
+  height:44px;
+  background:url('../../images/contents/arrow_blue02.png') no-repeat top;
+}
+.service_info .bg_green {
+  background:#36ae53;
+}
+.service_info .bg_blue {
+  background:#003a60;
+}
+.service_info .circle02:after {
+  margin:0 auto 5px;
+  height:44px;
+  background:url('../../images/contents/arrow_blue02.png') no-repeat top;
+}
+.service_info .circle02:before {
+  margin:0 auto;
+  height:42px;
+  background:url('../../images/contents/arrow_green02.png') no-repeat top;
+}
+.risk_list .list_item:before {
+  content:'';
+  position:absolute;
+  top:-26px; left:50%;
+  width:80.80%; height:22px;
+  border-width: 2px 2px 0 2px;
+  border-color: #003a60;
+  border-style: solid;
+  box-sizing: border-box;
+  transform:translateX(-50%);
+
+}
+.risk_list .list_item {
+  position:absolute;
+  top:164px;
+  width:100%;
+}
+.risk_list .list_item:after {
+  content:'';
+  position:absolute;
+  bottom:-26px; left:50%;
+  clear:both;
+  width:80.80%; height:22px;
+  border-width: 0 2px 2px 2px;
+  border-color: #36ae53;
+  border-style: solid;
+  box-sizing: border-box;
+  transform:translateX(-50%);
+}
+
+.risk_list .list_item li {
+  position:relative;
+  float:left;
+  margin-left: 8px;
+  padding:78px 0 0 0;
+  width: calc((100% - 34px) / 5); height: 230px;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  text-align:center;
+}
+.risk_list .list_item li.item01:before,
+.risk_list .list_item li.item05:before{
+  content:'';
+  position:absolute;
+  top:-11px; left:50%;  
+  width:9px; height:9px;
+  background:url('../../images/contents/arrow_blue.png') no-repeat top;
+  transform:translateX(-50%);
+}
+.risk_list .list_item li.item01:after,
+.risk_list .list_item li.item05:after {
+  content:'';
+  position:absolute;
+  bottom:-11px; left:50%;  
+  width:9px; height:9px;
+  background:url('../../images/contents/arrow_green.png') no-repeat top;
+  transform:translateX(-50%);
+}
+.risk_list .list_item li.item01 {
+  margin-left:0;
+}
+.risk_list .list_item li.item02:before,
+.risk_list .list_item li.item02:after,
+.risk_list .list_item li.item04:before,
+.risk_list .list_item li.item04:after {
+  content:'';
+  position:absolute;
+  left:50%;
+  width:9px; height:25px;
+  transform:translateX(-50%);
+  background-position:center bottom;
+}
+.risk_list .list_item li.item02:before,
+.risk_list .list_item li.item04:before {
+  top:-27px;
+  background:url('../../images/contents/arrow_blue03.png') no-repeat bottom;
+}
+.risk_list .list_item li.item02:after,
+.risk_list .list_item li.item04:after {
+  bottom:-27px;
+  background:url('../../images/contents/arrow_green03.png') no-repeat bottom;
+}
+.risk_list .list_item li p {
+  margin-top:38px;
+}
+.risk_list .list_item li.item03 p {
+  margin-top:25px;
+}
+.risk_list .list_item li i {
+  display:block;
+  margin:0 auto;
+  width:55px;
+  height:50px;
+  background:url('../../images/contents/ico_risk.png') no-repeat left;
+}
+.risk_list .list_item li.item02 i {
+  background-position:-57px center;
+}
+.risk_list .list_item li.item03 i {
+  background-position:-109px center;
+}
+.risk_list .list_item li.item04 i {
+  background-position:-164px center;
+}
+.risk_list .list_item li.item05 i {
+  background-position:-220px center;
+}
+.risk_list .list_item li.item05 .txt_red {
+  position:absolute;
+  top:36px; left:0;
+  width:100%;
+  font-weight:700;
+}
+.service_info .text_box02 {
+  margin-top:37px;
+}
+.service_info .text_box02 .txt_green {
+  display:block;
+  line-height:1.33;
+  font-weight:700;
+  font-size:18px;
+}
+.service_info .text_box02 p {
+  margin-top:10px;
+  line-height:1.71;
+}
+@media screen and (max-width: 768px) {
+  .service_info {
+    padding:50px 0 103px;
+  }
+  .service_info .mo_br {
+    display:block;
+  }
+  .service_info .text_risk {
+    margin-top:30px;
+  }
+  .service_info .risk_list {
+    margin-top:30px;
+  }
+  .risk_list > div {
+    width:81.25%;
+    height:1000px;
+  }
+  .service_info .circle01:after,
+  .service_info .circle02:before,
+  .risk_list .list_item:before,
+  .risk_list .list_item:after {
+    display:none;
+  }
+  
+  .risk_list .list_item li {
+    float:none;
+    margin-left:0;
+    margin-top:30px;
+    padding:0 16.25% 0 17.5%;
+    width:100%; height:110px;
+    text-align:left;
+  }
+  .risk_list .list_item li:first-child {
+    margin-top:0;
+  }
+  .risk_list .list_item li i {
+    display:inline-block;
+    /* margin-right:14.375%; */
+    height:100%;
+    vertical-align: middle;
+  }
+
+  .risk_list .list_item li > p {
+    display:inline-block;
+    float:right;
+    margin:0;
+    padding-top:45px;
+    width:35.31%;
+    vertical-align: middle;
+  }
+  .risk_list .list_item li.item:after {
+    background:url('../../images/contents/arrow_blue_m.png');
+    width:9px; height:30px;
+    bottom:-30px; left: 57.813%;
+  }
+  .risk_list .list_item li.item:before {
+    background:url('../../images/contents/arrow_green_m.png');
+    width:9px; height:30px;
+    top:110px; left:42.187%;
+  }
+  .risk_list .list_item li.item05:after,
+  .risk_list .list_item li.item05:before {
+    display:none;
+  }
+  .risk_list .list_item li.item03 p {
+    margin:0;
+    padding-top:38px;
+  }
+  .risk_list .list_item li.item05 .txt_red {
+    position:static;
+    display: inline-block;
+  }
+  .risk_list .list_item li.item05 div {
+    float:right;
+    padding-top:34px;
+  }
+  .risk_list .list_item li.item05 div p {
+    margin-top:4px;
+  }
+  .service_info .text_box02 {
+    margin-top:50px;
+  }
+  
+  
+
 }
