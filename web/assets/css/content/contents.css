@@ -35,20 +35,48 @@
 
 .gtp_raunching dt {
   font-weight: 500;
+  padding-bottom: 7px;
 }
 
 .gtp_raunching dd {
-  position: relative;
-  padding: 7px 0 0 6px;
+  line-height: 1.9;
 }
 
 .gtp_raunching dd::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 60%;
+  content: "";
   width: 2px; height: 2px;
   background: #666;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right:4px;
 }
+
+@media screen and (max-width: 768px) {
+
+  .gtp_raunching .inner_box {
+    width: 100%;
+    height: inherit;
+  }
+
+  .gtp_raunching .inner_box .thumb {
+    position: absolute;
+    left: 50%; top: 40px;
+    margin-top: 0;
+    margin-left: -48px;
+  }
+  
+  .gtp_raunching .txt,
+  .gtp_raunching dl {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .gtp_raunching .txt {
+    padding-top: 136px;
+  }
+}
+
+
 .history {margin-top:58px;}
 .history > ul > li {float:left;padding-left:21px;font-size: 0;}
 .history > ul {margin-left:-21px;}
@@ -745,6 +773,63 @@
   }
 }
 
+/* 글로벌 금융네트워크 */
+
+.txt_sub {
+  color:#666;
+  margin-top:14px;
+}
+.network_wrap {
+  margin-top:40px;
+}
+
+.network_wrap ul {
+  margin-left: -20px;
+  margin-top: -24px;
+}
+
+.network_wrap ul .tit {
+  font-size: 16px;
+  font-weight: 700;
+  margin:30px 0 10px 0;
+}
+
+.network_wrap ul li {
+  float: left;
+  padding: 30px;
+  width: 306px; height: 384px; 
+  border: 1px solid #d8d8d8;
+  margin-left: 20px;
+  margin-top: 24px;
+}
+
+.network_wrap ul li img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.network_wrap ul li p {
+  color: #666;
+  line-height: 24px;
+}
+
+.network_wrap ul li .addr_mail {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .network_wrap ul {
+    margin-left: 0;
+  }
+
+  .network_wrap ul li {
+    width: 342px; height: 384px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
 
 
 /* 서비스 이용약관 */
@@ -944,7 +1029,6 @@
     word-break: keep-all;
   }
 }
-
 /* 서비스 소개 */
 .service_info {
   padding:40px 0 483px;
