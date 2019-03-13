@@ -770,12 +770,13 @@
   }
   .section_company02 tr:last-child th {
     padding:21px 0 15px;
+  }
 /* 글로벌 금융네트워크 */
+
 .txt_sub {
   color:#666;
   margin-top:14px;
 }
-
 .network_wrap {
   margin-top:40px;
 }
