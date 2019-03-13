@@ -418,7 +418,7 @@
   font-size:18px;
   line-height:16px;
 }
-.data_info:after {
+.board_info:after {
   content:'';
   display:block;
   clear:both;

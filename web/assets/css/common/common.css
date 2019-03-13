@@ -549,7 +549,19 @@ button {
 .btn_wrap.col2 .btn:first-child {
   margin-right: 5px;
 }
-.btn_wrap .btn_more {
+.btn_more {
+  color: #222;
+  font-weight: 500;
+  display: block;
+  line-height: 50px;
+  background-color: #fff;
+  border: 1px solid #999;
+  width: 150px;
+  text-align: center;
+  margin: 30px auto 120px;
+}
+
+.btn_list {
   color: #222;
   font-weight: 500;
   display: block;
