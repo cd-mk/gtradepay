@@ -443,7 +443,6 @@ input[type="text"].id_vaild {
   -ms-user-select: none;
   vertical-align: middle;
 }
-
 .chk_inp input[type="checkbox"] + label:before {
   content: '';
   display: inline-block;
