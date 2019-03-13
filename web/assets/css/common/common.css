@@ -366,7 +366,7 @@ h1,h2,h3,h4,h5,h6,strong {
 .page_title .txt_desc {
   margin-top: 16px;
   line-height: 1.4;
-  color: #999;
+  color: #666;
 }
 .page_title .btn_wrap {
   width: 200px;
@@ -729,6 +729,13 @@ button {
   border-top: none;
 }
 .tab.col3 button {width:33.333%;}
+
+@media screen and (max-width: 768px) {
+  .tab button {
+  line-height: 20px;
+  padding: 8px 25px 12px;
+  }
+}
 
 /* table */
 .table_wrap {
