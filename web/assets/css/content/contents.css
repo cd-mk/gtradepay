@@ -39,6 +39,8 @@
 }
 
 .gtp_raunching dd {
+  position: relative;
+  padding-left: 6px;
   line-height: 1.9;
 }
 
@@ -47,8 +49,9 @@
   width: 2px; height: 2px;
   background: #666;
   display: inline-block;
-  vertical-align: middle;
-  margin-right:4px;
+  position: absolute;
+  top: 12px;
+  left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,15 +83,30 @@
 .history {margin-top:58px;}
 .history > ul > li {float:left;padding-left:21px;font-size: 0;}
 .history > ul {margin-left:-21px;}
-.history li .inner_box {border:1px solid #d8d8d8;width:306px;margin-bottom:25px;}
+.history li .inner_box {border:1px solid #d8d8d8;width:306px;margin-bottom:25px; color: #666666;}
 .history h4 {font-size: 16px; font-weight: 500; color: #222222;line-height:1.7;padding:30px 20px 0;}
-.history h5 {font-size: 14px;font-weight: 500;color: #666666;margin-top:15px;padding:0 20px;}
+.history h5 {font-size: 14px;font-weight: 500; margin-top:15px;padding:0 20px;}
 .history ul li ul {margin-top:5px;padding:0 20px;font-size: 0;}
-.history ul li ul li {font-size: 14px;color: #666666;font-size: 14px;font-weight: 400;}
-.history ul li ul li:before {width: 2px; height: 2px; background-color: #666666;content: "";display: inline-block;margin-right:4px;vertical-align: middle;}
+.history ul li ul li {font-size: 14px; font-size: 14px;font-weight: 400; position: relative; padding-left:6px;}
+.history ul li ul li:before {width: 2px; height: 2px; background-color: #666666;content: "";display: inline-block; position: absolute; top: 10px; left: 0;}
+.history ul li ul .txt_green:before {background-color: #36ae53;}
 .history .photo_box {margin-top:35px;border-top:1px solid #d8d8d8;}
 .history .photo_box span {width:50%;float:left;display:block;}
-.history .photo_box span img {width:100%;;}
+.history .photo_box span img {width:100%;}
+
+@media screen and (max-width: 768px) {
+  .history > ul {
+    margin-left: 0;
+  }
+
+  .history > ul > li {
+    padding-left: 0;
+  }
+
+  .history li .inner_box {
+    width: 100%;
+  }
+}
 
 /* 서비스 faq */
 .service_faq {
@@ -772,6 +790,72 @@
     padding:21px 0 15px;
   }
 }
+/* 글로벌 금융네트워크 */
+.network_wrap {
+  margin-top:40px;
+}
+
+.network_wrap ul {
+  margin-left: -20px;
+  margin-top: -24px;
+}
+
+.network_wrap ul li {
+  float: left;
+  padding: 30px;
+  width: 306px; height: 384px; 
+  border: 1px solid #d8d8d8;
+  margin-left: 20px;
+  margin-top: 24px;
+}
+
+.network_wrap ul li img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.network_wrap ul li h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin:30px 0 10px 0;
+  color: #666;
+}
+
+.network_wrap ul li p {
+  color: #666;
+  line-height: 24px;
+}
+
+.network_wrap ul li .addr_mail {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .network_wrap ul {
+    margin-left: 0;
+  }
+
+  .network_wrap ul li {
+    width: 342px; height: 384px;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .network_wrap ul li img {
+    width: 275px;
+    padding-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* 글로벌 금융네트워크 */
 
