@@ -4,7 +4,6 @@
 .apply_form {
   width: 505px;
   margin: 0 auto;
-  padding-bottom: 120px;
 }
 .apply_form .btn_wrap {
   margin-top: 40px;
@@ -176,7 +175,6 @@
 .escrow_view {
   width: 505px;
   margin: 0 auto;
-  padding-bottom: 120px;
 }
 .escrow_view .con_box {
   margin-top: 40px;

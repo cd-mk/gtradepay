@@ -1,7 +1,7 @@
 
 /* 사업연혁 */
 .gtp_raunching {
-  padding: 10px 0 120px;
+  padding: 10px 0 0;
 }
 
 .gtp_raunching .inner_box {
@@ -111,7 +111,6 @@
 /* 서비스 faq */
 .service_faq {
   margin-top: 40px;
-  padding-bottom: 162px;
 }
 .service_faq dl {
   border-top: 1px solid #e1e1e1;
@@ -215,7 +214,6 @@
 .contact_wrap {
   width: 505px;
   margin: 0 auto;
-  padding-bottom: 120px;
 }
 .contact_wrap .contact_form .btn_wrap {
   width: 200px;
@@ -318,7 +316,6 @@
 
 /* user guide */
 .guide_wrap {
-  padding-bottom: 120px;
 }
 .guide_wrap .guide_item_box {
   margin-top: 40px;
@@ -421,7 +418,6 @@
 /* 재무 */
 .finance_wrap {
   margin: 40px auto 0;
-  padding-bottom: 120px;
 }
 .finance_wrap .finance_info {
   width: 734px; 
@@ -478,7 +474,7 @@
 
 /* 서비스 이용 대상 */
 .service_target {
-  padding: 40px 0 120px;
+  padding: 40px 0 0;
 }
 .service_target .text_box {
   width: 713px;
@@ -596,7 +592,7 @@
 }
 /* 회사소개 */
 .company_wrap {
-  padding:40px 0 100px;
+  padding:40px 0 0;
 }
 .company_wrap .mo_br {
   display:none;
@@ -918,7 +914,7 @@
 
 /* 서비스 이용약관 */
 .service_terms {
-  padding: 40px 0 120px;
+  padding: 40px 0 0;
 }
 .service_terms h3 {
   font-size: 26px;
@@ -963,7 +959,7 @@
 
 /* 서비스 수수료 */
 .service_commission {
-  padding: 40px 0 120px;
+  padding: 40px 0 0;
 }
 .service_commission .top_commission {
   display: table;
@@ -1115,7 +1111,7 @@
 }
 /* 서비스 소개 */
 .service_info {
-  padding:40px 0 483px;
+  padding:40px 0 0;
 }
 .service_info .mo_br {
   display:none;

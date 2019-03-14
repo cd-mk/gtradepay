@@ -24,7 +24,7 @@
   url('../../font/notokr-regular.svg#notokr-regular') format('svg');}
 
 body {
-  font-family: 'notokr','AppleSDGothicNeo';
+  font-family: 'notokr';
   font-size: 14px;
   color: #222;
   background: #fff;
@@ -282,7 +282,6 @@ h1,h2,h3,h4,h5,h6,strong {
   position: relative;
   padding: 40px 25%;
   background: #fafafa;
-
 }
 #footer .foot_title {
   font-size: 18px;
@@ -354,7 +353,8 @@ h1,h2,h3,h4,h5,h6,strong {
 /* content */
 .container {
   max-width: 960px;
-  margin: 0 auto 120px auto;
+  margin: 0 auto;
+  padding-bottom:120px;
 }
 .page_title {
   padding: 50px 0;
@@ -589,7 +589,7 @@ button {
   border: 1px solid #999;
   width: 150px;
   text-align: center;
-  margin: 30px auto 120px;
+  margin: 30px auto 0;
 }
 
 .btn_list {
@@ -897,7 +897,7 @@ button {
 /* mobile */
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 4.26%;
+    padding: 0 4.26% 120px 4.26%;
   }
   #header .header_top {
     height: 60px;

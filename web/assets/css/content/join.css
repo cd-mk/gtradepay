@@ -4,7 +4,6 @@
 .join_form {
   width: 505px;
   margin: 0 auto;
-  padding-bottom: 120px;
 }
 .join_form .require {
   color: #ff3d00;
@@ -251,7 +250,6 @@
 .mypage_form {
   width: 505px;
   margin: 0 auto;
-  padding-bottom: 120px;
 }
 .mypage_form .require {
   color: #ff3d00;
