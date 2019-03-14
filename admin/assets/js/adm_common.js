@@ -49,25 +49,39 @@ var mobileGnb = function () {
   });
 };
 
-var inputFile = function () {
-  $('.file_inp').each(function () {
+var inputFile = function() {
+  $('.file_inp').each(function() {
     var fileName;
-    $(this).on('change', function () {
+    $(this).on('change', function() {
+      var targetImg = $(this).closest('.file_inp_box').find('.img_preview');
+
       if (window.FileReader) {
         fileName = $(this)[0].files[0].name;
       } else {
         fileName = $(this).val().split('/').pop().split('\\').pop();
       }
 
-      $(this).siblings('.js-file_name').val(fileName).attr('disabled', 'disabled');
+      if ($(this)[0].files && $(this)[0].files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function(e) {
+          var dataUrl = e.target.result;
+          targetImg.attr('src', dataUrl);
+        };
+        reader.readAsDataURL($(this)[0].files[0]);
+      }
+
+      $(this).closest('.file_inp_box').find('.js-file_name').addClass('has_target js-open-popup');
+      $(this).closest('.file_inp_box').find('.js-file_name').find('span').text(fileName);
       $(this).siblings('label').hide();
       $(this).siblings('.btn_delete').removeClass('hide');
     });
   });
-  $('.btn_delete').on('click', function () {
+  $('.btn_delete').on('click', function() {
     $(this).addClass('hide');
     $(this).siblings('label').show();
-    $(this).siblings('.js-file_name').val('').removeAttr('disabled');
+    $(this).closest('.file_inp_box').find('.js-file_name').removeClass('has_target js-open-popup');
+    $(this).closest('.file_inp_box').find('.js-file_name').find('span').text('');
     $(this).siblings('.file_inp').val('');
   });
 };
@@ -103,7 +117,7 @@ var setAccordian = function () {
 
 var layerPopup = function () {
   function openPopup() {
-    $('.js-open-popup').on('click', function () {
+    $('body').on('click', '.js-open-popup', function() {
       $(this).next('.layer_popup').addClass('open');
       $('body').addClass('open');
     });

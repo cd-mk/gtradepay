@@ -353,12 +353,18 @@
                   <dt>Packing List</dt>
                   <dd class="file_inp_box">
                     <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
+                      <!-- ipnut file 입력 시 "has_target js-open-popup" 클래스 추가됨 -->
+                      <a href="#url" class="btn_preview js-file_name has_target js-open-popup">
+                        <!-- 선택한 file name값이 입력됨 -->
+                        <span>sampleFile.jpg</span>
+                      </a>
+                      <!-- 이미지 미리보기 팝업 -->
                       <div class="layer_popup layer_preview">
                         <div class="popup_box">
                           <h4 class="title_popup">업로드 이미지 미리보기</h4>
                           <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
+                            <!-- 선택한 file의 주소가 src로 입력됨 -->
+                            <img class="img_preview" src="../assets/images/contents/bsnss_left_05.png" alt="">
                           </div>
                           <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
                         </div>
@@ -366,8 +372,9 @@
                       </div>
                     </div>
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                    <label for="file1">찾아보기</label>
+                    <button type="button" class="btn point_gray btn_delete"><span>삭제</span></button>
+                    <!-- 첨부파일 넣을 시 숨김 처리됨 -->
+                    <label for="file1" style="display: none;">찾아보기</label>
                     <input type="file" id="file1" class="file_inp">
                   </dd>
                 </dl>
@@ -375,12 +382,18 @@
                   <dt>은행통장사본</dt>
                   <dd class="file_inp_box">
                     <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
+                      <!-- ipnut file 입력 시 "has_target js-open-popup" 클래스 추가됨 -->
+                      <a href="#url" class="btn_preview js-file_name has_target js-open-popup">
+                        <!-- 선택한 file name값이 입력됨 -->
+                        <span>sampleFile.jpg</span>
+                      </a>
+                      <!-- 이미지 미리보기 팝업 -->
                       <div class="layer_popup layer_preview">
                         <div class="popup_box">
                           <h4 class="title_popup">업로드 이미지 미리보기</h4>
                           <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
+                            <!-- 선택한 file의 주소가 src로 입력됨 -->
+                            <img class="img_preview" src="../assets/images/contents/bsnss_left_05.png" alt="">
                           </div>
                           <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
                         </div>
@@ -388,8 +401,8 @@
                       </div>
                     </div>
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                    <label for="file2">찾아보기</label>
+                    <button type="button" class="btn point_gray btn_delete"><span>삭제</span></button>
+                    <label for="file2" style="display: none;">찾아보기</label>
                     <input type="file" id="file2" class="file_inp">
                   </dd>
                 </dl>
