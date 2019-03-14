@@ -3,7 +3,6 @@
 .login_wrap {
   width: 360px;
   margin: 0 auto;
-  padding-bottom: 160px;
 }
 .login_wrap .group_wrap {
   margin-top: 50px;
@@ -56,6 +55,5 @@
 @media screen and (max-width: 768px) {
   .login_wrap {
     width: 100%;
-    padding-bottom: 69px;
   }
 }

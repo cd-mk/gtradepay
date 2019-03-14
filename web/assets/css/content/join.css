@@ -149,7 +149,6 @@
 
 /* 회원가입 완료 */
 .join_fin_wrap {
-  padding-bottom: 137px;
 }
 .join_fin_wrap .txt_box {
   margin-top: 80px;
@@ -224,7 +223,6 @@
 
 @media screen and (max-width: 768px) {
   .join_fin_wrap {
-    padding-bottom: 69px;
   }
   .join_fin_wrap ol {
     padding-left: 0;

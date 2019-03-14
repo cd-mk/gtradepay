@@ -22,12 +22,13 @@
   url('../../font/notokr-regular.woff') format('woff'),
   url('../../font/notokr-regular.ttf') format('truetype'),
   url('../../font/notokr-regular.svg#notokr-regular') format('svg');}
-
+html {min-height:100%;}
 body {
   font-family: 'notokr';
   font-size: 14px;
   color: #222;
   background: #fff;
+  height:100vh;
 }
 body.open {
   overflow: hidden;
@@ -55,6 +56,10 @@ a {
 h1,h2,h3,h4,h5,h6,strong {
   font-weight: 500;
 }
+
+/* wrap */
+#wrap {position: relative;padding-bottom:260px;min-height: 100%;}
+
 
 /* header */
 #header {position: relative;text-align:center;}
@@ -279,7 +284,10 @@ h1,h2,h3,h4,h5,h6,strong {
 
 /* footer */
 #footer {
-  position: relative;
+  position: absolute;
+  bottom:0;
+  right:0;
+  left:0;
   padding: 40px 25%;
   background: #fafafa;
 }
@@ -351,6 +359,7 @@ h1,h2,h3,h4,h5,h6,strong {
   }
 }
 /* content */
+
 .container {
   max-width: 960px;
   margin: 0 auto;
