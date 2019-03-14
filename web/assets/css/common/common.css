@@ -24,7 +24,7 @@
   url('../../font/notokr-regular.svg#notokr-regular') format('svg');}
 
 body {
-  font-family: 'notokr';
+  font-family: 'notokr','AppleSDGothicNeo';
   font-size: 14px;
   color: #222;
   background: #fff;
@@ -282,6 +282,7 @@ h1,h2,h3,h4,h5,h6,strong {
   position: relative;
   padding: 40px 25%;
   background: #fafafa;
+
 }
 #footer .foot_title {
   font-size: 18px;
@@ -353,7 +354,7 @@ h1,h2,h3,h4,h5,h6,strong {
 /* content */
 .container {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
 }
 .page_title {
   padding: 50px 0;
