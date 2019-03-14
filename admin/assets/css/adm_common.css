@@ -296,8 +296,35 @@ input[type="text"].id_vaild {
   text-align: center;
   cursor: pointer;
 }
-.file_inp_box input:disabled {
+.file_inp_box .btn_preview {
+  float: left;
+  width: 77%; height: 44px;
+  padding: 0 20px;
+  line-height: 44px;
+  color: #666;
   background: #fff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  font-weight: 400;
+  cursor: auto;;
+}
+.file_inp_box .btn_preview.has_target {
+  background: #f9f9f9;
+  cursor: pointer;
+}
+.file_inp_box .btn_preview span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.file_inp_box .btn_preview.has_target:hover span,
+.file_inp_box .btn_preview.has_target:focus span {
+  text-decoration: underline;
+}
+.file_inp_box .btn_delete {
+  width: 21.8%;
+  margin-left: 1%;
 }
 
 .chk_inp_box {
