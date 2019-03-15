@@ -296,35 +296,20 @@ input[type="text"].id_vaild {
   text-align: center;
   cursor: pointer;
 }
-.file_inp_box .btn_preview {
-  float: left;
-  width: 77%; height: 44px;
-  padding: 0 20px;
-  line-height: 44px;
-  color: #666;
-  background: #fff;
-  border: 1px solid #e1e1e1;
-  box-sizing: border-box;
-  font-weight: 400;
-  cursor: auto;;
-}
-.file_inp_box .btn_preview.has_target {
+.file_inp_box .has_target {
   background: #f9f9f9;
   cursor: pointer;
 }
-.file_inp_box .btn_preview span {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.file_inp_box .btn_preview.has_target:hover span,
-.file_inp_box .btn_preview.has_target:focus span {
+.file_inp_box .has_target:hover,
+.file_inp_box .has_target:focus {
   text-decoration: underline;
 }
 .file_inp_box .btn_delete {
   width: 21.8%;
   margin-left: 1%;
+}
+.file_inp_box .hide {
+  display: none;
 }
 
 .chk_inp_box {
@@ -727,6 +712,13 @@ button {
 
 .layer_popup.attach .popup_box{width:550px;}
 .layer_popup.attach img {max-width:100%;}
+
+.layer_popup.layer_preview .popup_box {
+  width: 550px;
+}
+.layer_popup.layer_preview .content_popup img {
+  max-width: 100%;
+}
 /* table */
 .table_wrap {
   margin-top:12px;

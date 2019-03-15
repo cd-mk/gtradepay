@@ -305,19 +305,8 @@
                     <dl class="group_inp">
                       <dt>Signed by</dt>
                       <dd class="file_inp_box">
-                        <div class="file_preview">
-                          <a href="#url" class="btn_preview js-file_name"><span></span></a>
-                          <div class="layer_popup layer_preview">
-                            <div class="popup_box">
-                              <h4 class="title_popup">업로드 이미지 미리보기</h4>
-                              <div class="content_popup">
-                                <img class="img_preview" src="" alt="">
-                              </div>
-                              <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                            </div>
-                            <div class="dim"></div>
-                          </div>
-                        </div>
+                        <!-- 첨부 파일 이름 출력 요소 -->
+                        <input type="text" class="input_with_btn js-file_name" readonly>
                         <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
                         <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
                         <label for="signFile">찾아보기</label>
@@ -332,63 +321,44 @@
                 <dl class="group_inp">
                   <dt>Packing List</dt>
                   <dd class="file_inp_box">
-                    <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
-                      <div class="layer_popup layer_preview">
-                        <div class="popup_box">
-                          <h4 class="title_popup">업로드 이미지 미리보기</h4>
-                          <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
-                          </div>
-                          <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                        </div>
-                        <div class="dim"></div>
-                      </div>
-                    </div>
+                    <!-- 등록한 첨부 파일이 존재할 경우 -->
+                    <!-- 
+                      1. has_target 클래스 추가
+                      2. value 값에 파일명 추가
+                      3. data-img-src 에 서버에 저장된 img 경로를 삽입
+                    -->
+                    <input type="text" class="input_with_btn js-file_name has_target" readonly value="sample.jpg" data-img-src="../assets/images/contents/bsnss_left_01.png">
+                    <!-- //등록한 첨부 파일이 존재할 경우 -->
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                    <label for="file1">찾아보기</label>
+                    <button type="button" class="btn point_gray btn_delete"><span>삭제</span></button>
+                    <!-- 파일 첨부 시 hide 클래스 추가됨, 첨부 파일 삭제 시 hide클래스 제거됨 -->
+                    <label for="file1" class="hide">찾아보기</label>
                     <input type="file" id="file1" class="file_inp">
                   </dd>
                 </dl>
                 <dl class="group_inp">
                   <dt>은행통장사본</dt>
                   <dd class="file_inp_box">
-                    <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
-                      <div class="layer_popup layer_preview">
-                        <div class="popup_box">
-                          <h4 class="title_popup">업로드 이미지 미리보기</h4>
-                          <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
-                          </div>
-                          <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                        </div>
-                        <div class="dim"></div>
-                      </div>
-                    </div>
+                    <!-- 등록한 첨부 파일이 존재할 경우 -->
+                    <!-- 
+                      1. has_target 클래스 추가
+                      2. value 값에 파일명 추가
+                      3. data-img-src 에 서버에 저장된 img 경로를 삽입
+                    -->
+                    <input type="text" class="input_with_btn js-file_name has_target" readonly value="sample2.jpg" data-img-src="../assets/images/contents/bsnss_left_02.png">
+                    <!-- //등록한 첨부 파일이 존재할 경우 -->
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                    <label for="file2">찾아보기</label>
+                    <button type="button" class="btn point_gray btn_delete"><span>삭제</span></button>
+                    <!-- 파일 첨부 시 hide 클래스 추가됨, 첨부 파일 삭제 시 hide클래스 제거됨 -->
+                    <label for="file2" class="hide">찾아보기</label>
                     <input type="file" id="file2" class="file_inp">
                   </dd>
                 </dl>
                 <dl class="group_inp">
                   <dt>기타 첨부 1</dt>
                   <dd class="file_inp_box">
-                    <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
-                      <div class="layer_popup layer_preview">
-                        <div class="popup_box">
-                          <h4 class="title_popup">업로드 이미지 미리보기</h4>
-                          <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
-                          </div>
-                          <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                        </div>
-                        <div class="dim"></div>
-                      </div>
-                    </div>
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
                     <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
                     <label for="file3">찾아보기</label>
@@ -398,19 +368,8 @@
                 <dl class="group_inp">
                   <dt>기타 첨부 2</dt>
                   <dd class="file_inp_box">
-                    <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
-                      <div class="layer_popup layer_preview">
-                        <div class="popup_box">
-                          <h4 class="title_popup">업로드 이미지 미리보기</h4>
-                          <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
-                          </div>
-                          <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                        </div>
-                        <div class="dim"></div>
-                      </div>
-                    </div>
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
                     <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
                     <label for="file4">찾아보기</label>
@@ -420,19 +379,8 @@
                 <dl class="group_inp">
                   <dt>기타 첨부 3</dt>
                   <dd class="file_inp_box">
-                    <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
-                      <div class="layer_popup layer_preview">
-                        <div class="popup_box">
-                          <h4 class="title_popup">업로드 이미지 미리보기</h4>
-                          <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
-                          </div>
-                          <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                        </div>
-                        <div class="dim"></div>
-                      </div>
-                    </div>
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
                     <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
                     <label for="file5">찾아보기</label>
@@ -442,19 +390,8 @@
                 <dl class="group_inp">
                   <dt>기타 첨부 4</dt>
                   <dd class="file_inp_box">
-                    <div class="file_preview">
-                      <a href="#url" class="btn_preview js-file_name"><span></span></a>
-                      <div class="layer_popup layer_preview">
-                        <div class="popup_box">
-                          <h4 class="title_popup">업로드 이미지 미리보기</h4>
-                          <div class="content_popup">
-                            <img class="img_preview" src="" alt="">
-                          </div>
-                          <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                        </div>
-                        <div class="dim"></div>
-                      </div>
-                    </div>
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
                     <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
                     <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
                     <label for="file6">찾아보기</label>
@@ -526,7 +463,20 @@
 	<!-- footer area -->
 	<div id="footer">
 	</div>
-	<!-- //footer area -->
+  <!-- //footer area -->
+  <!-- popup area -->
+  <!-- 등록된 첨부 파일 이미지 미리보기 팝업 -->
+  <div id="file_layer" class="layer_popup layer_preview">
+    <div class="popup_box">
+      <h4 class="title_popup">업로드 이미지 미리보기</h4>
+      <div class="content_popup">
+        <img class="img_preview" src="" alt="">
+      </div>
+      <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+    </div>
+    <div class="dim"></div>
+  </div>
+  <!-- //popup area -->
   </div>
   <!-- js -->
   <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
