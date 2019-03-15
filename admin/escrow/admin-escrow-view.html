@@ -348,37 +348,15 @@
                                     <tr>
                                         <th scope="row">Packing List</th>
                                         <td>
-                                            <a href="#url" class="js-open-popup">패킹리스트. jpg</a>
-                                            <!-- 첨부파일 팝업 -->
-                                            <div class="layer_popup attach">
-                                                <div class="popup_box">
-                                                    <h4 class="title_popup">은행통장사본. jpg</h4>
-                                                    <div class="content_popup">
-                                                        <img src="http://www.jesuson.net/images/%ED%86%B5%EC%9E%A5%EC%82%AC%EB%B3%B8.jpg" alt="은행통장사본">
-                                                    </div>
-                                                    <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                                                </div>
-                                                <div class="dim"></div>
-                                            </div>
-                                            <!-- //첨부파일 팝업 -->
+                                            <!-- has_target 클래스 추가, data-img-src 에 서버 이미지 주소 삽입 -->
+                                            <a href="#url" class="has_target" data-img-src="http://www.jesuson.net/images/%ED%86%B5%EC%9E%A5%EC%82%AC%EB%B3%B8.jpg">패킹리스트.jpg</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">은행통장사본</th>
                                         <td>
-                                            <a href="#url" class="js-open-popup">은행통장사본. jpg</a>
-                                            <!-- 첨부파일 팝업 -->
-                                            <div class="layer_popup attach">
-                                                <div class="popup_box">
-                                                    <h4 class="title_popup">은행통장사본. jpg</h4>
-                                                    <div class="content_popup">
-                                                        <img src="http://www.jesuson.net/images/%ED%86%B5%EC%9E%A5%EC%82%AC%EB%B3%B8.jpg" alt="은행통장사본">
-                                                    </div>
-                                                    <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
-                                                </div>
-                                                <div class="dim"></div>
-                                            </div>
-                                            <!-- //첨부파일 팝업 -->
+                                            <!-- has_target 클래스 추가, data-img-src 에 서버 이미지 주소 삽입 -->
+                                            <a href="#url" class="has_target" data-img-src="../../web/assets/images/contents/bg_section_company01.jpg">은행통장사본.jpg</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -462,6 +440,19 @@
         <div id="footer">
         </div>
         <!-- //footer area -->
+        <!-- popup area -->
+        <!-- 등록된 첨부 파일 이미지 미리보기 팝업 -->
+        <div id="file_layer" class="layer_popup layer_preview">
+            <div class="popup_box">
+            <h4 class="title_popup">업로드 이미지 미리보기</h4>
+            <div class="content_popup">
+                <img class="img_preview" src="" alt="">
+            </div>
+            <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+            </div>
+            <div class="dim"></div>
+        </div>
+        <!-- //popup area -->
     </div>
     <!-- js -->
     <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>

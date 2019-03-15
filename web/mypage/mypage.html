@@ -173,19 +173,40 @@
                 <dl class="group_inp">
                   <dt>회사 사업자 등록증</dt>
                   <dd class="file_inp_box">
-                    <input type="text" disabled="disabled" value="사업자 등록증.jpg">
+                    <!-- 등록한 첨부 파일이 존재할 경우 -->
+                    <!-- 
+                      1. has_target 클래스 추가
+                      2. value 값에 파일명 추가
+                      3. data-img-src 에 서버에 저장된 img 경로를 삽입
+                    -->
+                    <input type="text" class="js-file_name has_target" readonly value="회사 사업자 등록증.jpg" data-img-src="../assets/images/contents/bsnss_left_01.png">
+                    <!-- //등록한 첨부 파일이 존재할 경우 -->
                   </dd>
                 </dl>
                 <dl class="group_inp">
                   <dt>재무제표 증명원 (3개년)</dt>
                   <dd class="file_inp_box">
-                    <input type="text" disabled="disabled" value="재무제표.pdf">
+                    <!-- 등록한 첨부 파일이 존재할 경우 -->
+                    <!-- 
+                      1. has_target 클래스 추가
+                      2. value 값에 파일명 추가
+                      3. data-img-src 에 서버에 저장된 img 경로를 삽입
+                    -->
+                    <input type="text" class="js-file_name has_target" readonly value="제무제표 증명원.jpg" data-img-src="../assets/images/contents/bsnss_left_02.png">
+                    <!-- //등록한 첨부 파일이 존재할 경우 -->
                   </dd>
                 </dl>
                 <dl class="group_inp">
                   <dt>인감증명서</dt>
                   <dd class="file_inp_box">
-                    <input type="text" disabled="disabled" value="인감.jpg">
+                    <!-- 등록한 첨부 파일이 존재할 경우 -->
+                    <!-- 
+                      1. has_target 클래스 추가
+                      2. value 값에 파일명 추가
+                      3. data-img-src 에 서버에 저장된 img 경로를 삽입
+                    -->
+                    <input type="text" class="js-file_name has_target" readonly value="인감증명서.jpg" data-img-src="../assets/images/contents/bsnss_left_03.png">
+                    <!-- //등록한 첨부 파일이 존재할 경우 -->
                   </dd>
                 </dl>
                 <dl class="group_inp">
@@ -198,13 +219,27 @@
                 <dl class="group_inp">
                   <dt>등기부등본</dt>
                   <dd class="file_inp_box">
-                    <input type="text" disabled="disabled" value="등본.jpg">
+                    <!-- 등록한 첨부 파일이 존재할 경우 -->
+                    <!-- 
+                      1. has_target 클래스 추가
+                      2. value 값에 파일명 추가
+                      3. data-img-src 에 서버에 저장된 img 경로를 삽입
+                    -->
+                    <input type="text" class="js-file_name has_target" readonly value="등기부등본.jpg" data-img-src="../assets/images/contents/bsnss_left_04.png">
+                    <!-- //등록한 첨부 파일이 존재할 경우 -->
                   </dd>
                 </dl>
                 <dl class="group_inp">
                   <dt>대표자 여권사본</dt>
                   <dd class="file_inp_box">
-                    <input type="text" disabled="disabled" value="여권사본.jpg">
+                    <!-- 등록한 첨부 파일이 존재할 경우 -->
+                    <!-- 
+                      1. has_target 클래스 추가
+                      2. value 값에 파일명 추가
+                      3. data-img-src 에 서버에 저장된 img 경로를 삽입
+                    -->
+                    <input type="text" class="js-file_name has_target" readonly value="대표자 여권사본.jpg" data-img-src="../assets/images/contents/bsnss_left_05.png">
+                    <!-- //등록한 첨부 파일이 존재할 경우 -->
                   </dd>
                 </dl>
               </div>
@@ -252,7 +287,20 @@
 	<!-- footer area -->
 	<div id="footer">
 	</div>
-	<!-- //footer area -->
+  <!-- //footer area -->
+  <!-- popup area -->
+  <!-- 등록된 첨부 파일 이미지 미리보기 팝업 -->
+  <div id="file_layer" class="layer_popup layer_preview">
+    <div class="popup_box">
+      <h4 class="title_popup">업로드 이미지 미리보기</h4>
+      <div class="content_popup">
+        <img class="img_preview" src="" alt="">
+      </div>
+      <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+    </div>
+    <div class="dim"></div>
+  </div>
+  <!-- //popup area -->
   </div>
   <!-- js -->
   <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>

@@ -52,27 +52,17 @@ var inpFile = {
   inpWrap: '.file_inp_box',
   fileNameClass: '.js-file_name',
   targetLayerImg: $('#file_layer').find('.img_preview'),
-  imgSrcArr: [],
   setElement: function() {
-    var previewList = [];
-        inpList = [];
-    var targetPreview = this.fileNameClass;
+    var inpList = [];
 
-    $(targetPreview).each(function() {
-      previewList.push($(this));
-    });
     $('.file_inp').each(function() {
       inpList.push($(this));
     });
 
-    return [previewList, inpList];
+    return inpList;
   },
   fileChangeEvt: function() {
-    var targets = this.setElement(),
-        previewList = targets[0],
-        inpList = targets[1];
-
-    this.imgSrcArr.length = previewList.length;
+    var inpList = this.setElement();
 
     for (var i = 0; i < inpList.length; i++) {
       inpList[i].on('change', this.setChangeEvt);
@@ -94,28 +84,12 @@ var inpFile = {
 
     return fileName;
   },
-  setImgUrl: function(target) {
-    var imgSrc;
-
-    if ($(target)[0].files && $(target)[0].files[0]) {
-      var reader = new FileReader();
-
-      reader.onload = function(e) {
-        imgSrc = e.target.result;
-
-        $(this.targetLayerImg).attr('src', imgSrc);
-      };
-
-      reader.readAsDataURL($(target)[0].files[0]);
-    }
-  },
   insertFileName: function(target, fileName) {
     var wrap = this.inpWrap,
         targetFileName = this.fileNameClass;
 
-    $(target).closest(wrap).find(targetFileName).addClass('has_target js-file-popup');
-    $(target).closest(wrap).find(targetFileName).find('span').text(fileName);
-    $(target).siblings('label').hide();
+    $(target).closest(wrap).find(targetFileName).attr('disabled', 'disabled').val(fileName);
+    $(target).siblings('label').addClass('hide');
     $(target).siblings('.btn_delete').removeClass('hide');
   },
   setDeleteFile: function() {
@@ -124,21 +98,30 @@ var inpFile = {
 
     $('.btn_delete').on('click', function() {
       $(this).siblings('.file_inp').val('');
-      $(this).closest(wrap).find(targetFileName).removeClass('has_target js-file-popup');
-      $(this).closest(wrap).find(targetFileName).find('span').text('');
+      if ($(this).closest(wrap).find(targetFileName).hasClass('has_target')) {
+        $(this).closest(wrap).find(targetFileName).removeClass('has_target').removeAttr('data-img-src');
+        $(this).closest(wrap).find(targetFileName).off('click');
+      }
+      $(this).closest(wrap).find(targetFileName).attr('disabled', false).val('');
       $(this).addClass('hide');
-      $(this).siblings('label').show();
+      $(this).siblings('label').removeClass('hide');
     });
   },
-  openPopup: function() {
-    $('body').on('click', '.js-file-popup', function() {
+  setPopup: function() {
+    var imgSrc;
+    var target = this.targetLayerImg;
+    $('.has_target').on('click', function() {
+      imgSrc = $(this).attr('data-img-src');
+      target.attr('src', imgSrc);
+
       $('#file_layer').addClass('open');
+      $('body').addClass('open');
     });
   },
   init: function() {
     this.setDeleteFile();
     this.fileChangeEvt();
-    this.openPopup();
+    this.setPopup();
   }
 };
 
@@ -198,9 +181,6 @@ var layerPopup = function() {
 $(document).ready(function() {
   // header, footer load
   layout();
-  if ($('.file_inp').length) {
-    inpFile.init();
-  }
   if ($('.input_date').length) {
     setDatePicker();
   }
@@ -210,6 +190,7 @@ $(document).ready(function() {
   if ($('.js-open-accordian').length) {
     setContentAccordian();
   }
+  inpFile.init();
   layerPopup();
 });
 // header load 후 header관련 function 실행
