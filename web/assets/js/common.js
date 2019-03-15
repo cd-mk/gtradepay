@@ -48,41 +48,98 @@ var mobileGnb = function() {
   });
 };
 
-var inputFile = function() {
-  $('.file_inp').each(function() {
-    var fileName;
-    $(this).on('change', function() {
-      var targetImg = $(this).closest('.file_inp_box').find('.img_preview');
+var inpFile = {
+  inpWrap: '.file_inp_box',
+  fileNameClass: '.js-file_name',
+  targetLayerImg: $('#file_layer').find('.img_preview'),
+  imgSrcArr: [],
+  setElement: function() {
+    var previewList = [];
+        inpList = [];
+    var targetPreview = this.fileNameClass;
 
-      if (window.FileReader) {
-        fileName = $(this)[0].files[0].name;
-      } else {
-        fileName = $(this).val().split('/').pop().split('\\').pop();
-      }
-
-      if ($(this)[0].files && $(this)[0].files[0]) {
-        var reader = new FileReader();
-        
-        reader.onload = function(e) {
-          var dataUrl = e.target.result;
-          targetImg.attr('src', dataUrl);
-        };
-        reader.readAsDataURL($(this)[0].files[0]);
-      }
-
-      $(this).closest('.file_inp_box').find('.js-file_name').addClass('has_target js-open-popup');
-      $(this).closest('.file_inp_box').find('.js-file_name').find('span').text(fileName);
-      $(this).siblings('label').hide();
-      $(this).siblings('.btn_delete').removeClass('hide');
+    $(targetPreview).each(function() {
+      previewList.push($(this));
     });
-  });
-  $('.btn_delete').on('click', function() {
-    $(this).addClass('hide');
-    $(this).siblings('label').show();
-    $(this).closest('.file_inp_box').find('.js-file_name').removeClass('has_target js-open-popup');
-    $(this).closest('.file_inp_box').find('.js-file_name').find('span').text('');
-    $(this).siblings('.file_inp').val('');
-  });
+    $('.file_inp').each(function() {
+      inpList.push($(this));
+    });
+
+    return [previewList, inpList];
+  },
+  fileChangeEvt: function() {
+    var targets = this.setElement(),
+        previewList = targets[0],
+        inpList = targets[1];
+
+    this.imgSrcArr.length = previewList.length;
+
+    for (var i = 0; i < inpList.length; i++) {
+      inpList[i].on('change', this.setChangeEvt);
+    }
+  },
+  setChangeEvt: function() {
+    var fileName = inpFile.setFileName(this);
+
+    inpFile.insertFileName(this, fileName);
+  },
+  setFileName: function(target) {
+    var fileName;
+
+    if (window.FileReader) {
+      fileName = $(target)[0].files[0].name;
+    } else {
+      fileName = $(target).val().split('/').pop().split('\\').pop();
+    }
+
+    return fileName;
+  },
+  setImgUrl: function(target) {
+    var imgSrc;
+
+    if ($(target)[0].files && $(target)[0].files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        imgSrc = e.target.result;
+
+        $(this.targetLayerImg).attr('src', imgSrc);
+      };
+
+      reader.readAsDataURL($(target)[0].files[0]);
+    }
+  },
+  insertFileName: function(target, fileName) {
+    var wrap = this.inpWrap,
+        targetFileName = this.fileNameClass;
+
+    $(target).closest(wrap).find(targetFileName).addClass('has_target js-file-popup');
+    $(target).closest(wrap).find(targetFileName).find('span').text(fileName);
+    $(target).siblings('label').hide();
+    $(target).siblings('.btn_delete').removeClass('hide');
+  },
+  setDeleteFile: function() {
+    var wrap = this.inpWrap,
+        targetFileName = this.fileNameClass;
+
+    $('.btn_delete').on('click', function() {
+      $(this).siblings('.file_inp').val('');
+      $(this).closest(wrap).find(targetFileName).removeClass('has_target js-file-popup');
+      $(this).closest(wrap).find(targetFileName).find('span').text('');
+      $(this).addClass('hide');
+      $(this).siblings('label').show();
+    });
+  },
+  openPopup: function() {
+    $('body').on('click', '.js-file-popup', function() {
+      $('#file_layer').addClass('open');
+    });
+  },
+  init: function() {
+    this.setDeleteFile();
+    this.fileChangeEvt();
+    this.openPopup();
+  }
 };
 
 var setDatePicker = function() {
@@ -138,12 +195,11 @@ var layerPopup = function() {
   openNextPopup();
 };
 
-
 $(document).ready(function() {
   // header, footer load
   layout();
   if ($('.file_inp').length) {
-    inputFile();
+    inpFile.init();
   }
   if ($('.input_date').length) {
     setDatePicker();
