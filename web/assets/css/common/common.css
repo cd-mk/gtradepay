@@ -461,6 +461,9 @@ input[type="text"].id_vaild {
   width: 21.8%;
   margin-left: 1%;
 }
+.file_inp_box .hide_img {
+  display: none;
+}
 
 .chk_inp_box {
   overflow: hidden;
