@@ -72,7 +72,8 @@ html, body, #wrap{min-height: 100%;}
 #header .gnb  li.active > a,
 #header .gnb > li > a:hover {color: #3cb95d;}
 
-#header .snb {position: absolute;top:60px;display: none;}
+#header .snb {position: absolute;top:60px;display: none;left: 50%;transform: translateX(-50%);}
+#header .gnb  li.active .snb {display: block;}
 #header .snb > li > a {font-size: 14px; color: #000; font-weight:500; line-height: 45px; display: block; padding:0 15px;}
 #header .snb  li.active > a,
 #header .snb > li > a:hover {color: #3cb95d;}

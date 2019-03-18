@@ -6,7 +6,7 @@
 var setGnb = function () {
   var idx;
 
-  $('.gnb > li').on('click', function () {
+  $('.gnb > li').on('mouseleave', function () {
     idx = $(this).index();
     $(".gnb > li").removeClass('active');
     $(".gnb > li").eq(idx).addClass('active');
@@ -18,9 +18,14 @@ var setGnb = function () {
       $(this).addClass("active");
     }
   });
-
-
 };
+
+
+
+
+
+
+
 
 var miniLayer = function () {
   var targets = ['.btn_login.login'];
