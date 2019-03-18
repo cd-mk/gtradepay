@@ -7,7 +7,7 @@
 .main .key_visual {
   position: relative;
   height: 520px;
-  background: url(../../images/main/img-visual01.jpg) no-repeat center;
+  background: url(../images/main/img-visual01.jpg) no-repeat center;
   background-size: cover;
 }
 .main .key_visual .text_box {
@@ -57,7 +57,7 @@
 .main .key_visual .btn_box a span {
   display: block;
   color: #fff;
-  background: url(../../images/main/arr-right.png) no-repeat 100% center;
+  background: url(../images/main/arr-right.png) no-repeat 100% center;
 }
 .section_main {
   max-width: 1280px;
@@ -133,7 +133,7 @@
   display: block;
   width: 46px; height: 43px;
   margin-bottom: 15px;
-  background: url(../../images/main/ico-step.png) no-repeat left top;
+  background: url(../images/main/ico-step.png) no-repeat left top;
 }
 .section_main .step_list ol li:nth-child(2) .text_step::before {
   background-position: -46px 0;
@@ -157,7 +157,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  background: #004c7a url(../../images/main/ico_lock.png) no-repeat 26px 50%;
+  background: #004c7a url(../images/main/ico_lock.png) no-repeat 26px 50%;
   border-radius: 30px;
 }
 .section_main .img_box {
@@ -180,22 +180,22 @@
 .section_main.bg_trust .text_box {
   height: 340px;
   padding-top: 220px;
-  background: url(../../images/main/img-section02.jpg) no-repeat center;
+  background: url(../images/main/img-section02.jpg) no-repeat center;
   box-sizing: border-box;
 }
 .section_main.bg_trust .img_box {
   height: 150px;
-  background: url(../../images/main/img-section02-logo.png) no-repeat center;
+  background: url(../images/main/img-section02-logo.png) no-repeat center;
 }
 .section_main.bg_parthner .text_box {
   height: 340px;
   padding-top: 220px;
-  background: url(../../images/main/img-section03.jpg) no-repeat center;
+  background: url(../images/main/img-section03.jpg) no-repeat center;
   box-sizing: border-box;
 }
 .section_main.bg_parthner .img_box {
   height: 150px;
-  background: url(../../images/main/img-section03-logo.png) no-repeat center;
+  background: url(../images/main/img-section03-logo.png) no-repeat center;
 }
 .section_join {
   margin-top: 100px;
@@ -227,7 +227,7 @@
     padding: 0;
   }
   .main .key_visual {
-    background: url(../../images/main/img-visual01-m.jpg) no-repeat center;
+    background: url(../images/main/img-visual01-m.jpg) no-repeat center;
     background-size: cover;
   }
   .main .key_visual .text_box {
@@ -271,7 +271,7 @@
   .section_main .step_list ol:after {
     left: 62.6%; top: 246px;
     width: 27px; height: 506px;
-    background: url(../../images/main/bg-diagram.png) no-repeat 0 0;
+    background: url(../images/main/bg-diagram.png) no-repeat 0 0;
     border: 0;
   }
   .section_main .step_list ol li {
@@ -311,19 +311,19 @@
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    background: #004c7a url(../../images/main/ico_lock.png) no-repeat center 27px;
+    background: #004c7a url(../images/main/ico_lock.png) no-repeat center 27px;
     border-radius: 10px;
     box-sizing: border-box;
   }
   .section_main.bg_trust .text_box {
     height: 325px;
     padding-top: 180px;
-    background: url(../../images/main/img-section02-m.jpg) no-repeat center;
+    background: url(../images/main/img-section02-m.jpg) no-repeat center;
     background-size: cover;
   }
   .section_main.bg_trust .img_box {
     height: 103px;
-    background: url(../../images/main/img-section02-logo-m.png) no-repeat center;
+    background: url(../images/main/img-section02-logo-m.png) no-repeat center;
   }
   .section_main.bg_parthner {
     margin-top: 110px;
@@ -331,12 +331,12 @@
   .section_main.bg_parthner .text_box {
     height: 325px;
     padding-top: 180px;
-    background: url(../../images/main/img-section03-m.jpg) no-repeat center;
+    background: url(../images/main/img-section03-m.jpg) no-repeat center;
     background-size: cover;
   }
   .section_main.bg_parthner .img_box {
     height: 93px;
-    background: url(../../images/main/img-section03-logo-m.png) no-repeat center;
+    background: url(../images/main/img-section03-logo-m.png) no-repeat center;
   }
   .section_join {
     margin-top: 80px;

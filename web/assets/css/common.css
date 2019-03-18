@@ -1,27 +1,87 @@
 @charset "utf-8";
 
-@import url(./reset.css);
+/* reset */
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'notokr';
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption {
+	overflow:hidden;
+  position:absolute;
+  top:0; left:0;
+  width:1px; height:1px;
+  font-size:0; line-height:0
+}
+em {
+	font-style: normal;
+}
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+
 
 /* font */
 @font-face {
-  font-family:'notokr';font-weight:700; font-style:normal; src:url('../../font/notokr-bold.eot'); src:url('../../font/notokr-bold.eot?#iefix') format('embedded-opentype'),
-  url('../../font/notokr-bold.woff2') format('woff2'),
-  url('../../font/notokr-bold.woff') format('woff'),
-  url('../../font/notokr-bold.ttf') format('truetype'),
-  url('../../font/notokr-bold.svg#notokr-medium') format('svg');
+  font-family:'notokr';font-weight:700; font-style:normal; src:url('../font/notokr-bold.eot'); src:url('../font/notokr-bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/notokr-bold.woff2') format('woff2'),
+  url('../font/notokr-bold.woff') format('woff'),
+  url('../font/notokr-bold.ttf') format('truetype'),
+  url('../font/notokr-bold.svg#notokr-medium') format('svg');
 }
 
-@font-face {font-family:'notokr'; font-weight:500; font-style:normal; src:url('../../font/notokr-medium.eot'); src:url('../../font/notokr-medium.eot?#iefix') format('embedded-opentype'),
-  url('../../font/notokr-medium.woff2') format('woff2'),
-  url('../../font/notokr-medium.woff') format('woff'),
-  url('../../font/notokr-medium.ttf') format('truetype'),
-  url('../../font/notokr-medium.svg#notokr-medium') format('svg');}
+@font-face {font-family:'notokr'; font-weight:500; font-style:normal; src:url('../font/notokr-medium.eot'); src:url('../font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+  url('../font/notokr-medium.woff2') format('woff2'),
+  url('../font/notokr-medium.woff') format('woff'),
+  url('../font/notokr-medium.ttf') format('truetype'),
+  url('../font/notokr-medium.svg#notokr-medium') format('svg');}
 
-@font-face {font-family:'notokr'; font-weight:400; font-style:normal; src:url('../../font/notokr-regular.eot'); src:url('../../font/notokr-regular.eot?#iefix') format('embedded-opentype'),
-  url('../../font/notokr-regular.woff2') format('woff2'),
-  url('../../font/notokr-regular.woff') format('woff'),
-  url('../../font/notokr-regular.ttf') format('truetype'),
-  url('../../font/notokr-regular.svg#notokr-regular') format('svg');}
+@font-face {font-family:'notokr'; font-weight:400; font-style:normal; src:url('../font/notokr-regular.eot'); src:url('../font/notokr-regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/notokr-regular.woff2') format('woff2'),
+  url('../font/notokr-regular.woff') format('woff'),
+  url('../font/notokr-regular.ttf') format('truetype'),
+  url('../font/notokr-regular.svg#notokr-regular') format('svg');}
 html {min-height:100%;}
 body {
   font-family: 'notokr';
@@ -111,7 +171,7 @@ h1,h2,h3,h4,h5,h6,strong {
   display: inline-block;
   width: 19px;
   height: 20px;
-  background: url(../../images/common/ico-login.png) no-repeat 0 0;
+  background: url(../images/common/ico-login.png) no-repeat 0 0;
 }
 
 .header_top .my_box .login_box .login_layer::before {
@@ -170,7 +230,7 @@ h1,h2,h3,h4,h5,h6,strong {
   font-size: 12px;
   color: #000;
   font-weight: 500;
-  background: url(../../images/common/arr-bottom.png) no-repeat center right;
+  background: url(../images/common/arr-bottom.png) no-repeat center right;
 }
 .header_top .my_box .lang_box .lang_layer::before {
   content: '';
@@ -219,7 +279,7 @@ h1,h2,h3,h4,h5,h6,strong {
   height: 14px;
   margin-top: 15px;
   padding: 3px 1px;
-  background: url(../../images/common/arr-left.png) no-repeat 50%;
+  background: url(../images/common/arr-left.png) no-repeat 50%;
 }
 .header_bottom .sub_gnb_wrap {
   float: right;
@@ -408,7 +468,7 @@ input::placeholder {
 }
 input[type="text"].id_vaild {
   padding-right: 46px;
-  background: url(../../images/common/ico-vaild.png) no-repeat 94.5% 50%;
+  background: url(../images/common/ico-vaild.png) no-repeat 94.5% 50%;
 }
 
 .file_inp_box .file_inp {
@@ -481,7 +541,7 @@ input[type="text"].id_vaild {
 }
 .chk_inp input[type="checkbox"]:checked + label:before {
   content: '';
-  background: url(../../images/common/ico-check.png) no-repeat 0 0;
+  background: url(../images/common/ico-check.png) no-repeat 0 0;
   border: 0;
 }
 
@@ -496,7 +556,7 @@ select {
   border: 1px solid #e1e1e1;
   border-radius: 0;
   box-sizing: border-box;
-  background: url(../../images/common/arr-bottom.png) no-repeat 96% 50%;
+  background: url(../images/common/arr-bottom.png) no-repeat 96% 50%;
 }
 select::-ms-expand {
   display: none;
@@ -508,7 +568,7 @@ select:disabled {
 /* datepicker */
 .input_date {
   padding-right: 44px;
-  background: #fff url(../../images/common/ico-calender.png) no-repeat 100% center;
+  background: #fff url(../images/common/ico-calender.png) no-repeat 100% center;
 }
 
 /* textarea */
@@ -657,7 +717,7 @@ button {
   position: absolute;
   left: 0; top: 2px;
   width: 20px; height: 20px;
-  background: url(../../images/common/ico-alert.png) no-repeat 0 0;
+  background: url(../images/common/ico-alert.png) no-repeat 0 0;
 }
 .txt_alert {
   position: relative;
@@ -704,7 +764,7 @@ button {
   position: absolute;
   right: 5.4%; top: 18px;
   width: 20px; height: 20px;
-  background: url(../../images/common/btn_close_pop.png) no-repeat center;
+  background: url(../images/common/btn_close_pop.png) no-repeat center;
 }
 .layer_popup .popup_box .content_popup {
   padding: 40px 8% 30px;
@@ -882,7 +942,7 @@ button {
   width:44px;
   height:44px;
   color:transparent;
-  background:#666 url('../../images/common/btn_search.png') no-repeat center;
+  background:#666 url('../images/common/btn_search.png') no-repeat center;
   background-size:16px;
   vertical-align: middle;
 }
@@ -976,7 +1036,7 @@ button {
     display: block;
     font-size: 18px;
     color: #000;
-    background: url(../../images/common/arr-bottom-gray.png) no-repeat center right;
+    background: url(../images/common/arr-bottom-gray.png) no-repeat center right;
   }
   .header_top .mobile_wrap .mobile_gnb dl dt.on a {
     color: #36ae53;
@@ -1017,11 +1077,11 @@ button {
     color: #666;
   }
   .header_top .mobile_wrap .mobile_gnb .bottom_box .login span {
-    background: url(../../images/common/ico-power.png) no-repeat center top;
+    background: url(../images/common/ico-power.png) no-repeat center top;
     background-size: auto 50%;
   }
   .header_top .mobile_wrap .mobile_gnb .bottom_box .mypage span {
-    background: url(../../images/common/ico-mypage.png) no-repeat center top;
+    background: url(../images/common/ico-mypage.png) no-repeat center top;
     background-size: auto 50%;
   }
   .header_top .mobile_wrap .mobile_gnb.open {
