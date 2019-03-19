@@ -17,40 +17,50 @@
     <!-- header area -->
     <div class="container">
       <div class="page_title">
-        <h2 class="txt_title">아이디/비밀번호 찾기</h2>
-        <p class="txt_desc">작업 예정!!!!!!!</p>
+        <h2 class="txt_title">아이디 찾기/비밀번호 초기화</h2>
       </div>
-      <div class="login_wrap">
+      <!-- Tab links -->
+      <div class="tab col2">
+        <button class="tablinks active" onclick="openCity(event, 'tab1')">아이디 찾기</button>
+        <button class="tablinks" onclick="openCity(event, 'tab2')">비밀번호 초기화</button>
+      </div>
+      <div class="id_pw_wrap">                
         <form method="POST" action="">
           <fieldset>
-            <legend class="blind">로그인 양식</legend>
-            <div class="group_wrap">
+            <legend class="blind">아이디 찾기, 비밀번호 초기화 양식</legend>
+            <!-- S : Tab content -->
+            <div id="tab1" style="display:block;" class="tabcontent group_wrap">
               <div class="group_inp">
-                <label for="userName" class="blind">아이디 입력</label>
-                <input type="text" name="" id="userName" placeholder="Username">
+                <label for="companyName1" class="blind">회사명</label>
+                <input type="text" name="" id="companyName1" placeholder="회사명">
               </div>
               <div class="group_inp">
-                <label for="password" class="blind">비밀번호 입력</label>
-                <input type="password" name="" id="password" placeholder="Password">
-              </div>
-              <div class="group_inp chk_inp_box">
-                <span class="chk_inp">
-                  <input type="checkbox" name="" id="privacyAgree">
-                  <label for="privacyAgree"><span class="blind">로그인 정보 저장</span></label>
-                </span>
-                <span class="txt_label">Remind me Later</span>
+                <label for="businessNumber1" class="blind">사업자 번호</label>
+                <input type="text" name="" id="businessNumber1" placeholder="사업자 번호">
               </div>
               <div class="btn_wrap">
-                <button type="submit" class="btn point_green"><span>로그인</span></button>
+                <button type="submit" class="btn point_green"><span>확인</span></button>
+              </div>
+            </div>
+            <div id="tab2"  class="tabcontent group_wrap">
+              <div class="group_inp">
+                <label for="companyName2" class="blind">회사명</label>
+                <input type="text" name="" id="companyName2" placeholder="회사명">
+              </div>
+              <div class="group_inp">
+                <label for="businessNumber2" class="blind">사업자 번호</label>
+                <input type="text" name="" id="businessNumber2" placeholder="사업자 번호">
+              </div>
+              <div class="group_inp">
+                  <label for="id" class="blind">아이디</label>
+                  <input type="text" name="" id="id" placeholder="ID">
+                </div>
+              <div class="btn_wrap">
+                <button type="submit" class="btn point_green"><span>확인</span></button>
               </div>
             </div>
           </fieldset>
         </form>
-        <div class="forgot_wrap">
-          <a href="../member/join.html" class="join_link">회원가입</a>
-          <a href="../member/id-pw.html">아이디/비밀번호 찾기</a>
-        </div>
-      </div>
     </div>
   <!-- footer area -->
   <div id="footer">
