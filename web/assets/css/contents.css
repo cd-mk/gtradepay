@@ -1621,6 +1621,16 @@
 .form_group .group_wrap .group_inp .col2 *:last-child {
   margin-left: 1%;
 }
+.form_group .group_wrap .group_inp.col_half {
+  overflow: hidden;
+}
+.form_group .group_wrap .group_inp.col_half dd {
+  float: left;
+  width: 49.5%;
+}
+.form_group .group_wrap .group_inp.col_half dd:last-child {
+  margin-left: 1%;
+}
 .form_group .group_wrap .group_inp .txt_message {
   margin-top: 10px;
   font-size: 13px;
@@ -1694,6 +1704,10 @@
 .form_notice .txt_desc {
   margin-top: 15px;
   color: #666;
+}
+.sample_down {
+  display: block;
+  margin-top: 14px;
 }
 .captcha_wrap {
   margin-top: 40px;

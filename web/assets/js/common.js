@@ -178,6 +178,35 @@ var layerPopup = function() {
   openNextPopup();
 };
 
+var changeMobileLink = function() {
+  $('.js-change_href').each(function() {
+    changeLink($(this));
+  });
+  
+  $(window).resize(function() {
+    var resizeSize = $(window).outerWidth();
+
+    $('.js-change_href').each(function() {
+      changeLink($(this), resizeSize);
+    });
+  });
+
+  function changeLink(target, windowSize) {
+    var winSize = $(window).outerWidth(),
+        pcHref = $(target).attr('data-pc-href'),
+        moHref = $(target).attr('data-mo-href');
+
+    if (windowSize) {
+      winSize = windowSize;
+    }
+    if (winSize > 768) {
+      $(target).attr('href', pcHref);
+    } else {
+      $(target).attr('href', moHref);
+    }
+  }
+};
+
 $(document).ready(function() {
   // header, footer load
   layout();
@@ -189,6 +218,9 @@ $(document).ready(function() {
   }
   if ($('.js-open-accordian').length) {
     setContentAccordian();
+  }
+  if ($('.js-change_href').length) {
+    changeMobileLink();
   }
   inpFile.init();
   layerPopup();
