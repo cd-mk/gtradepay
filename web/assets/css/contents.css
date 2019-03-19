@@ -1897,6 +1897,46 @@
 }
 
 /* -------------------------
+      아이디 찾기, 비밀번호 초기화 area
+ ------------------------- */
+ .id_pw_wrap {
+  width: 360px;
+  margin: 0 auto;
+}
+.id_pw_wrap .group_wrap {
+  margin-top: 50px;
+}
+.id_pw_wrap .group_wrap .group_inp {
+  margin-top: 10px;
+}
+.id_pw_wrap .group_wrap .group_inp:first-child {
+  margin-top: 0;
+}
+.id_pw_wrap .group_wrap .group_inp:first-child input {
+  border-color: #36ae53;
+}
+.id_pw_wrap .group_wrap .group_inp.chk_inp_box {
+  margin-top: 18px;
+}
+.id_pw_wrap .group_wrap .group_inp.chk_inp_box .txt_label {
+  margin-left: 8px;
+  color: #666;
+}
+.id_pw_wrap .group_wrap .btn_wrap {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .tab button {    
+    padding:8px 25px 12px;
+    line-height:20px;
+  }
+  .id_pw_wrap {
+    width: 100%;
+  }
+}
+
+/* -------------------------
       에스크로 area
  ------------------------- */
 @charset "utf-8";
