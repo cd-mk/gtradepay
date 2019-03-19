@@ -91,7 +91,7 @@ body {
   height:100vh;
 }
 body.open {
-  position: fixed;
+  overflow: hidden;
 }
 a {
   color: #222;
