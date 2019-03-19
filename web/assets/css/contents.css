@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 /* 사업연혁 */
 .gtp_raunching {
@@ -1913,7 +1914,7 @@
 /* -------------------------
       아이디 찾기, 비밀번호 초기화 area
  ------------------------- */
- .id_pw_wrap {
+.id_pw_wrap {
   width: 360px;
   margin: 0 auto;
 }
@@ -1953,7 +1954,6 @@
 /* -------------------------
       에스크로 area
  ------------------------- */
-@charset "utf-8";
 
 /* 에스크로 신청하기 */
 .apply_form {
@@ -2008,6 +2008,17 @@
   font-size: 14px;
 }
 
+/* 무역견적서 팝업 */
+.layer_popup.trade_apply .popup_box {
+  width: 960px;
+}
+.layer_popup.trade_apply .popup_box .table_wrap {
+  margin-top: 0;
+}
+.layer_popup.trade_apply .popup_box .content_popup {
+  overflow-y: auto;
+  max-height: 700px;
+}
 @media screen and (max-width: 768px) {
   .apply_form {
     width: 100%;

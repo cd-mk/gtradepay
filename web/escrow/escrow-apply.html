@@ -88,7 +88,261 @@
               <h3 class="group_title">첨부 서류</h3>
               <div class="group_wrap">
                 <div class="accordian_inp">
-                  <a href="#url" class="title_accordian js-accordian">무역 견적서 <span class="text_state">작성</span></a>
+                  <a href="#url" class="title_accordian js-open-popup">무역 견적서 <span class="text_state">작성</span></a>
+                  <div class="layer_popup trade_apply">
+                    <div class="popup_box">
+                      <h4 class="title_popup">무역 견적서 작성</h4>
+                      <div class="content_popup">
+                        <div class="table_wrap">
+                          <table>
+                            <caption>무역 견적서 작성 양식</caption>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Company Name</th>
+                                <td colspan="6">
+                                  <label for="inp1" class="blind">input company name</label>
+                                  <input type="text" id="inp1" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Address</th>
+                                <td colspan="6">
+                                  <label for="inp2" class="blind">input address</label>
+                                  <input type="text" id="inp2" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Tel</th>
+                                <td colspan="2">
+                                  <label for="inp3" class="blind">input tel</label>
+                                  <input type="tel" id="inp3" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">Fax</th>
+                                <td colspan="3">
+                                  <label for="inp4" class="blind">input fax</label>
+                                  <input type="tel" id="inp4" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Customer</th>
+                                <td colspan="2">
+                                  <label for="inp5" class="blind">input customer</label>
+                                  <input type="text" id="inp5" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">To</th>
+                                <td colspan="3">
+                                  <label for="inp6" class="blind">input To</label>
+                                  <input type="text" id="inp6" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Date</th>
+                                <td colspan="2">
+                                  <label for="inp7" class="blind">input date</label>
+                                  <input type="text" id="inp7" class="input_date tbl_inp_full">
+                                </td>
+                                <th scope="row">CC.</th>
+                                <td colspan="3">
+                                  <label for="inp8" class="blind">input CC</label>
+                                  <input type="text" id="inp8" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Ref.No</th>
+                                <td colspan="2">
+                                  <label for="inp9" class="blind">input Ref.No</label>
+                                  <input type="text" id="inp9" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">By.</th>
+                                <td colspan="3">
+                                  <label for="inp10" class="blind">input By</label>
+                                  <input type="text" id="inp10" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Item</th>
+                                <td>
+                                  <label for="inp11" class="blind">input Item</label>
+                                  <input type="text" id="inp11" class="tbl_inp_full">
+                                </td>
+                                <th scope="col">Description</th>
+                                <th scope="col">Unit Price (BreakDown Price)</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">MOQ</th>
+                                <th scope="col">Amount</th>
+                              </tr>
+                              <tr>
+                                <th scope="row">Item</th>
+                                <td>
+                                  <label for="inp12" class="blind">input Item</label>
+                                  <input type="text" id="inp12" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp13" class="blind">input Description</label>
+                                  <input type="text" id="inp13" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp14" class="blind">input Unit Price</label>
+                                  <input type="text" id="inp14" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp15" class="blind">input Quantity</label>
+                                  <input type="text" id="inp15" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp16" class="blind">input MOQ</label>
+                                  <input type="text" id="inp16" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp17" class="blind">input Amount</label>
+                                  <input type="text" id="inp17" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Item</th>
+                                <td>
+                                  <label for="inp18" class="blind">input Item</label>
+                                  <input type="text" id="inp18" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp19" class="blind">input Description</label>
+                                  <input type="text" id="inp19" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp20" class="blind">input Unit Price</label>
+                                  <input type="text" id="inp20" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp21" class="blind">input Quantity</label>
+                                  <input type="text" id="inp21" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp22" class="blind">input MOQ</label>
+                                  <input type="text" id="inp22" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp23" class="blind">input Amount</label>
+                                  <input type="text" id="inp23" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Total</th>
+                                <td>
+                                  <label for="inp24" class="blind">input Total</label>
+                                  <input type="text" id="inp24" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp25" class="blind">input Description</label>
+                                  <input type="text" id="inp25" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp26" class="blind">input Unit Price</label>
+                                  <input type="text" id="inp26" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp27" class="blind">input Quantity</label>
+                                  <input type="text" id="inp27" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <label for="inp28" class="blind">input MOQ</label>
+                                  <input type="text" id="inp28" class="tbl_inp_full">
+                                </td>
+                                <td>
+                                  <span>총 금액</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Packing</th>
+                                <td colspan="2">
+                                  <label for="inp29" class="blind">input Packing</label>
+                                  <input type="text" id="inp29" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">Delivery Time</th>
+                                <td colspan="3">
+                                  <label for="inp30" class="blind">input Delivery Time</label>
+                                  <input type="time" id="inp30" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Port of Loading</th>
+                                <td colspan="2">
+                                  <label for="inp31" class="blind">input Port of Loading</label>
+                                  <input type="text" id="inp31" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">Port of Unloading</th>
+                                <td colspan="3">
+                                  <label for="inp32" class="blind">input Port of Unloading</label>
+                                  <input type="text" id="inp32" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Terms of Payment</th>
+                                <td colspan="2">
+                                  <label for="inp33" class="blind">input Terms of Payment</label>
+                                  <input type="text" id="inp33" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">Insurance</th>
+                                <td colspan="3">
+                                  <label for="inp34" class="blind">input Insurance</label>
+                                  <input type="text" id="inp34" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Quality Guarantee</th>
+                                <td colspan="2">
+                                  <label for="inp35" class="blind">input Quality Guarantee</label>
+                                  <input type="text" id="inp35" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">After-sale Service</th>
+                                <td colspan="3">
+                                  <label for="inp36" class="blind">input After-sale Service</label>
+                                  <input type="text" id="inp36" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Quotation Valid By</th>
+                                <td colspan="2">
+                                  <label for="inp37" class="blind">input Quotation Valid By</label>
+                                  <input type="text" id="inp37" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">Special Requirements</th>
+                                <td colspan="3">
+                                  <label for="inp38" class="blind">input Special Requirements</label>
+                                  <input type="text" id="inp38" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Approved By</th>
+                                <td colspan="2">
+                                  <label for="inp39" class="blind">input Approved By</label>
+                                  <input type="text" id="inp39" class="tbl_inp_full">
+                                </td>
+                                <th scope="row">Authorized Representative</th>
+                                <td colspan="3">
+                                  <label for="inp40" class="blind">input Authorized Representative</label>
+                                  <input type="text" id="inp40" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">General Manager</th>
+                                <td colspan="6">
+                                  <label for="inp41" class="blind">input General Manager</label>
+                                  <input type="text" id="inp41" class="tbl_inp_full">
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="btn_wrap col2">
+                          <button type="button" class="btn point_green"><span>저장</span></button>
+                          <button type="button" class="btn point_white js-close-popup"><span>취소</span></button>
+                        </div>
+                      </div>
+                      <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
+                    </div>
+                    <div class="dim"></div>
+                  </div>
                   <div class="inp_wrap">
                     <dl class="group_inp">
                       <dt>수신인(Consignee)</dt>
