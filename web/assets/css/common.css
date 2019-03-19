@@ -91,7 +91,7 @@ body {
   height:100vh;
 }
 body.open {
-  overflow: hidden;
+  position: fixed;
 }
 a {
   color: #222;
@@ -731,6 +731,10 @@ button {
   border-bottom: 2px solid #222;
 }
 
+.txt_under {
+  text-decoration: underline;
+}
+
 /* layer popup */
 .layer_popup {
   display: none;
@@ -774,6 +778,9 @@ button {
 .layer_popup.layer_preview .popup_box {
   width: 550px;
 }
+.layer_popup.layer_preview .content_popup {
+  text-align: center;
+}
 .layer_popup.layer_preview .content_popup img {
   max-width: 100%;
 }
@@ -782,7 +789,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .layer_popup .popup_box {
-    width: 90%;
+    width: 90% !important;
   }
 }
 
