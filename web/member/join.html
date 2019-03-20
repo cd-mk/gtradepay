@@ -56,11 +56,11 @@
                   </dd>
                   <dd>
                     <label for="trade" class="blind">무역 구분 선택</label>
-                    <select name="" id="trade" class="select_join01">
+                    <select name="" id="trade" class="js-change-opt">
                       <option value="">선택</option>
-                      <option value="option1">수출입</option>
-                      <option value="option2">수입</option>
-                      <option value="option3">수출</option>
+                      <option value="opt1">수출입</option>
+                      <option value="opt2">수입</option>
+                      <option value="opt3">수출</option>
                     </select>
                   </dd>
                 </dl>
@@ -301,7 +301,7 @@
                 </dl>
               </div>
               <!-- 회원가입 구분 select option 중 수출, 수출입 선택 시 출력 -->
-              <div class="group_wrap group_hide">
+              <div class="group_wrap js-change-doc hide">
                 <h4 class="group_title2">UnionPay 가입서류</h4>
                 <dl class="group_inp">
                   <dt>대표와 주주 신분증</dt>
@@ -448,15 +448,5 @@
   <!-- js -->
   <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
   <script src="../assets/js/common.js"></script>
-  <script>
-    var selectOption = function(){
-      if('.select_join01', value==option2){
-        $('.group_hide').removeClass('group_on');
-      }
-      else{
-        $('.group_hide').addClass('group_on');
-      }
-    };
-  </script>
 </body>
 </html>

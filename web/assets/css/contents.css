@@ -1600,6 +1600,9 @@
 .form_group .group_title .require_txt em {
   color: #ff3d00;
 }
+.form_group .group_wrap.hide {
+  display: none;
+}
 .form_group .group_wrap .group_inp {
   margin-top: 20px;
 }
