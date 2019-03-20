@@ -282,3 +282,16 @@ function layout() {
   });
 }
 
+// join-selectbox
+
+var selectOption = function() {
+  $('.js-change-opt').on('change',function(){
+    $('js-change-opt option:selected').val();
+    if($(this).val()!='opt3'){
+      $('.js-change-doc').removeClass('hide');
+    }else{
+      $('.js-change-doc').addClass('hide');
+    }
+  });
+};
+selectOption();
