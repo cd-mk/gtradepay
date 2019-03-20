@@ -198,35 +198,16 @@ var changeMobileLink = function() {
 var customList = {
   addBtnClass: '.js-add-btn',
   deleteBtnClass: '.js-delete-btn',
-  listInputCount: $('.list_box').find('input').length,
-  updateCount: function() {
-    var addBtn = this.addBtnClass,
-        deleteBtn = this.deleteBtnClass;
-    
-    $(addBtn).on('click', function() {
-      customList.listInputCount = $('.list_box').find('input').length;
-    });
-    $(deleteBtn).on('click', function() {
-      customList.listInputCount = $('.list_box').find('input').length;
-    });
-  },
   setAddList: function() {
     var addBtn = this.addBtnClass;
     var cloneList;
 
     $(addBtn).on('click', function() {
-      var startNum = customList.listInputCount;
       var $boxPosition = $(this).closest('.data_wrap').find('.data_total');
 
       cloneList = $(this).closest('.head_box').next('.list_box').clone(true);
       cloneList.find('input').val('');
 
-      for(var i = 0; i < cloneList.find('input').length; i++) {
-        var idNum = startNum + (i + 1);
-
-        $(cloneList.find('input')[i]).attr('id', 'listInp' + idNum);
-      }
-      
       $boxPosition.before(cloneList);
     });
   },
@@ -240,7 +221,6 @@ var customList = {
   init: function() {
     this.setAddList();
     this.setDeleteList();
-    this.updateCount();
   }
 
 };
