@@ -118,8 +118,10 @@ h1,h2,h3,h4,h5,h6,strong {
 }
 
 /* wrap */
-#wrap {position: relative;padding-bottom:260px;min-height: 100%;}
-
+#wrap {position: relative;padding-bottom:185px;min-height: 100%;}
+@media screen and (max-width: 1500px) {
+  #wrap {padding-bottom:240px;}
+}
 
 /* header */
 #header {position: relative;text-align:center;}
@@ -385,6 +387,7 @@ h1,h2,h3,h4,h5,h6,strong {
   color: #666;
 }
 @media screen and (max-width: 1500px) {
+  #footer .footer_inner {width:80%;}
   #footer .foot_logo {
     overflow: hidden;
     position: static;
@@ -677,7 +680,9 @@ button {
   text-align: center;
   margin: 30px auto 120px;
 }
-
+@media screen and (max-width: 1500px) {
+  .btn_wrap.admin {right:0;}
+}
 @media screen and (max-width: 768px) {
   .input_with_btn {
     width: 66.5%;
