@@ -1964,16 +1964,25 @@
   margin-top: 40px;
 }
 .group_wrap .accordian_inp {
+  position: relative;
   margin-top: 7px;
 }
 .group_wrap .accordian_inp:first-of-type {
   margin-top: 0;
 }
+.group_wrap .accordian_inp .absolute_select {
+  position: absolute;
+  right: 75px; top: 50%;
+  width: 140px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  background-position: 90% 50%;
+}
 .group_wrap .accordian_inp .title_accordian {
   display: block;
-  height: 44px;
+  height: 54px;
   padding: 0 20px;
-  line-height: 44px;
+  line-height: 54px;
   font-weight: 500;
   background: #eee;
   border-bottom: 1px solid #d0d0d0;
@@ -1990,34 +1999,157 @@
   margin-left: 5px;
   background: url(../images/common/ico-plus-minus.png) no-repeat 0 0;
 }
-.group_wrap .accordian_inp .inp_wrap {
-  display: none;
-  padding: 30px 4% 0;
-  background: #fafafa;
-}
-.group_wrap .accordian_inp .inp_wrap .group_inp:first-child {
-  margin-top: 0;
-}
-.group_wrap .accordian_inp.open .title_accordian .text_state:after {
-  background-position: 0 -9px;
-}
-.group_wrap .accordian_inp .inp_wrap .btn_wrap {
-  margin: 30px -4% 0;
-}
-.group_wrap .accordian_inp .inp_wrap .btn_wrap .btn span {
-  font-size: 14px;
-}
 
-/* 무역견적서 팝업 */
+/* 무역견적서  & 인보이스 작성 팝업 */
 .layer_popup.trade_apply .popup_box {
-  width: 960px;
-}
-.layer_popup.trade_apply .popup_box .table_wrap {
-  margin-top: 0;
+  width: 984px;
 }
 .layer_popup.trade_apply .popup_box .content_popup {
+  padding: 40px 30px 30px;
   overflow-y: auto;
   max-height: 700px;
+}
+.popup_apply_form .apply_inp {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #e1e1e1;
+  border-bottom: 0;
+}
+.popup_apply_form .apply_inp:last-of-type {
+  border-bottom: 1px solid #e1e1e1;
+}
+.popup_apply_form .apply_inp dt {
+  display: table-cell;
+  width: 184px;
+  padding: 12px 20px;
+  border-right: 1px solid #e1e1e1;
+  background: #eee;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.popup_apply_form .apply_inp dd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.popup_apply_form .apply_inp dd input {
+  padding: 12px 20px;
+  border: 0;
+}
+.popup_apply_form .data_wrap .head_box,
+.popup_apply_form .data_wrap .list_box {
+  position: relative;
+}
+.popup_apply_form .data_wrap .btn_plus,
+.popup_apply_form .data_wrap .btn_minus {
+  position: absolute;
+  left: 20px; top: 50%;
+  transform: translateY(-50%);
+  width: 24px; height: 24px;
+  background: url(../../assets/images/common/ico-box-plus-minus.png) no-repeat 0 0;
+}
+.popup_apply_form .data_wrap .btn_minus {
+  background-position: 0 -24px;
+}
+.popup_apply_form .data_wrap .head_box + .list_box .btn_minus {
+  display: none;
+}
+.popup_apply_form .data_wrap .head_box + .list_box .data_list .style_item {
+  padding-left: 0;
+}
+.popup_apply_form .data_wrap .data_head {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #e1e1e1;
+}
+.popup_apply_form .data_wrap .data_head > li {
+  display: table-cell;
+  height: 62px;
+  border-left: 1px solid #e1e1e1;
+  background: #eee;
+  text-align: center;
+  vertical-align: middle;
+}
+.popup_apply_form .data_wrap .data_head > li:first-child {
+  border-left: 0;
+}
+.popup_apply_form .data_wrap .data_list {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+}
+.popup_apply_form .data_wrap .data_list > li {
+  display: table-cell;
+  height: 44px;
+  border-left: 1px solid #e1e1e1;
+}
+.popup_apply_form .data_wrap .data_list > li:first-child {
+  border-left: 0;
+}
+.popup_apply_form .data_wrap .data_list > li input {
+  border: 0;
+}
+.popup_apply_form .data_wrap .style_item {
+  width: 260px;
+  padding-left: 54px;
+}
+.popup_apply_form .data_wrap .data_head .style_item {
+  padding-left: 0;
+}
+.popup_apply_form .data_wrap .style_unit {
+  width: 185px;
+}
+.popup_apply_form .data_wrap .data_total {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+  border-bottom: 0;
+}
+.popup_apply_form .data_wrap .data_total dt {
+  display: table-cell;
+  width: 260px; height: 44px;
+  background: #fff;
+  border-right: 1px solid #e1e1e1;
+  text-align: center;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.popup_apply_form .data_wrap .data_total dd {
+  display: table-cell;
+  background: #fff;
+  text-align: center;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.popup_apply_form .btn_wrap {
+  margin-top: 30px;
+}
+.popup_apply_form .btn_wrap.col2 {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.popup_apply_form .btn_wrap.col2 .btn {
+  width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .layer_popup.trade_apply .popup_box {
+    width: 90%;
+  }
+  .layer_popup.trade_apply .popup_box .popup_apply_form {
+    width: 900px;
+  }
 }
 @media screen and (max-width: 768px) {
   .apply_form {

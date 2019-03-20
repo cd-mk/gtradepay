@@ -88,508 +88,553 @@
               <h3 class="group_title">첨부 서류</h3>
               <div class="group_wrap">
                 <div class="accordian_inp">
+                  <select name="" id="" class="absolute_select">
+                    <option value="">양식1</option>
+                    <option value="">양식2</option>
+                    <option value="">양식3</option>
+                    <option value="">양식4</option>
+                    <option value="">양식5</option>
+                  </select>
                   <a href="#url" class="title_accordian js-open-popup">무역 견적서 <span class="text_state">작성</span></a>
                   <div class="layer_popup trade_apply">
                     <div class="popup_box">
                       <h4 class="title_popup">무역 견적서 작성</h4>
                       <div class="content_popup">
-                        <div class="table_wrap">
-                          <table>
-                            <caption>무역 견적서 작성 양식</caption>
-                            <tbody>
-                              <tr>
-                                <th scope="row">Company Name</th>
-                                <td colspan="6">
-                                  <label for="inp1" class="blind">input company name</label>
-                                  <input type="text" id="inp1" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Address</th>
-                                <td colspan="6">
-                                  <label for="inp2" class="blind">input address</label>
-                                  <input type="text" id="inp2" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Tel</th>
-                                <td colspan="2">
-                                  <label for="inp3" class="blind">input tel</label>
-                                  <input type="tel" id="inp3" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">Fax</th>
-                                <td colspan="3">
-                                  <label for="inp4" class="blind">input fax</label>
-                                  <input type="tel" id="inp4" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Customer</th>
-                                <td colspan="2">
-                                  <label for="inp5" class="blind">input customer</label>
-                                  <input type="text" id="inp5" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">To</th>
-                                <td colspan="3">
+                        <div class="popup_apply_form">
+                          <form action="" method="POST">
+                            <fieldset>
+                              <legend class="blind">무역 견적서 작성 양식</legend>
+                              <dl class="apply_inp">
+                                <dt>Company Name</dt>
+                                <dd>
+                                  <label for="inp1" class="blind">input Company Name</label>
+                                  <input type="text" name="" id="inp1">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Address</dt>
+                                <dd>
+                                  <label for="inp2" class="blind">input Address</label>
+                                  <input type="text" name="" id="inp2" placeholder="Headquarter : 3F Samjung bldg. 139 Saimdang-ro, Seocho-gu, Seoul, Korea">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Tel</dt>
+                                <dd>
+                                  <label for="inp3" class="blind">input Tel</label>
+                                  <input type="tel" name="" id="inp3">
+                                </dd>
+                                <dt>FAX</dt>
+                                <dd>
+                                  <label for="inp4" class="blind">input FAX</label>
+                                  <input type="tel" name="" id="inp4">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Customer</dt>
+                                <dd>
+                                  <label for="inp5" class="blind">input Customer</label>
+                                  <input type="text" name="" id="inp5">
+                                </dd>
+                                <dt>To</dt>
+                                <dd>
                                   <label for="inp6" class="blind">input To</label>
-                                  <input type="text" id="inp6" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Date</th>
-                                <td colspan="2">
-                                  <label for="inp7" class="blind">input date</label>
-                                  <input type="text" id="inp7" class="input_date tbl_inp_full">
-                                </td>
-                                <th scope="row">CC.</th>
-                                <td colspan="3">
-                                  <label for="inp8" class="blind">input CC</label>
-                                  <input type="text" id="inp8" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Ref.No</th>
-                                <td colspan="2">
+                                  <input type="text" name="" id="inp6">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Date</dt>
+                                <dd>
+                                  <label for="inp7" class="blind">input Date</label>
+                                  <input type="text" name="" id="inp7" class="input_date">
+                                </dd>
+                                <dt>CC.</dt>
+                                <dd>
+                                  <label for="inp8" class="blind">input To</label>
+                                  <input type="text" name="" id="inp8">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Ref.No</dt>
+                                <dd>
                                   <label for="inp9" class="blind">input Ref.No</label>
-                                  <input type="text" id="inp9" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">By.</th>
-                                <td colspan="3">
-                                  <label for="inp10" class="blind">input By</label>
-                                  <input type="text" id="inp10" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Item</th>
-                                <td>
-                                  <label for="inp11" class="blind">input Item</label>
-                                  <input type="text" id="inp11" class="tbl_inp_full">
-                                </td>
-                                <th scope="col">Description</th>
-                                <th scope="col">Unit Price (BreakDown Price)</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">MOQ</th>
-                                <th scope="col">Amount</th>
-                              </tr>
-                              <tr>
-                                <th scope="row">Item</th>
-                                <td>
-                                  <label for="inp12" class="blind">input Item</label>
-                                  <input type="text" id="inp12" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp13" class="blind">input Description</label>
-                                  <input type="text" id="inp13" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp14" class="blind">input Unit Price</label>
-                                  <input type="text" id="inp14" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp15" class="blind">input Quantity</label>
-                                  <input type="text" id="inp15" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp16" class="blind">input MOQ</label>
-                                  <input type="text" id="inp16" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp17" class="blind">input Amount</label>
-                                  <input type="text" id="inp17" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Item</th>
-                                <td>
-                                  <label for="inp18" class="blind">input Item</label>
-                                  <input type="text" id="inp18" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp19" class="blind">input Description</label>
-                                  <input type="text" id="inp19" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp20" class="blind">input Unit Price</label>
-                                  <input type="text" id="inp20" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp21" class="blind">input Quantity</label>
-                                  <input type="text" id="inp21" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp22" class="blind">input MOQ</label>
-                                  <input type="text" id="inp22" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp23" class="blind">input Amount</label>
-                                  <input type="text" id="inp23" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Total</th>
-                                <td>
-                                  <label for="inp24" class="blind">input Total</label>
-                                  <input type="text" id="inp24" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp25" class="blind">input Description</label>
-                                  <input type="text" id="inp25" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp26" class="blind">input Unit Price</label>
-                                  <input type="text" id="inp26" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp27" class="blind">input Quantity</label>
-                                  <input type="text" id="inp27" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <label for="inp28" class="blind">input MOQ</label>
-                                  <input type="text" id="inp28" class="tbl_inp_full">
-                                </td>
-                                <td>
-                                  <span>총 금액</span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Packing</th>
-                                <td colspan="2">
-                                  <label for="inp29" class="blind">input Packing</label>
-                                  <input type="text" id="inp29" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">Delivery Time</th>
-                                <td colspan="3">
-                                  <label for="inp30" class="blind">input Delivery Time</label>
-                                  <input type="time" id="inp30" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Port of Loading</th>
-                                <td colspan="2">
-                                  <label for="inp31" class="blind">input Port of Loading</label>
-                                  <input type="text" id="inp31" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">Port of Unloading</th>
-                                <td colspan="3">
-                                  <label for="inp32" class="blind">input Port of Unloading</label>
-                                  <input type="text" id="inp32" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Terms of Payment</th>
-                                <td colspan="2">
-                                  <label for="inp33" class="blind">input Terms of Payment</label>
-                                  <input type="text" id="inp33" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">Insurance</th>
-                                <td colspan="3">
-                                  <label for="inp34" class="blind">input Insurance</label>
-                                  <input type="text" id="inp34" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Quality Guarantee</th>
-                                <td colspan="2">
-                                  <label for="inp35" class="blind">input Quality Guarantee</label>
-                                  <input type="text" id="inp35" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">After-sale Service</th>
-                                <td colspan="3">
-                                  <label for="inp36" class="blind">input After-sale Service</label>
-                                  <input type="text" id="inp36" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Quotation Valid By</th>
-                                <td colspan="2">
-                                  <label for="inp37" class="blind">input Quotation Valid By</label>
-                                  <input type="text" id="inp37" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">Special Requirements</th>
-                                <td colspan="3">
-                                  <label for="inp38" class="blind">input Special Requirements</label>
-                                  <input type="text" id="inp38" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">Approved By</th>
-                                <td colspan="2">
-                                  <label for="inp39" class="blind">input Approved By</label>
-                                  <input type="text" id="inp39" class="tbl_inp_full">
-                                </td>
-                                <th scope="row">Authorized Representative</th>
-                                <td colspan="3">
-                                  <label for="inp40" class="blind">input Authorized Representative</label>
-                                  <input type="text" id="inp40" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">General Manager</th>
-                                <td colspan="6">
-                                  <label for="inp41" class="blind">input General Manager</label>
-                                  <input type="text" id="inp41" class="tbl_inp_full">
-                                </td>
-                              </tr>
-                              
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="btn_wrap col2">
-                          <button type="button" class="btn point_green"><span>저장</span></button>
-                          <button type="button" class="btn point_white js-close-popup"><span>취소</span></button>
+                                  <input type="text" name="" id="inp9">
+                                </dd>
+                                <dt>By.</dt>
+                                <dd>
+                                  <label for="inp10" class="blind">input By.</label>
+                                  <input type="text" name="" id="inp10">
+                                </dd>
+                              </dl>
+                              <div class="data_wrap">
+                                <div class="head_box">
+                                  <ul class="data_head">
+                                    <li class="style_item">Item</li>
+                                    <li>Description</li>
+                                    <li class="style_unit">Unit Price<br>(BreakDown Price)</li>
+                                    <li>Quantity</li>
+                                    <li>MOQ</li>
+                                    <li>Amount</li>
+                                  </ul>
+                                  <button type="button" class="btn_plus js-add-btn"><span class="blind">데이터 리스트 추가</span></button>
+                                </div>
+                                
+                                <!-- data_list repeat -->
+                                <div class="list_box">
+                                  <ul class="data_list">
+                                    <li class="style_item">
+                                      <label for="listInp1" class="blind">input Item</label>
+                                      <input type="text" name="" id="listInp1">
+                                    </li>
+                                    <li>
+                                      <label for="listInp2" class="blind">input Description</label>
+                                      <input type="text" name="" id="listInp2">
+                                    </li>
+                                    <li class="style_unit">
+                                      <label for="listInp3" class="blind">input Unit Price</label>
+                                      <input type="text" name="" id="listInp3">
+                                    </li>
+                                    <li>
+                                      <label for="listInp4" class="blind">input Quantity</label>
+                                      <input type="text" name="" id="listInp4">
+                                    </li>
+                                    <li>
+                                      <label for="listInp5" class="blind">input MOQ</label>
+                                      <input type="text" name="" id="listInp5">
+                                    </li>
+                                    <li>
+                                      <label for="listInp6" class="blind">input Amount</label>
+                                      <input type="text" name="" id="listInp6">
+                                    </li>
+                                  </ul>
+                                  <button type="button" class="btn_minus js-delete-btn"><span class="blind">데이터 리스트 삭제</span></button>
+                                </div>
+                                <!-- //data_list repeat -->
+                                <div class="list_box">
+                                  <ul class="data_list">
+                                    <li class="style_item">
+                                      <label for="listInp7" class="blind">input Item</label>
+                                      <input type="text" name="" id="listInp7">
+                                    </li>
+                                    <li>
+                                      <label for="listInp8" class="blind">input Description</label>
+                                      <input type="text" name="" id="listInp8">
+                                    </li>
+                                    <li class="style_unit">
+                                      <label for="listInp9" class="blind">input Unit Price</label>
+                                      <input type="text" name="" id="listInp9">
+                                    </li>
+                                    <li>
+                                      <label for="listInp10" class="blind">input Quantity</label>
+                                      <input type="text" name="" id="listInp10">
+                                    </li>
+                                    <li>
+                                      <label for="listInp11" class="blind">input MOQ</label>
+                                      <input type="text" name="" id="listInp11">
+                                    </li>
+                                    <li>
+                                      <label for="listInp12" class="blind">input Amount</label>
+                                      <input type="text" name="" id="listInp12">
+                                    </li>
+                                  </ul>
+                                  <button type="button" class="btn_minus js-delete-btn"><span class="blind">데이터 리스트 삭제</span></button>
+                                </div>
+                                <div class="list_box">
+                                  <ul class="data_list">
+                                    <li class="style_item">
+                                      <label for="listInp13" class="blind">input Item</label>
+                                      <input type="text" name="" id="listInp13">
+                                    </li>
+                                    <li>
+                                      <label for="listInp14" class="blind">input Description</label>
+                                      <input type="text" name="" id="listInp14">
+                                    </li>
+                                    <li class="style_unit">
+                                      <label for="listInp15" class="blind">input Unit Price</label>
+                                      <input type="text" name="" id="listInp15">
+                                    </li>
+                                    <li>
+                                      <label for="listInp16" class="blind">input Quantity</label>
+                                      <input type="text" name="" id="listInp16">
+                                    </li>
+                                    <li>
+                                      <label for="listInp17" class="blind">input MOQ</label>
+                                      <input type="text" name="" id="listInp17">
+                                    </li>
+                                    <li>
+                                      <label for="listInp18" class="blind">input Amount</label>
+                                      <input type="text" name="" id="listInp18">
+                                    </li>
+                                  </ul>
+                                  <button type="button" class="btn_minus js-delete-btn"><span class="blind">데이터 리스트 삭제</span></button>
+                                </div>
+
+                                <!-- Total Data -->
+                                <dl class="data_total">
+                                  <dt>Total</dt>
+                                  <dd>총금액 표시 영역</dd>
+                                </dl>
+                                <!-- //Total Data -->
+                              </div>
+                              <dl class="apply_inp">
+                                <dt>Packing</dt>
+                                <dd>
+                                  <label for="inp11" class="blind">input Packing</label>
+                                  <input type="text" name="" id="inp11">
+                                </dd>
+                                <dt>Delivery Time</dt>
+                                <dd>
+                                  <label for="inp12" class="blind">input Delivery Time</label>
+                                  <input type="text" name="" id="inp12">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Port of Loading</dt>
+                                <dd>
+                                  <label for="inp13" class="blind">input Port of Loading</label>
+                                  <input type="text" name="" id="inp13">
+                                </dd>
+                                <dt>Port of Unloading</dt>
+                                <dd>
+                                  <label for="inp14" class="blind">input Port of Unloading</label>
+                                  <input type="text" name="" id="inp14">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Terms of Payment</dt>
+                                <dd>
+                                  <label for="inp15" class="blind">input Terms of Payment</label>
+                                  <input type="text" name="" id="inp15">
+                                </dd>
+                                <dt>Insurance</dt>
+                                <dd>
+                                  <label for="inp16" class="blind">input Insurance</label>
+                                  <input type="text" name="" id="inp16">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Quality Guarantee</dt>
+                                <dd>
+                                  <label for="inp17" class="blind">input Quality Guarantee</label>
+                                  <input type="text" name="" id="inp17">
+                                </dd>
+                                <dt>After-sale Service</dt>
+                                <dd>
+                                  <label for="inp18" class="blind">input After-sale Service</label>
+                                  <input type="text" name="" id="inp18">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Quotation Valid By</dt>
+                                <dd>
+                                  <label for="inp19" class="blind">input Quotation Valid By</label>
+                                  <input type="text" name="" id="inp19">
+                                </dd>
+                                <dt>Special Requirements</dt>
+                                <dd>
+                                  <label for="inp20" class="blind">input Special Requirements</label>
+                                  <input type="text" name="" id="inp20">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Approved By</dt>
+                                <dd>
+                                  <label for="inp21" class="blind">input Approved By</label>
+                                  <input type="text" name="" id="inp21">
+                                </dd>
+                                <dt>Authorized Representative</dt>
+                                <dd>
+                                  <label for="inp22" class="blind">input Authorized Representative</label>
+                                  <input type="text" name="" id="inp22">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>General Manager</dt>
+                                <dd>
+                                  <label for="inp23" class="blind">input General Manager</label>
+                                  <input type="text" name="" id="inp23">
+                                </dd>
+                              </dl>
+                              <div class="btn_wrap col2">
+                                <button type="button" class="btn point_green"><span>저장</span></button>
+                                <button type="button" class="btn point_white js-close-popup"><span>취소</span></button>
+                              </div>
+                            </fieldset>
+                          </form>
                         </div>
                       </div>
                       <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
                     </div>
                     <div class="dim"></div>
                   </div>
-                  <div class="inp_wrap">
-                    <dl class="group_inp">
-                      <dt>수신인(Consignee)</dt>
-                      <dd>
-                        <label for="consigneeText" class="blind">수신인 입력</label>
-                        <textarea name="" id="consigneeText" placeholder="TO: Mr/Ms&#13;&#10;XXX Co. Ltd.&#13;&#10;Address"></textarea>
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>E-mail</dt>
-                      <dd>
-                        <label for="mail" class="blind">이메일 입력</label>
-                        <input type="email" name="" id="mail" placeholder="example@example.com">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Quotation Date</dt>
-                      <dd>
-                        <label for="quotationDate" class="blind">Quotation date 입력</label>
-                        <input type="text" name="" id="quotationDate" class="input_date" placeholder="2019-02-01">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Reference</dt>
-                      <dd>
-                        <label for="reference" class="blind">reference 입력</label>
-                        <input type="text" name="" id="reference" placeholder="Advertisement">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Delivery Date</dt>
-                      <dd>
-                        <label for="deliveryDate" class="blind">delivery date 입력</label>
-                        <input type="text" name="" id="deliveryDate" class="input_date" placeholder="2019-02-01">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Payment Date</dt>
-                      <dd>
-                        <label for="paymentDate" class="blind">payment date 입력</label>
-                        <input type="text" name="" id="paymentDate" class="input_date" placeholder="2019-02-01">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Banking Charges</dt>
-                      <dd>
-                        <label for="bankingCharges" class="blind">Banking Charges 입력</label>
-                        <input type="text" name="" id="bankingCharges" placeholder="5%">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Offer Validity</dt>
-                      <dd>
-                        <label for="offerValidity" class="blind">offer Validity 입력</label>
-                        <input type="text" name="" id="offerValidity" placeholder="20일">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Description</dt>
-                      <dd>
-                        <label for="description" class="blind">description 입력</label>
-                        <textarea name="" id="description" placeholder="제품명&#13;&#10;상세내역"></textarea>
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Quantity</dt>
-                      <dd>
-                        <label for="quantity" class="blind">Quantity 입력</label>
-                        <input type="text" name="" id="quantity" placeholder="1.000">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Unit Price</dt>
-                      <dd>
-                        <label for="unitPrice" class="blind">unit Price 입력</label>
-                        <input type="text" name="" id="unitPrice" placeholder="0.03">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Taxes</dt>
-                      <dd>
-                        <label for="taxes" class="blind">taxes 입력</label>
-                        <input type="text" name="" id="taxes" placeholder="15.00%">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Amount</dt>
-                      <dd>
-                        <label for="amount" class="blind">amount 입력</label>
-                        <input type="text" name="" id="amount" placeholder="10,000 USD">
-                      </dd>
-                    </dl>
-                    <div class="btn_wrap">
-                      <button type="button" class="btn point_dgray"><span>저장</span></button>
-                    </div>
-                  </div>
                 </div>
                 <div class="accordian_inp">
-                  <a href="#url" class="title_accordian js-accordian">인보이스 <span class="text_state">작성</span></a>
-                  <div class="inp_wrap">
-                    <dl class="group_inp">
-                      <dt>Shipper / Exporter</dt>
-                      <dd>
-                        <label for="shipperText" class="blind">발송인 정보 입력</label>
-                        <textarea name="" id="shipperText" placeholder="발송인의 이름 / 회사명 / 주소 / 전화번호"></textarea>
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Account &amp; Risk of Messrs.</dt>
-                      <dd>
-                        <label for="accountText" class="blind">수취인 정보 입력</label>
-                        <textarea name="" id="accountText" placeholder="수취인의 이름 / 회사명 / 주소 / 전화번호"></textarea>
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Notify party</dt>
-                      <dd>
-                        <label for="notifyParty" class="blind">notifyParty 입력</label>
-                        <input type="text" name="" id="notifyParty">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Port of loading</dt>
-                      <dd>
-                        <label for="port" class="blind">Port of loading 입력</label>
-                        <input type="text" name="" id="port">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Final Destination</dt>
-                      <dd>
-                        <label for="destination" class="blind">Final Destination 입력</label>
-                        <input type="text" name="" id="destination">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Sailing on or about</dt>
-                      <dd>
-                        <label for="sailing" class="blind">Sailing on or about 입력</label>
-                        <input type="text" name="" id="sailing">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>No. &amp; Date of invoice</dt>
-                      <dd>
-                        <label for="invoice" class="blind">No. &amp; Date of invoice 입력</label>
-                        <input type="text" name="" id="invoice">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>No. &amp; Date of L/C</dt>
-                      <dd>
-                        <label for="lc" class="blind">No. &amp; Date of L/C 입력</label>
-                        <input type="text" name="" id="lc">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>L/C Issuing bank</dt>
-                      <dd>
-                        <label for="bank" class="blind">L/C Issuing bank 입력</label>
-                        <input type="text" name="" id="bank">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Remarks</dt>
-                      <dd>
-                        <label for="remarks" class="blind">remarks 입력</label>
-                        <textarea name="" id="remarks" class="textarea_midium" placeholder="운송요금 지불방식 또는 기타 요구되는 사항 기재"></textarea>
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Marks and Numbers of PKGS</dt>
-                      <dd>
-                        <label for="markNum" class="blind">Marks and Numbers of PKGS 입력</label>
-                        <input type="text" name="" id="markNum">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Description of Goods</dt>
-                      <dd>
-                        <label for="descGoods" class="blind">Description of Goods 입력</label>
-                        <textarea name="" id="descGoods" class="textarea_midium" placeholder="발송물의 품목을 구체적으로 기재"></textarea>
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Quantity/Unit</dt>
-                      <dd>
-                        <label for="quantityUnit" class="blind">Quantity/Unit 입력</label>
-                        <input type="text" name="" id="quantityUnit" placeholder="발송물의 수량을 정확히 기재">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Unit Price</dt>
-                      <dd>
-                        <label for="unitPrice2" class="blind">unit Price 입력</label>
-                        <input type="text" name="" id="unitPrice2" placeholder="발송물의 단가 기재">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Amount</dt>
-                      <dd>
-                        <label for="amount2" class="blind">amount 입력</label>
-                        <input type="text" name="" id="amount2" placeholder="발송물 금액 기재">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>P.O Box</dt>
-                      <dd>
-                        <label for="po" class="blind">P.O Box 입력</label>
-                        <input type="text" name="" id="po">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Cable address</dt>
-                      <dd>
-                        <label for="cableAddr" class="blind">Cable address 입력</label>
-                        <input type="text" name="" id="cableAddr">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Telex Code</dt>
-                      <dd>
-                        <label for="telexCode" class="blind">Telex Code 입력</label>
-                        <input type="text" name="" id="telexCode">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Telephone No.</dt>
-                      <dd>
-                        <label for="telNum" class="blind">Telex Code 입력</label>
-                        <input type="tel" name="" id="telNum">
-                      </dd>
-                    </dl>
-                    <dl class="group_inp">
-                      <dt>Signed by</dt>
-                      <dd class="file_inp_box">
-                        <!-- 첨부 파일 이름 출력 요소 -->
-                        <input type="text" class="input_with_btn js-file_name" readonly>
-                        <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                        <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                        <label for="signFile">찾아보기</label>
-                        <input type="file" id="signFile" class="file_inp">
-                      </dd>
-                    </dl>
-                    <div class="btn_wrap">
-                      <button type="button" class="btn point_dgray"><span>저장</span></button>
+                  <select name="" id="" class="absolute_select">
+                    <option value="">양식1</option>
+                    <option value="">양식2</option>
+                    <option value="">양식3</option>
+                    <option value="">양식4</option>
+                    <option value="">양식5</option>
+                  </select>
+                  <a href="#url" class="title_accordian js-open-popup">인보이스 <span class="text_state">작성</span></a>
+                  <div class="layer_popup trade_apply">
+                    <div class="popup_box">
+                      <h4 class="title_popup">인보이스 작성</h4>
+                      <div class="content_popup">
+                        <div class="popup_apply_form">
+                          <form action="" method="POST">
+                            <fieldset>
+                              <legend class="blind">인보이스 작성 양식</legend>
+                              <dl class="apply_inp">
+                                <dt>Sender Name</dt>
+                                <dd>
+                                  <label for="invoiceInp1" class="blind">input Company Name</label>
+                                  <input type="text" name="" id="invoiceInp1">
+                                </dd>
+                                <dt>Date</dt>
+                                <dd>
+                                  <label for="invoiceInp2" class="blind">input Date</label>
+                                  <input type="text" name="" id="invoiceInp2" class="input_date">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Company Name</dt>
+                                <dd>
+                                  <label for="invoiceInp3" class="blind">input Company Name</label>
+                                  <input type="text" name="" id="invoiceInp3">
+                                </dd>
+                                <dt>Address</dt>
+                                <dd>
+                                  <label for="invoiceInp4" class="blind">input Address</label>
+                                  <input type="text" name="" id="invoiceInp4">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Invoice No.</dt>
+                                <dd>
+                                  <label for="invoiceInp5" class="blind">input Invoice No</label>
+                                  <input type="text" name="" id="invoiceInp5">
+                                </dd>
+                                <dt>AWB No.</dt>
+                                <dd>
+                                  <label for="invoiceInp6" class="blind">input AWB No.</label>
+                                  <input type="text" name="" id="invoiceInp6">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Tel</dt>
+                                <dd>
+                                  <label for="invoiceInp7" class="blind">input Tel</label>
+                                  <input type="tel" name="" id="invoiceInp7">
+                                </dd>
+                                <dt>Email</dt>
+                                <dd>
+                                  <label for="invoiceInp8" class="blind">input Email</label>
+                                  <input type="email" name="" id="invoiceInp8">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Consignee Name</dt>
+                                <dd>
+                                  <label for="invoiceInp9" class="blind">input Consignee Name</label>
+                                  <input type="text" name="" id="invoiceInp9">
+                                </dd>
+                                <dt>Gross Weight</dt>
+                                <dd>
+                                  <label for="invoiceInp10" class="blind">input Gross Weight</label>
+                                  <input type="text" name="" id="invoiceInp10">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Total No. of Package(s)</dt>
+                                <dd>
+                                  <label for="invoiceInp11" class="blind">input Total No. of Package(s)</label>
+                                  <input type="text" name="" id="invoiceInp11">
+                                </dd>
+                                <dt>Address</dt>
+                                <dd>
+                                  <label for="invoiceInp12" class="blind">input Address</label>
+                                  <input type="text" name="" id="invoiceInp12">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Dimension</dt>
+                                <dd>
+                                  <label for="invoiceInp13" class="blind">input Dimension</label>
+                                  <input type="text" name="" id="invoiceInp13">
+                                </dd>
+                                <dt>Contact Person</dt>
+                                <dd>
+                                  <label for="invoiceInp14" class="blind">input Contact Person</label>
+                                  <input type="text" name="" id="invoiceInp14">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Tel</dt>
+                                <dd>
+                                  <label for="invoiceInp15" class="blind">input Tel</label>
+                                  <input type="tel" name="" id="invoiceInp15">
+                                </dd>
+                                <dt>Email</dt>
+                                <dd>
+                                  <label for="invoiceInp16" class="blind">input Email</label>
+                                  <input type="email" name="" id="invoiceInp16">
+                                </dd>
+                              </dl>
+                              
+                              <div class="data_wrap">
+                                <div class="head_box">
+                                  <ul class="data_head">
+                                    <li class="style_item">Item</li>
+                                    <li>Description</li>
+                                    <li>Quantity<br>(Unit)</li>
+                                    <li class="style_unit">Unit Price<br>(USD)</li>
+                                    <li>Total<br>(USD)</li>
+                                    <li>Todtal Amount<br>(FOB)</li>
+                                    <li>Total Value in Words</li>
+                                  </ul>
+                                  <button type="button" class="btn_plus js-add-btn"><span class="blind">데이터 리스트 추가</span></button>
+                                </div>
+                                
+                                <!-- data_list repeat -->
+                                <div class="list_box">
+                                  <ul class="data_list">
+                                    <li class="style_item">
+                                      <label for="invoicelistInp1" class="blind">input Item</label>
+                                      <input type="text" name="" id="invoicelistInp1">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp2" class="blind">input Description</label>
+                                      <input type="text" name="" id="invoicelistInp2">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp3" class="blind">input Quantity</label>
+                                      <input type="text" name="" id="invoicelistInp3">
+                                    </li>
+                                    <li class="style_unit">
+                                      <label for="invoicelistInp4" class="blind">input Unit Price</label>
+                                      <input type="text" name="" id="invoicelistInp4">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp5" class="blind">input Total</label>
+                                      <input type="text" name="" id="invoicelistInp5">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp6" class="blind">input Total Amount</label>
+                                      <input type="text" name="" id="invoicelistInp6">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp7" class="blind">input Total Value in Words<</label>
+                                      <input type="text" name="" id="invoicelistInp7">
+                                    </li>
+                                  </ul>
+                                  <button type="button" class="btn_minus js-delete-btn"><span class="blind">데이터 리스트 삭제</span></button>
+                                </div>
+                                <!-- //data_list repeat -->
+                                <div class="list_box">
+                                  <ul class="data_list">
+                                    <li class="style_item">
+                                      <label for="invoicelistInp8" class="blind">input Item</label>
+                                      <input type="text" name="" id="invoicelistInp8">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp9" class="blind">input Description</label>
+                                      <input type="text" name="" id="invoicelistInp9">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp10" class="blind">input Quantity</label>
+                                      <input type="text" name="" id="invoicelistInp10">
+                                    </li>
+                                    <li class="style_unit">
+                                      <label for="invoicelistInp11" class="blind">input Unit Price</label>
+                                      <input type="text" name="" id="invoicelistInp11">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp12" class="blind">input Total</label>
+                                      <input type="text" name="" id="invoicelistInp12">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp13" class="blind">input Total Amount</label>
+                                      <input type="text" name="" id="invoicelistInp13">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp14" class="blind">input Total Value in Words<</label>
+                                      <input type="text" name="" id="invoicelistInp14">
+                                    </li>
+                                  </ul>
+                                  <button type="button" class="btn_minus js-delete-btn"><span class="blind">데이터 리스트 삭제</span></button>
+                                </div>
+                                <div class="list_box">
+                                  <ul class="data_list">
+                                    <li class="style_item">
+                                      <label for="invoicelistInp15" class="blind">input Item</label>
+                                      <input type="text" name="" id="invoicelistInp15">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp16" class="blind">input Description</label>
+                                      <input type="text" name="" id="invoicelistInp16">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp17" class="blind">input Quantity</label>
+                                      <input type="text" name="" id="invoicelistInp17">
+                                    </li>
+                                    <li class="style_unit">
+                                      <label for="invoicelistInp18" class="blind">input Unit Price</label>
+                                      <input type="text" name="" id="invoicelistInp18">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp19" class="blind">input Total</label>
+                                      <input type="text" name="" id="invoicelistInp19">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp20" class="blind">input Total Amount</label>
+                                      <input type="text" name="" id="invoicelistInp20">
+                                    </li>
+                                    <li>
+                                      <label for="invoicelistInp21" class="blind">input Total Value in Words<</label>
+                                      <input type="text" name="" id="invoicelistInp21">
+                                    </li>
+                                  </ul>
+                                  <button type="button" class="btn_minus js-delete-btn"><span class="blind">데이터 리스트 삭제</span></button>
+                                </div>
+
+                                <!-- Total Data -->
+                                <dl class="data_total">
+                                  <dt>Total</dt>
+                                  <dd>총금액 표시 영역</dd>
+                                </dl>
+                                <!-- //Total Data -->
+                              </div>
+                              <dl class="apply_inp">
+                                <dt>Reason for Export</dt>
+                                <dd>
+                                  <label for="invoiceInp17" class="blind">input Reason for Export</label>
+                                  <input type="text" name="" id="invoiceInp17">
+                                </dd>
+                              </dl>
+                              <dl class="apply_inp">
+                                <dt>Signature &amp; Company Stamp</dt>
+                                <dd class="file_inp_box">
+                                  <!-- 첨부 파일 이름 출력 요소 -->
+                                  <input type="text" class="input_with_btn js-file_name" readonly>
+                                  <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                                  <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                                  <!-- 첨부파일 넣을 시 숨김 처리됨 -->
+                                  <label for="file1">찾아보기</label>
+                                  <input type="file" id="file1" class="file_inp">
+                                </dd>
+                              </dl>
+                              <div class="btn_wrap col2">
+                                <button type="button" class="btn point_green"><span>저장</span></button>
+                                <button type="button" class="btn point_white js-close-popup"><span>취소</span></button>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+                      <button type="button" class="close_popup js-close-popup"><span class="blind">팝업 닫기</span></button>
                     </div>
+                    <div class="dim"></div>
                   </div>
                 </div>
                 <dl class="group_inp">
