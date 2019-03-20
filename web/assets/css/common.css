@@ -348,9 +348,10 @@ h1,h2,h3,h4,h5,h6,strong {
   bottom:0;
   right:0;
   left:0;
-  padding: 40px 25%;
+  padding: 40px 0;
   background: #fafafa;
 }
+#footer .footer_inner {width:960px;margin:0 auto;position: relative;}
 #footer .foot_title {
   font-size: 18px;
   font-weight: 700;
@@ -373,7 +374,7 @@ h1,h2,h3,h4,h5,h6,strong {
 }
 #footer .foot_logo {
   position: absolute;
-  right: 25%; top: 40px;
+  right: 0; top: 0;
   max-width: 73px;
   text-align: center;
 }
@@ -642,7 +643,18 @@ button {
   text-align: center;
   margin: 30px auto 0;
 }
-
+.btn_wrap.admin {
+  position: absolute;
+  right:90px;
+  top:0;
+  background:#333;
+}
+.btn_wrap.admin .btn{
+  background:#00426a;
+  width:100px;
+  height:45px;
+  line-height:45px;
+}
 .btn_list {
   color: #222;
   font-weight: 500;
