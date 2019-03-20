@@ -56,11 +56,11 @@
                   </dd>
                   <dd>
                     <label for="trade" class="blind">무역 구분 선택</label>
-                    <select name="" id="trade">
+                    <select name="" id="trade" class="select_join01">
                       <option value="">선택</option>
-                      <option value="">수출입</option>
-                      <option value="">수입</option>
-                      <option value="">수출</option>
+                      <option value="option1">수출입</option>
+                      <option value="option2">수입</option>
+                      <option value="option3">수출</option>
                     </select>
                   </dd>
                 </dl>
@@ -205,7 +205,14 @@
                   </dd>
                 </dl>
                 <dl class="group_inp">
-                  <dt>재무제표 증명원 (3개년)</dt>
+                  <dt>무역업 고유 번호</dt>
+                  <dd>
+                    <label for="text" class="blind">고유번호 입력</label>
+                    <input type="text" id="text" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>사업자 등록증 증명원</dt>
                   <dd class="file_inp_box">
                     <!-- 첨부 파일 이름 출력 요소 -->
                     <input type="text" class="input_with_btn js-file_name" readonly>
@@ -216,7 +223,7 @@
                   </dd>
                 </dl>
                 <dl class="group_inp">
-                  <dt>인감증명서</dt>
+                  <dt>무역거래 확인원</dt>
                   <dd class="file_inp_box">
                     <!-- 첨부 파일 이름 출력 요소 -->
                     <input type="text" class="input_with_btn js-file_name" readonly>
@@ -227,14 +234,7 @@
                   </dd>
                 </dl>
                 <dl class="group_inp">
-                  <dt>무역업 고유 번호</dt>
-                  <dd>
-                    <label for="transferNum" class="blind">무역업 고유 번호 입력</label>
-                    <input type="text" name="" id="transferNum">
-                  </dd>
-                </dl>
-                <dl class="group_inp">
-                  <dt>등기부등본</dt>
+                  <dt>법인등기부등본</dt>
                   <dd class="file_inp_box">
                     <!-- 첨부 파일 이름 출력 요소 -->
                     <input type="text" class="input_with_btn js-file_name" readonly>
@@ -245,7 +245,7 @@
                   </dd>
                 </dl>
                 <dl class="group_inp">
-                  <dt>대표자 여권사본</dt>
+                  <dt>임대계약서</dt>
                   <dd class="file_inp_box">
                     <!-- 첨부 파일 이름 출력 요소 -->
                     <input type="text" class="input_with_btn js-file_name" readonly>
@@ -255,7 +255,110 @@
                     <input type="file" id="file5" class="file_inp">
                   </dd>
                 </dl>
+                <dl class="group_inp">
+                  <dt>법인 인감증명서</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file6">찾아보기</label>
+                    <input type="file" id="file6" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>표준재무제표증명원</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file7">찾아보기</label>
+                    <input type="file" id="file7" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>외환통장</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file8">찾아보기</label>
+                    <input type="file" id="file8" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>국내일반통장</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file9">찾아보기</label>
+                    <input type="file" id="file9" class="file_inp">
+                  </dd>
+                </dl>
               </div>
+              <!-- 회원가입 구분 select option 중 수출, 수출입 선택 시 출력 -->
+              <div class="group_wrap group_hide">
+                <h4 class="group_title2">UnionPay 가입서류</h4>
+                <dl class="group_inp">
+                  <dt>대표와 주주 신분증</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file9">찾아보기</label>
+                    <input type="file" id="file9" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>주주의결서</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file9">찾아보기</label>
+                    <input type="file" id="file9" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>사업자등록증</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file9">찾아보기</label>
+                    <input type="file" id="file9" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>사이트 캡쳐</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file9">찾아보기</label>
+                    <input type="file" id="file9" class="file_inp">
+                  </dd>
+                </dl>
+                <dl class="group_inp">
+                  <dt>표준재무제표증명</dt>
+                  <dd class="file_inp_box">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly>
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file9">찾아보기</label>
+                    <input type="file" id="file9" class="file_inp">
+                  </dd>
+                </dl>
+              </div>              
               <span class="sample_down txt_gray">샘플 서류 다운로드 : <a href="#url" class="txt_green txt_under">XXXX XXXXXX XXXXXXXX</a></span>
             </div>
 
@@ -281,10 +384,9 @@
                     </span>
                     <span class="txt_label">SMS 수신 동의</span>
                   </dd>
-                </dl>
+                </dl>                
               </div>
             </div>
-
             <div class="form_group">
               <h3 class="group_title">5. 약관 및 개인정보취급 동의</h3>
               <div class="group_wrap">
@@ -346,5 +448,15 @@
   <!-- js -->
   <script src="../assets/js/plugins/jquery-3.2.1.min.js"></script>
   <script src="../assets/js/common.js"></script>
+  <script>
+    var selectOption = function(){
+      if('.select_join01', value==option2){
+        $('.group_hide').removeClass('group_on');
+      }
+      else{
+        $('.group_hide').addClass('group_on');
+      }
+    };
+  </script>
 </body>
 </html>
