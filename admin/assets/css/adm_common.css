@@ -51,7 +51,8 @@ h1,h2,h3,h4,h5,h6,strong {
   font-weight: 500;
 }
 #wrap {padding-bottom:186px;position: relative;}
-html, body, #wrap{min-height: 100%;}
+html {height:100vh;}
+body, #wrap{min-height: 100%;}
 /* header */
 #header {
   position: relative;
