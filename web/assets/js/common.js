@@ -204,9 +204,11 @@ var customList = {
 
     $(addBtn).on('click', function() {
       var $boxPosition = $(this).closest('.data_wrap').find('.data_total');
+      var listBoxLeng = $(this).closest('.data_wrap').find('.list_box').length + 1;
 
       cloneList = $(this).closest('.head_box').next('.list_box').clone(true);
       cloneList.find('input').val('');
+      cloneList.find('.js-data-num').text(listBoxLeng);
 
       $boxPosition.before(cloneList);
     });
@@ -218,9 +220,16 @@ var customList = {
       $(this).closest('.list_box').remove();
     });
   },
+  setDataNumber: function() {
+    $('.js-data-num').each(function() {
+      var idx = $(this).closest('.list_box').index();
+      $(this).text(idx);
+    });
+  },
   init: function() {
     this.setAddList();
     this.setDeleteList();
+    this.setDataNumber();
   }
 };
 
@@ -259,12 +268,6 @@ $(document).ready(function() {
 
   layerPopup();
 });
-// header load 후 header관련 function 실행
-$(window).on('load', function() {
-  miniLayer();
-  setGnb();
-  mobileGnb();
-});
 
 // TAB
 function openCity(evt, cityName) {
@@ -291,6 +294,10 @@ function openCity(evt, cityName) {
 //임시 header, footer영역 로드
 function layout() {
   $("#header").load("../common.html .header_inner", function () {
+    // header 로드 후 header 관련 function 실행
+    miniLayer();
+    setGnb();
+    mobileGnb();
   });
   $("#footer").load("../common.html .footer_inner", function () {
   });
