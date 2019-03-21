@@ -404,6 +404,12 @@ h1,h2,h3,h4,h5,h6,strong {
     vertical-align: middle;
   }
 }
+@media screen and (max-width: 980px) {
+  #footer .footer_inner {
+    width: 100%;
+    padding: 0 15%;
+  }
+}
 @media screen and (max-width: 768px) {
   #footer {
     padding: 39px 4.26% 41.5px;
@@ -417,6 +423,11 @@ h1,h2,h3,h4,h5,h6,strong {
   }
   #footer .foot_cpr {
     margin-top: 12px;
+  }
+  #footer .footer_inner .btn_wrap.admin {
+    position: static;
+    background: none;
+    margin-top: 20px;
   }
 }
 /* content */
@@ -970,7 +981,7 @@ button {
 /* mobile */
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 4.26% 120px 4.26%;
+    padding: 0 4.26% 165px 4.26%;
   }
   #header .header_top {
     height: 60px;
