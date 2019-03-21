@@ -29,6 +29,7 @@ body {
   font-size: 14px;
   color: #222;
   background: #fff;
+  height:100vh;
 }
 body.open {
   overflow: hidden;
@@ -285,6 +286,42 @@ input[type="text"].id_vaild {
   background: url(../images/common/ico-vaild.png) no-repeat 94.5% 50%;
 }
 
+/* 파일 추가 */
+#field {font-size:0;}
+#field >div{margin-top:5px;}
+.btn-active {margin-left:5px;}
+.btn-active.add {
+    width: 44px;
+    height: 44px;
+    background: #333;
+    font-size: 18px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+    vertical-align: top;
+    font-size: 0;
+    position: relative;
+    display:inline-block;
+    border:0;
+}
+.btn-active.del {
+    width: 44px;
+    height: 44px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+    vertical-align: top;
+    font-size: 0;
+    position: relative;
+    display:inline-block;
+}
+
+.btn-active.add:before{content: "+";clear:both;display:block;position:absolute;font-size: 18px;color:#fff;left:16px;font-weight: 700;}
+.btn-active.del:before{content: "-";clear:both;display:block;position:absolute;font-size: 24px;color:#222;left:16px;font-weight: 700;}
+
 .file_inp_box .file_inp {
   position: absolute;
   width: 1px; height: 1px;
@@ -303,6 +340,7 @@ input[type="text"].id_vaild {
   color: #fff;
   font-weight: 500;
   text-align: center;
+  font-size:14px;
   cursor: pointer;
 }
 .file_inp_box .has_target {

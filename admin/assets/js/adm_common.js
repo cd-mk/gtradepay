@@ -215,6 +215,8 @@ $(document).ready(function () {
 
 
 
+
+
 // TAB
 function openCity(evt, cityName) {
   // Declare all variables
