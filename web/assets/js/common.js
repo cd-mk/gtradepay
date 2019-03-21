@@ -222,7 +222,18 @@ var customList = {
     this.setAddList();
     this.setDeleteList();
   }
+};
 
+var selectOption = function() {
+  $('.js-change-opt').on('change',function(){
+    var opt = $(this).val();
+
+    if (opt === 'import' || opt === 'all') {
+      $('.js-change-doc').removeClass('hide');
+    } else {
+      $('.js-change-doc').addClass('hide');
+    }
+  });
 };
 
 $(document).ready(function() {
@@ -239,6 +250,9 @@ $(document).ready(function() {
   }
   if ($('.js-change_href').length) {
     changeMobileLink();
+  }
+  if ($('.js-change-opt').length) {
+    selectOption();
   }
   inpFile.init();
   customList.init();
@@ -282,16 +296,4 @@ function layout() {
   });
 }
 
-// join-selectbox
 
-var selectOption = function() {
-  $('.js-change-opt').on('change',function(){
-    $('js-change-opt option:selected').val();
-    if($(this).val()!='opt3'){
-      $('.js-change-doc').removeClass('hide');
-    }else{
-      $('.js-change-doc').addClass('hide');
-    }
-  });
-};
-selectOption();

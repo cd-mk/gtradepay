@@ -56,11 +56,12 @@
                   </dd>
                   <dd>
                     <label for="trade" class="blind">무역 구분 선택</label>
+                    <!-- 선택된 value값이 all, import 일경우 3.가입필수서류 영역에 추가 서류 영역 노출됨 -->
                     <select name="" id="trade" class="js-change-opt">
                       <option value="">선택</option>
-                      <option value="opt1">수출입</option>
-                      <option value="opt2">수입</option>
-                      <option value="opt3">수출</option>
+                      <option value="all">수출입</option>
+                      <option value="import">수입</option>
+                      <option value="export">수출</option>
                     </select>
                   </dd>
                 </dl>
@@ -300,7 +301,7 @@
                   </dd>
                 </dl>
               </div>
-              <!-- 회원가입 구분 select option 중 수출, 수출입 선택 시 출력 -->
+              <!-- 회원가입 구분값이 수압, 수출입 선택 시 hide클래스 제거되고 노출됨 -->
               <div class="group_wrap js-change-doc hide">
                 <h4 class="group_title2">UnionPay 가입서류</h4>
                 <dl class="group_inp">
