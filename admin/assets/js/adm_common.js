@@ -58,28 +58,28 @@ var inpFile = {
   inpWrap: '.file_inp_box',
   fileNameClass: '.js-file_name',
   targetLayerImg: $('#file_layer').find('.img_preview'),
-  setElement: function() {
+  setElement: function () {
     var inpList = [];
 
-    $('.file_inp').each(function() {
+    $('.file_inp').each(function () {
       inpList.push($(this));
     });
 
     return inpList;
   },
-  fileChangeEvt: function() {
+  fileChangeEvt: function () {
     var inpList = this.setElement();
 
     for (var i = 0; i < inpList.length; i++) {
       inpList[i].on('change', this.setChangeEvt);
     }
   },
-  setChangeEvt: function() {
+  setChangeEvt: function () {
     var fileName = inpFile.setFileName(this);
 
     inpFile.insertFileName(this, fileName);
   },
-  setFileName: function(target) {
+  setFileName: function (target) {
     var fileName;
 
     if (window.FileReader) {
@@ -90,19 +90,19 @@ var inpFile = {
 
     return fileName;
   },
-  insertFileName: function(target, fileName) {
+  insertFileName: function (target, fileName) {
     var wrap = this.inpWrap,
-        targetFileName = this.fileNameClass;
+      targetFileName = this.fileNameClass;
 
     $(target).closest(wrap).find(targetFileName).attr('disabled', 'disabled').val(fileName);
     $(target).siblings('label').addClass('hide');
     $(target).siblings('.btn_delete').removeClass('hide');
   },
-  setDeleteFile: function() {
+  setDeleteFile: function () {
     var wrap = this.inpWrap,
-        targetFileName = this.fileNameClass;
+      targetFileName = this.fileNameClass;
 
-    $('.btn_delete').on('click', function() {
+    $('.btn_delete').on('click', function () {
       $(this).siblings('.file_inp').val('');
       if ($(this).closest(wrap).find(targetFileName).hasClass('has_target')) {
         $(this).closest(wrap).find(targetFileName).removeClass('has_target').removeAttr('data-img-src');
@@ -113,21 +113,9 @@ var inpFile = {
       $(this).siblings('label').removeClass('hide');
     });
   },
-  setPopup: function() {
-    var imgSrc;
-    var target = this.targetLayerImg;
-    $('.has_target').on('click', function() {
-      imgSrc = $(this).attr('data-img-src');
-      target.attr('src', imgSrc);
-
-      $('#file_layer').addClass('open');
-      $('body').addClass('open');
-    });
-  },
-  init: function() {
+  init: function () {
     this.setDeleteFile();
     this.fileChangeEvt();
-    this.setPopup();
   }
 };
 

@@ -54,11 +54,11 @@
                                     </div>
                                     <!-- S : 추가 생성 -->
                                     <div id="pre_set" style="display:none;">
-                                        <!-- 첨부 파일 이름 출력 요소 -->
-                                        <input type="text" class="input_with_btn js-file_name">
-                                        <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
-                                        <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
-                                        <label for="file2">찾아보기</label><input type="file" id="file2" class="file_inp">
+                    <!-- 첨부 파일 이름 출력 요소 -->
+                    <input type="text" class="input_with_btn js-file_name" readonly="">
+                    <!-- 파일 첨부 시 hide 클래스 제거됨, 첨부 파일 삭제 시 hide클래스 추가됨 -->
+                    <button type="button" class="btn point_gray btn_delete hide"><span>삭제</span></button>
+                    <label for="file2">찾아보기</label><input type="file" id="file2" class="file_inp">
                                         <button type="button" onclick="remove_item(this)" class="btn-active del">삭제</button>
                                     </div>
                                     <!-- E : 추가 영역 -->
@@ -100,7 +100,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="btn_wrap col2">
+                <div class="btn_wrap">
                     <button type="submit" class="btn type_01"><span>수정</span></button>
                     <button type="button" class="btn type_02"><span>취소</span></button>
                 </div>
